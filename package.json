@@ -5,5 +5,15 @@
   "main": "index.ts",
   "repository": "git@github.com:tesseractcollective/admin-components.git",
   "author": "Tesseract Collective",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "case": "^1.6.3",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
+    "graphql-ws": "^5.10.2",
+    "nanoid": "^4.0.0",
+    "primereact": "^8.5.0",
+    "react-ace": "^10.1.0",
+    "react-hook-form": "^7.35.0"
+  }
 }

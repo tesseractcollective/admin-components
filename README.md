@@ -1,8 +1,11 @@
 # Admin Components
 
 TODO:
-- [ ] create general solution for state field
+- [ ] fix AdminInputState: we need to include states in the repo, or grab them from a public endpoint. A good source is https://github.com/dr5hn/countries-states-cities-database
+- [ ] fix AdminInputNationalId
+- [ ] fix AdminInputDate by adding material UI dependencies 
 - [ ] create example app
+
 
 # Admin Form
 

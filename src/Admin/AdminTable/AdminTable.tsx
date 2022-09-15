@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { DataTable, DataTableGlobalFilterType, DataTablePFSEvent, DataTableProps } from 'primereact/datatable'
-import isEqual from 'lodash/isEqual'
 import { AdminTableAdapter, AdminTableState } from './AdminTableAdapter'
+import { isEqual } from '../utils'
 
 type AdminTableProps = {
   adapter: AdminTableAdapter

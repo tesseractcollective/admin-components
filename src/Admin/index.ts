@@ -1,5 +1,5 @@
 export * from './types'
-export * from './adminUtils'
+export * from './utils'
 export * from './useTheme'
 export * from './DataAdapter'
 export * from './AdminTable/AdminTable'

@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { Button } from 'primereact/button'
-import { adminInputsForAttributeTypes } from 'components/Admin/AdminForm/AdminFormFields'
-import { AdminForm, AdminInputBaseProps, Attribute, AttributeGroup, findTypeInGroups } from 'components/Admin'
+import { adminInputsForAttributeTypes } from './AdminFormFields'
+import { AdminForm, AdminInputBaseProps, Attribute, AttributeGroup, findTypeInGroups } from '..'
 
 export interface AdminFormAttributesProps {
   attributes: Attribute[]
