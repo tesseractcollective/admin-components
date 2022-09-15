@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { AutoComplete, AutoCompleteCompleteMethodParams, AutoCompleteProps } from 'primereact/autocomplete'
 import { Controller } from 'react-hook-form'
-import { useUserContext } from 'shared/UserContext'
+// import { useUserContext } from 'shared/UserContext'
 import { nanoid } from 'nanoid'
 import { Toast } from 'primereact/toast'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
@@ -59,7 +59,7 @@ const AdminInputState: React.FC<AdminInputStateProps> = props => {
     ...attributeType?.props
   }
 
-  const { sdkClient } = useUserContext()
+  // const { sdkClient } = useUserContext()
 
   const stateOptionTemplate = (option: AddressState): JSX.Element => (
     <div className="flex items-center">
@@ -70,24 +70,24 @@ const AdminInputState: React.FC<AdminInputStateProps> = props => {
 
   useEffect(() => {
     if (countryCode) {
-      sdkClient
-        .addressStatesByCountryCode({ countryCode })
-        .then(data => {
-          const statesData = data.addressStatesByCountryCode || []
-          setAllStates(statesData.sort((a, b) => a.name.localeCompare(b.name)))
-        })
-        .catch(() => {
-          toast.current?.show({
-            severity: 'error',
-            summary: `No states for country code ${countryCode}`,
-            life: 3000
-          })
-        })
+      // sdkClient
+      //   .addressStatesByCountryCode({ countryCode })
+      //   .then(data => {
+      //     const statesData = data.addressStatesByCountryCode || []
+      //     setAllStates(statesData.sort((a, b) => a.name.localeCompare(b.name)))
+      //   })
+      //   .catch(() => {
+      //     toast.current?.show({
+      //       severity: 'error',
+      //       summary: `No states for country code ${countryCode}`,
+      //       life: 3000
+      //     })
+      //   })
     } else if (!isFirstRender) {
       setAllStates([])
       setCurrentInput('')
     }
-  }, [sdkClient, countryCode, currentInput, isFirstRender])
+  }, [countryCode, currentInput, isFirstRender])
 
   useEffect(() => {
     setIsFirstRender(false)

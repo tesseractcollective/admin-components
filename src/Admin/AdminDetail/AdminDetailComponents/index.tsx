@@ -24,12 +24,4 @@ import AdminDetailYaml from './AdminDetailYaml'
 // AdminDetailState
 // AdminDetailToggle
 
-export {
-  AdminDetailCode,
-  AdminDetailDate,
-  AdminDetailJson,
-  AdminDetailLink,
-  AdminDetailRichText,
-  AdminDetailText,
-  AdminDetailYaml
-}
+export { AdminDetailCode, AdminDetailDate, AdminDetailJson, AdminDetailLink, AdminDetailRichText, AdminDetailText, AdminDetailYaml }

@@ -34,8 +34,8 @@ const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
                 value={field.value}
                 checked={field.value}
                 onChange={e => {
-                    onChange && onChange(e)
-                    field.onChange(e.checked)
+                  onChange && onChange(e)
+                  field.onChange(e.checked)
                 }}
                 onBlur={() => {
                   field.onBlur()
