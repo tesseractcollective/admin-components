@@ -1,0 +1,72 @@
+[
+  {
+    "code": "LT-AL",
+    "name": "Alytus County",
+    "latitude": 54.2000214,
+    "longitude": 24.1512634,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-KU",
+    "name": "Kaunas County",
+    "latitude": 54.9872863,
+    "longitude": 23.9525736,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-KL",
+    "name": "Klaipėda County",
+    "latitude": 55.6519744,
+    "longitude": 21.3743956,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-MR",
+    "name": "Marijampolė County",
+    "latitude": 54.7819971,
+    "longitude": 23.1341365,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-PN",
+    "name": "Panevėžys County",
+    "latitude": 55.9748049,
+    "longitude": 25.0794767,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-SA",
+    "name": "Šiauliai County",
+    "latitude": 55.9985751,
+    "longitude": 23.1380051,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-TA",
+    "name": "Tauragė County",
+    "latitude": 55.3072586,
+    "longitude": 22.3572939,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-TE",
+    "name": "Telšiai County",
+    "latitude": 56.1026616,
+    "longitude": 22.1113915,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-UT",
+    "name": "Utena County",
+    "latitude": 55.5318969,
+    "longitude": 25.7904699,
+    "countryCode": "LT"
+  },
+  {
+    "code": "LT-VL",
+    "name": "Vilnius County",
+    "latitude": 54.8086502,
+    "longitude": 25.2182139,
+    "countryCode": "LT"
+  }
+]

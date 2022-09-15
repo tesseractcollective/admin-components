@@ -1,0 +1,79 @@
+[
+  {
+    "code": "VAN",
+    "name": "Antwerp",
+    "latitude": 51.2194475,
+    "longitude": 4.4024643,
+    "countryCode": "BE"
+  },
+  {
+    "code": "BRU",
+    "name": "Brussels-Capital Region",
+    "latitude": 50.8503463,
+    "longitude": 4.3517211,
+    "countryCode": "BE"
+  },
+  {
+    "code": "VOV",
+    "name": "East Flanders",
+    "latitude": 51.0362101,
+    "longitude": 3.7373124,
+    "countryCode": "BE"
+  },
+  {
+    "code": "VBR",
+    "name": "Flemish Brabant",
+    "latitude": 50.8815434,
+    "longitude": 4.564597,
+    "countryCode": "BE"
+  },
+  {
+    "code": "WHT",
+    "name": "Hainaut",
+    "latitude": 50.5257076,
+    "longitude": 4.0621017,
+    "countryCode": "BE"
+  },
+  {
+    "code": "WLG",
+    "name": "Liège",
+    "latitude": 50.6325574,
+    "longitude": 5.5796662,
+    "countryCode": "BE"
+  },
+  {
+    "code": "VLI",
+    "name": "Limburg",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "BE"
+  },
+  {
+    "code": "WLX",
+    "name": "Luxembourg",
+    "latitude": 49.815273,
+    "longitude": 6.129583,
+    "countryCode": "BE"
+  },
+  {
+    "code": "WNA",
+    "name": "Namur",
+    "latitude": 50.4673883,
+    "longitude": 4.8719854,
+    "countryCode": "BE"
+  },
+  {
+    "code": "WBR",
+    "name": "Walloon Brabant",
+    "latitude": 50.633241,
+    "longitude": 4.524315,
+    "countryCode": "BE"
+  },
+  {
+    "code": "VWV",
+    "name": "West Flanders",
+    "latitude": 40.0179334,
+    "longitude": -105.2806733,
+    "countryCode": "BE"
+  }
+]

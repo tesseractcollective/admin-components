@@ -1,0 +1,142 @@
+[
+  {
+    "code": "PT-20",
+    "name": "Açores",
+    "latitude": 37.7412488,
+    "longitude": -25.6755944,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-01",
+    "name": "Aveiro",
+    "latitude": 40.7209023,
+    "longitude": -8.5721016,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-02",
+    "name": "Beja",
+    "latitude": 37.9687786,
+    "longitude": -7.87216,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-03",
+    "name": "Braga",
+    "latitude": 41.550388,
+    "longitude": -8.4261301,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-05",
+    "name": "Castelo Branco",
+    "latitude": 39.8631323,
+    "longitude": -7.4814163,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-06",
+    "name": "Coimbra",
+    "latitude": 40.2057994,
+    "longitude": -8.41369,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-07",
+    "name": "Évora",
+    "latitude": 38.5744468,
+    "longitude": -7.9076553,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-08",
+    "name": "Faro",
+    "latitude": 37.0193548,
+    "longitude": -7.9304397,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-09",
+    "name": "Guarda",
+    "latitude": 40.5385972,
+    "longitude": -7.2675772,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-10",
+    "name": "Leiria",
+    "latitude": 39.7709532,
+    "longitude": -8.7921836,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-11",
+    "name": "Lisbon",
+    "latitude": 38.7223263,
+    "longitude": -9.1392714,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-30",
+    "name": "Madeira",
+    "latitude": 32.7607074,
+    "longitude": -16.9594723,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-12",
+    "name": "Portalegre",
+    "latitude": 39.2967086,
+    "longitude": -7.4284755,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-13",
+    "name": "Porto",
+    "latitude": 41.1476629,
+    "longitude": -8.6078973,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-14",
+    "name": "Santarém",
+    "latitude": 39.2366687,
+    "longitude": -8.6859944,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-15",
+    "name": "Setúbal",
+    "latitude": 38.5240933,
+    "longitude": -8.8925876,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-16",
+    "name": "Viana do Castelo",
+    "latitude": 41.6918046,
+    "longitude": -8.834451,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-17",
+    "name": "Vila Real",
+    "latitude": 41.3003527,
+    "longitude": -7.7457274,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-18",
+    "name": "Viseu",
+    "latitude": 40.6588424,
+    "longitude": -7.914756,
+    "countryCode": "PT"
+  },
+  {
+    "code": "PT-04",
+    "name": "Bragança",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PT"
+  }
+]

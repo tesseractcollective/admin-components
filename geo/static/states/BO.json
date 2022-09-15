@@ -1,0 +1,65 @@
+[
+  {
+    "code": "BO-B",
+    "name": "Beni Department",
+    "latitude": -14.3782747,
+    "longitude": -65.0957792,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-H",
+    "name": "Chuquisaca Department",
+    "latitude": -20.0249144,
+    "longitude": -64.1478236,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-C",
+    "name": "Cochabamba Department",
+    "latitude": -17.5681675,
+    "longitude": -65.475736,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-L",
+    "name": "La Paz Department",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-O",
+    "name": "Oruro Department",
+    "latitude": -18.5711579,
+    "longitude": -67.7615983,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-N",
+    "name": "Pando Department",
+    "latitude": -10.7988901,
+    "longitude": -66.9988011,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-P",
+    "name": "Potosí Department",
+    "latitude": -20.624713,
+    "longitude": -66.9988011,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-S",
+    "name": "Santa Cruz Department",
+    "latitude": -16.7476037,
+    "longitude": -62.0750998,
+    "countryCode": "BO"
+  },
+  {
+    "code": "BO-T",
+    "name": "Tarija Department",
+    "latitude": -21.5831595,
+    "longitude": -63.9586111,
+    "countryCode": "BO"
+  }
+]

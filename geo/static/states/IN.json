@@ -1,0 +1,254 @@
+[
+  {
+    "code": "AN",
+    "name": "Andaman and Nicobar Islands",
+    "latitude": 11.7400867,
+    "longitude": 92.6586401,
+    "countryCode": "IN"
+  },
+  {
+    "code": "AP",
+    "name": "Andhra Pradesh",
+    "latitude": 15.9128998,
+    "longitude": 79.7399875,
+    "countryCode": "IN"
+  },
+  {
+    "code": "AR",
+    "name": "Arunachal Pradesh",
+    "latitude": 28.2179994,
+    "longitude": 94.7277528,
+    "countryCode": "IN"
+  },
+  {
+    "code": "AS",
+    "name": "Assam",
+    "latitude": 26.2006043,
+    "longitude": 92.9375739,
+    "countryCode": "IN"
+  },
+  {
+    "code": "BR",
+    "name": "Bihar",
+    "latitude": 25.0960742,
+    "longitude": 85.3131194,
+    "countryCode": "IN"
+  },
+  {
+    "code": "CH",
+    "name": "Chandigarh",
+    "latitude": 30.7333148,
+    "longitude": 76.7794179,
+    "countryCode": "IN"
+  },
+  {
+    "code": "CT",
+    "name": "Chhattisgarh",
+    "latitude": 21.2786567,
+    "longitude": 81.8661442,
+    "countryCode": "IN"
+  },
+  {
+    "code": "DN",
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "latitude": 20.3973736,
+    "longitude": 72.8327991,
+    "countryCode": "IN"
+  },
+  {
+    "code": "DL",
+    "name": "Delhi",
+    "latitude": 28.7040592,
+    "longitude": 77.1024902,
+    "countryCode": "IN"
+  },
+  {
+    "code": "GA",
+    "name": "Goa",
+    "latitude": 15.2993265,
+    "longitude": 74.123996,
+    "countryCode": "IN"
+  },
+  {
+    "code": "GJ",
+    "name": "Gujarat",
+    "latitude": 22.258652,
+    "longitude": 71.1923805,
+    "countryCode": "IN"
+  },
+  {
+    "code": "HR",
+    "name": "Haryana",
+    "latitude": 29.0587757,
+    "longitude": 76.085601,
+    "countryCode": "IN"
+  },
+  {
+    "code": "HP",
+    "name": "Himachal Pradesh",
+    "latitude": 31.1048294,
+    "longitude": 77.1733901,
+    "countryCode": "IN"
+  },
+  {
+    "code": "JK",
+    "name": "Jammu and Kashmir",
+    "latitude": 33.277839,
+    "longitude": 75.3412179,
+    "countryCode": "IN"
+  },
+  {
+    "code": "JH",
+    "name": "Jharkhand",
+    "latitude": 23.6101808,
+    "longitude": 85.2799354,
+    "countryCode": "IN"
+  },
+  {
+    "code": "KA",
+    "name": "Karnataka",
+    "latitude": 15.3172775,
+    "longitude": 75.7138884,
+    "countryCode": "IN"
+  },
+  {
+    "code": "KL",
+    "name": "Kerala",
+    "latitude": 10.8505159,
+    "longitude": 76.2710833,
+    "countryCode": "IN"
+  },
+  {
+    "code": "LD",
+    "name": "Lakshadweep",
+    "latitude": 10.3280265,
+    "longitude": 72.7846336,
+    "countryCode": "IN"
+  },
+  {
+    "code": "MP",
+    "name": "Madhya Pradesh",
+    "latitude": 22.9734229,
+    "longitude": 78.6568942,
+    "countryCode": "IN"
+  },
+  {
+    "code": "MH",
+    "name": "Maharashtra",
+    "latitude": 19.7514798,
+    "longitude": 75.7138884,
+    "countryCode": "IN"
+  },
+  {
+    "code": "MN",
+    "name": "Manipur",
+    "latitude": 24.6637173,
+    "longitude": 93.9062688,
+    "countryCode": "IN"
+  },
+  {
+    "code": "ML",
+    "name": "Meghalaya",
+    "latitude": 25.4670308,
+    "longitude": 91.366216,
+    "countryCode": "IN"
+  },
+  {
+    "code": "MZ",
+    "name": "Mizoram",
+    "latitude": 23.164543,
+    "longitude": 92.9375739,
+    "countryCode": "IN"
+  },
+  {
+    "code": "NL",
+    "name": "Nagaland",
+    "latitude": 26.1584354,
+    "longitude": 94.5624426,
+    "countryCode": "IN"
+  },
+  {
+    "code": "OR",
+    "name": "Odisha",
+    "latitude": 20.9516658,
+    "longitude": 85.0985236,
+    "countryCode": "IN"
+  },
+  {
+    "code": "PY",
+    "name": "Puducherry",
+    "latitude": 11.9415915,
+    "longitude": 79.8083133,
+    "countryCode": "IN"
+  },
+  {
+    "code": "PB",
+    "name": "Punjab",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "IN"
+  },
+  {
+    "code": "RJ",
+    "name": "Rajasthan",
+    "latitude": 27.0238036,
+    "longitude": 74.2179326,
+    "countryCode": "IN"
+  },
+  {
+    "code": "SK",
+    "name": "Sikkim",
+    "latitude": 27.5329718,
+    "longitude": 88.5122178,
+    "countryCode": "IN"
+  },
+  {
+    "code": "TN",
+    "name": "Tamil Nadu",
+    "latitude": 11.1271225,
+    "longitude": 78.6568942,
+    "countryCode": "IN"
+  },
+  {
+    "code": "TG",
+    "name": "Telangana",
+    "latitude": 18.1124372,
+    "longitude": 79.0192997,
+    "countryCode": "IN"
+  },
+  {
+    "code": "TR",
+    "name": "Tripura",
+    "latitude": 23.9408482,
+    "longitude": 91.9881527,
+    "countryCode": "IN"
+  },
+  {
+    "code": "UP",
+    "name": "Uttar Pradesh",
+    "latitude": 26.8467088,
+    "longitude": 80.9461592,
+    "countryCode": "IN"
+  },
+  {
+    "code": "UT",
+    "name": "Uttarakhand",
+    "latitude": 30.066753,
+    "longitude": 79.0192997,
+    "countryCode": "IN"
+  },
+  {
+    "code": "WB",
+    "name": "West Bengal",
+    "latitude": 22.9867569,
+    "longitude": 87.8549755,
+    "countryCode": "IN"
+  },
+  {
+    "code": "DD",
+    "name": "Daman and Diu",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "IN"
+  }
+]

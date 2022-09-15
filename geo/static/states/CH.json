@@ -1,0 +1,184 @@
+[
+  {
+    "code": "AG",
+    "name": "Aargau",
+    "latitude": 47.3876664,
+    "longitude": 8.2554295,
+    "countryCode": "CH"
+  },
+  {
+    "code": "AR",
+    "name": "Appenzell Ausserrhoden",
+    "latitude": 47.366481,
+    "longitude": 9.3000916,
+    "countryCode": "CH"
+  },
+  {
+    "code": "AI",
+    "name": "Appenzell Innerrhoden",
+    "latitude": 47.3161925,
+    "longitude": 9.4316573,
+    "countryCode": "CH"
+  },
+  {
+    "code": "BL",
+    "name": "Basel-Land",
+    "latitude": 47.4418122,
+    "longitude": 7.7644002,
+    "countryCode": "CH"
+  },
+  {
+    "code": "BS",
+    "name": "Basel-Stadt",
+    "latitude": 47.566667,
+    "longitude": 7.6,
+    "countryCode": "CH"
+  },
+  {
+    "code": "BE",
+    "name": "Bern",
+    "latitude": 46.7988621,
+    "longitude": 7.7080701,
+    "countryCode": "CH"
+  },
+  {
+    "code": "FR",
+    "name": "Fribourg",
+    "latitude": 46.6816748,
+    "longitude": 7.1172635,
+    "countryCode": "CH"
+  },
+  {
+    "code": "GE",
+    "name": "Geneva",
+    "latitude": 46.2180073,
+    "longitude": 6.1216925,
+    "countryCode": "CH"
+  },
+  {
+    "code": "GL",
+    "name": "Glarus",
+    "latitude": 47.0411232,
+    "longitude": 9.0679,
+    "countryCode": "CH"
+  },
+  {
+    "code": "GR",
+    "name": "Graubünden",
+    "latitude": 46.6569871,
+    "longitude": 9.5780257,
+    "countryCode": "CH"
+  },
+  {
+    "code": "JU",
+    "name": "Jura",
+    "latitude": 47.3444474,
+    "longitude": 7.1430608,
+    "countryCode": "CH"
+  },
+  {
+    "code": "LU",
+    "name": "Lucerne",
+    "latitude": 47.0795671,
+    "longitude": 8.1662445,
+    "countryCode": "CH"
+  },
+  {
+    "code": "NE",
+    "name": "Neuchâtel",
+    "latitude": 46.9899874,
+    "longitude": 6.9292732,
+    "countryCode": "CH"
+  },
+  {
+    "code": "NW",
+    "name": "Nidwalden",
+    "latitude": 46.9267016,
+    "longitude": 8.3849982,
+    "countryCode": "CH"
+  },
+  {
+    "code": "OW",
+    "name": "Obwalden",
+    "latitude": 46.877858,
+    "longitude": 8.251249,
+    "countryCode": "CH"
+  },
+  {
+    "code": "SH",
+    "name": "Schaffhausen",
+    "latitude": 47.7009364,
+    "longitude": 8.568004,
+    "countryCode": "CH"
+  },
+  {
+    "code": "SZ",
+    "name": "Schwyz",
+    "latitude": 47.0207138,
+    "longitude": 8.6529884,
+    "countryCode": "CH"
+  },
+  {
+    "code": "SO",
+    "name": "Solothurn",
+    "latitude": 47.3320717,
+    "longitude": 7.6388385,
+    "countryCode": "CH"
+  },
+  {
+    "code": "SG",
+    "name": "St. Gallen",
+    "latitude": 47.1456254,
+    "longitude": 9.3504332,
+    "countryCode": "CH"
+  },
+  {
+    "code": "TG",
+    "name": "Thurgau",
+    "latitude": 47.6037856,
+    "longitude": 9.0557371,
+    "countryCode": "CH"
+  },
+  {
+    "code": "TI",
+    "name": "Ticino",
+    "latitude": 46.331734,
+    "longitude": 8.8004529,
+    "countryCode": "CH"
+  },
+  {
+    "code": "UR",
+    "name": "Uri",
+    "latitude": 41.4860647,
+    "longitude": -71.5308537,
+    "countryCode": "CH"
+  },
+  {
+    "code": "VS",
+    "name": "Valais",
+    "latitude": 46.1904614,
+    "longitude": 7.5449226,
+    "countryCode": "CH"
+  },
+  {
+    "code": "VD",
+    "name": "Vaud",
+    "latitude": 46.5613135,
+    "longitude": 6.536765,
+    "countryCode": "CH"
+  },
+  {
+    "code": "ZG",
+    "name": "Zug",
+    "latitude": 47.1661505,
+    "longitude": 8.5154749,
+    "countryCode": "CH"
+  },
+  {
+    "code": "ZH",
+    "name": "Zürich",
+    "latitude": 47.359536,
+    "longitude": 8.6356452,
+    "countryCode": "CH"
+  }
+]

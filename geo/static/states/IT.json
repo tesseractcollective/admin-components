@@ -1,0 +1,772 @@
+[
+  {
+    "code": "AO",
+    "name": "Aosta Valley",
+    "latitude": 45.7388878,
+    "longitude": 7.4261866,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BN",
+    "name": "Benevento Province",
+    "latitude": 41.2035093,
+    "longitude": 14.7520939,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RC",
+    "name": "Calabria",
+    "latitude": 39.3087714,
+    "longitude": 16.3463791,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RM",
+    "name": "Emilia-Romagna",
+    "latitude": 44.5967607,
+    "longitude": 11.2186396,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VE",
+    "name": "Friuli–Venezia Giulia",
+    "latitude": 46.2259177,
+    "longitude": 13.1033646,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AG",
+    "name": "Libero consorzio comunale di Agrigento",
+    "latitude": 37.3105202,
+    "longitude": 13.5857978,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CL",
+    "name": "Libero consorzio comunale di Caltanissetta",
+    "latitude": 37.486013,
+    "longitude": 14.0614982,
+    "countryCode": "IT"
+  },
+  {
+    "code": "EN",
+    "name": "Libero consorzio comunale di Enna",
+    "latitude": 37.5676216,
+    "longitude": 14.2795349,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RG",
+    "name": "Libero consorzio comunale di Ragusa",
+    "latitude": 36.9269273,
+    "longitude": 14.7255129,
+    "countryCode": "IT"
+  },
+  {
+    "code": "SR",
+    "name": "Libero consorzio comunale di Siracusa",
+    "latitude": 37.0656924,
+    "longitude": 15.2857109,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TP",
+    "name": "Libero consorzio comunale di Trapani",
+    "latitude": 38.0183116,
+    "longitude": 12.5148265,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BA",
+    "name": "Metropolitan City of Bari",
+    "latitude": 41.1171432,
+    "longitude": 16.8718715,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BO",
+    "name": "Metropolitan City of Bologna",
+    "latitude": 44.494887,
+    "longitude": 11.3426162,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CA",
+    "name": "Metropolitan City of Cagliari",
+    "latitude": 39.2238411,
+    "longitude": 9.1216613,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CT",
+    "name": "Metropolitan City of Catania",
+    "latitude": 37.4515438,
+    "longitude": 15.0557415,
+    "countryCode": "IT"
+  },
+  {
+    "code": "FI",
+    "name": "Metropolitan City of Florence",
+    "latitude": 43.7679178,
+    "longitude": 11.2523792,
+    "countryCode": "IT"
+  },
+  {
+    "code": "GE",
+    "name": "Metropolitan City of Genoa",
+    "latitude": 44.4056493,
+    "longitude": 8.9462564,
+    "countryCode": "IT"
+  },
+  {
+    "code": "ME",
+    "name": "Metropolitan City of Messina",
+    "latitude": 38.1937335,
+    "longitude": 15.5542057,
+    "countryCode": "IT"
+  },
+  {
+    "code": "MI",
+    "name": "Metropolitan City of Milan",
+    "latitude": 45.458626,
+    "longitude": 9.181873,
+    "countryCode": "IT"
+  },
+  {
+    "code": "NA",
+    "name": "Metropolitan City of Naples",
+    "latitude": 40.901975,
+    "longitude": 14.332644,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PA",
+    "name": "Metropolitan City of Palermo",
+    "latitude": 38.11569,
+    "longitude": 13.3614868,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TO",
+    "name": "Metropolitan City of Turin",
+    "latitude": 45.063299,
+    "longitude": 7.669289,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PU",
+    "name": "Pesaro and Urbino Province",
+    "latitude": 43.6130118,
+    "longitude": 12.7135121,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AL",
+    "name": "Province of Alessandria",
+    "latitude": 44.8175587,
+    "longitude": 8.7046627,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AN",
+    "name": "Province of Ancona",
+    "latitude": 43.5493245,
+    "longitude": 13.2663479,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AP",
+    "name": "Province of Ascoli Piceno",
+    "latitude": 42.8638933,
+    "longitude": 13.5899733,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AT",
+    "name": "Province of Asti",
+    "latitude": 44.9007652,
+    "longitude": 8.2064315,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AV",
+    "name": "Province of Avellino",
+    "latitude": 40.996451,
+    "longitude": 15.1258955,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BT",
+    "name": "Province of Barletta-Andria-Trani",
+    "latitude": 41.2004543,
+    "longitude": 16.2051484,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BL",
+    "name": "Province of Belluno",
+    "latitude": 46.2497659,
+    "longitude": 12.1969565,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BG",
+    "name": "Province of Bergamo",
+    "latitude": 45.6982642,
+    "longitude": 9.6772698,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BI",
+    "name": "Province of Biella",
+    "latitude": 45.5628176,
+    "longitude": 8.0582717,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BS",
+    "name": "Province of Brescia",
+    "latitude": 45.5415526,
+    "longitude": 10.2118019,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BR",
+    "name": "Province of Brindisi",
+    "latitude": 40.6112663,
+    "longitude": 17.763621,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CB",
+    "name": "Province of Campobasso",
+    "latitude": 41.6738865,
+    "longitude": 14.7520939,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CI",
+    "name": "Province of Carbonia-Iglesias",
+    "latitude": 39.2534659,
+    "longitude": 8.5721016,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CE",
+    "name": "Province of Caserta",
+    "latitude": 41.2078354,
+    "longitude": 14.1001326,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CZ",
+    "name": "Province of Catanzaro",
+    "latitude": 38.8896348,
+    "longitude": 16.4405872,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CH",
+    "name": "Province of Chieti",
+    "latitude": 42.0334428,
+    "longitude": 14.3791912,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CO",
+    "name": "Province of Como",
+    "latitude": 45.8080416,
+    "longitude": 9.0851793,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CS",
+    "name": "Province of Cosenza",
+    "latitude": 39.5644105,
+    "longitude": 16.2522143,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CR",
+    "name": "Province of Cremona",
+    "latitude": 45.2014375,
+    "longitude": 9.9836582,
+    "countryCode": "IT"
+  },
+  {
+    "code": "KR",
+    "name": "Province of Crotone",
+    "latitude": 39.1309856,
+    "longitude": 17.0067031,
+    "countryCode": "IT"
+  },
+  {
+    "code": "CN",
+    "name": "Province of Cuneo",
+    "latitude": 44.5970314,
+    "longitude": 7.6114217,
+    "countryCode": "IT"
+  },
+  {
+    "code": "FM",
+    "name": "Province of Fermo",
+    "latitude": 43.0931367,
+    "longitude": 13.5899733,
+    "countryCode": "IT"
+  },
+  {
+    "code": "FE",
+    "name": "Province of Ferrara",
+    "latitude": 44.766368,
+    "longitude": 11.7644068,
+    "countryCode": "IT"
+  },
+  {
+    "code": "FG",
+    "name": "Province of Foggia",
+    "latitude": 41.638448,
+    "longitude": 15.5943388,
+    "countryCode": "IT"
+  },
+  {
+    "code": "FC",
+    "name": "Province of Forlì-Cesena",
+    "latitude": 43.9947681,
+    "longitude": 11.9804613,
+    "countryCode": "IT"
+  },
+  {
+    "code": "FR",
+    "name": "Province of Frosinone",
+    "latitude": 41.6576528,
+    "longitude": 13.6362715,
+    "countryCode": "IT"
+  },
+  {
+    "code": "GO",
+    "name": "Province of Gorizia",
+    "latitude": 45.9053899,
+    "longitude": 13.5163725,
+    "countryCode": "IT"
+  },
+  {
+    "code": "GR",
+    "name": "Province of Grosseto",
+    "latitude": 42.8518007,
+    "longitude": 11.2523792,
+    "countryCode": "IT"
+  },
+  {
+    "code": "IM",
+    "name": "Province of Imperia",
+    "latitude": 43.941866,
+    "longitude": 7.8286368,
+    "countryCode": "IT"
+  },
+  {
+    "code": "IS",
+    "name": "Province of Isernia",
+    "latitude": 41.5891555,
+    "longitude": 14.1930918,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AQ",
+    "name": "Province of L'Aquila",
+    "latitude": 42.1256317,
+    "longitude": 13.6362715,
+    "countryCode": "IT"
+  },
+  {
+    "code": "SP",
+    "name": "Province of La Spezia",
+    "latitude": 44.2447913,
+    "longitude": 9.7678687,
+    "countryCode": "IT"
+  },
+  {
+    "code": "LT",
+    "name": "Province of Latina",
+    "latitude": 41.4087476,
+    "longitude": 13.0817903,
+    "countryCode": "IT"
+  },
+  {
+    "code": "LE",
+    "name": "Province of Lecce",
+    "latitude": 40.2347393,
+    "longitude": 18.1428669,
+    "countryCode": "IT"
+  },
+  {
+    "code": "LC",
+    "name": "Province of Lecco",
+    "latitude": 45.9382941,
+    "longitude": 9.385729,
+    "countryCode": "IT"
+  },
+  {
+    "code": "LI",
+    "name": "Province of Livorno",
+    "latitude": 43.0239848,
+    "longitude": 10.6647101,
+    "countryCode": "IT"
+  },
+  {
+    "code": "LO",
+    "name": "Province of Lodi",
+    "latitude": 45.2405036,
+    "longitude": 9.5292512,
+    "countryCode": "IT"
+  },
+  {
+    "code": "LU",
+    "name": "Province of Lucca",
+    "latitude": 43.8376736,
+    "longitude": 10.495053,
+    "countryCode": "IT"
+  },
+  {
+    "code": "MC",
+    "name": "Province of Macerata",
+    "latitude": 43.2459322,
+    "longitude": 13.2663479,
+    "countryCode": "IT"
+  },
+  {
+    "code": "MN",
+    "name": "Province of Mantua",
+    "latitude": 45.1667728,
+    "longitude": 10.7753613,
+    "countryCode": "IT"
+  },
+  {
+    "code": "MS",
+    "name": "Province of Massa and Carrara",
+    "latitude": 44.2213998,
+    "longitude": 10.0359661,
+    "countryCode": "IT"
+  },
+  {
+    "code": "MT",
+    "name": "Province of Matera",
+    "latitude": 40.6663496,
+    "longitude": 16.6043636,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VS",
+    "name": "Province of Medio Campidano",
+    "latitude": 39.5317389,
+    "longitude": 8.704075,
+    "countryCode": "IT"
+  },
+  {
+    "code": "MO",
+    "name": "Province of Modena",
+    "latitude": 44.5513799,
+    "longitude": 10.918048,
+    "countryCode": "IT"
+  },
+  {
+    "code": "MB",
+    "name": "Province of Monza and Brianza",
+    "latitude": 45.623599,
+    "longitude": 9.2588015,
+    "countryCode": "IT"
+  },
+  {
+    "code": "NO",
+    "name": "Province of Novara",
+    "latitude": 45.5485133,
+    "longitude": 8.5150793,
+    "countryCode": "IT"
+  },
+  {
+    "code": "NU",
+    "name": "Province of Nuoro",
+    "latitude": 40.3286904,
+    "longitude": 9.456155,
+    "countryCode": "IT"
+  },
+  {
+    "code": "OG",
+    "name": "Province of Ogliastra",
+    "latitude": 39.8410536,
+    "longitude": 9.456155,
+    "countryCode": "IT"
+  },
+  {
+    "code": "OT",
+    "name": "Province of Olbia-Tempio",
+    "latitude": 40.8268383,
+    "longitude": 9.2785583,
+    "countryCode": "IT"
+  },
+  {
+    "code": "OR",
+    "name": "Province of Oristano",
+    "latitude": 40.0599068,
+    "longitude": 8.7481167,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PD",
+    "name": "Province of Padua",
+    "latitude": 45.3661864,
+    "longitude": 11.8209139,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PR",
+    "name": "Province of Parma",
+    "latitude": 44.8015322,
+    "longitude": 10.3279354,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PV",
+    "name": "Province of Pavia",
+    "latitude": 45.3218166,
+    "longitude": 8.8466236,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PG",
+    "name": "Province of Perugia",
+    "latitude": 42.938004,
+    "longitude": 12.6216211,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PE",
+    "name": "Province of Pescara",
+    "latitude": 42.3570655,
+    "longitude": 13.9608091,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PC",
+    "name": "Province of Piacenza",
+    "latitude": 44.8263112,
+    "longitude": 9.5291447,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PI",
+    "name": "Province of Pisa",
+    "latitude": 43.7228315,
+    "longitude": 10.4017194,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PT",
+    "name": "Province of Pistoia",
+    "latitude": 43.9543733,
+    "longitude": 10.8903099,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PN",
+    "name": "Province of Pordenone",
+    "latitude": 46.0378862,
+    "longitude": 12.710835,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PZ",
+    "name": "Province of Potenza",
+    "latitude": 40.4182194,
+    "longitude": 15.876004,
+    "countryCode": "IT"
+  },
+  {
+    "code": "PO",
+    "name": "Province of Prato",
+    "latitude": 44.04539,
+    "longitude": 11.1164452,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RA",
+    "name": "Province of Ravenna",
+    "latitude": 44.4184443,
+    "longitude": 12.2035998,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RE",
+    "name": "Province of Reggio Emilia",
+    "latitude": 44.585658,
+    "longitude": 10.5564736,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RI",
+    "name": "Province of Rieti",
+    "latitude": 42.3674405,
+    "longitude": 12.8975098,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RN",
+    "name": "Province of Rimini",
+    "latitude": 44.0678288,
+    "longitude": 12.5695158,
+    "countryCode": "IT"
+  },
+  {
+    "code": "RO",
+    "name": "Province of Rovigo",
+    "latitude": 45.0241818,
+    "longitude": 11.8238162,
+    "countryCode": "IT"
+  },
+  {
+    "code": "SA",
+    "name": "Province of Salerno",
+    "latitude": 40.4287832,
+    "longitude": 15.2194808,
+    "countryCode": "IT"
+  },
+  {
+    "code": "SS",
+    "name": "Province of Sassari",
+    "latitude": 40.7967907,
+    "longitude": 8.5750407,
+    "countryCode": "IT"
+  },
+  {
+    "code": "SV",
+    "name": "Province of Savona",
+    "latitude": 44.2887995,
+    "longitude": 8.265058,
+    "countryCode": "IT"
+  },
+  {
+    "code": "SI",
+    "name": "Province of Siena",
+    "latitude": 43.2937732,
+    "longitude": 11.4339148,
+    "countryCode": "IT"
+  },
+  {
+    "code": "SO",
+    "name": "Province of Sondrio",
+    "latitude": 46.1727636,
+    "longitude": 9.7994917,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TA",
+    "name": "Province of Taranto",
+    "latitude": 40.5740901,
+    "longitude": 17.2429976,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TE",
+    "name": "Province of Teramo",
+    "latitude": 42.5895608,
+    "longitude": 13.6362715,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TR",
+    "name": "Province of Terni",
+    "latitude": 42.5634534,
+    "longitude": 12.5298028,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TV",
+    "name": "Province of Treviso",
+    "latitude": 45.6668517,
+    "longitude": 12.2430617,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TS",
+    "name": "Province of Trieste",
+    "latitude": 45.6894823,
+    "longitude": 13.7833072,
+    "countryCode": "IT"
+  },
+  {
+    "code": "UD",
+    "name": "Province of Udine",
+    "latitude": 46.1407972,
+    "longitude": 13.1662896,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VA",
+    "name": "Province of Varese",
+    "latitude": 45.799026,
+    "longitude": 8.7300945,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VB",
+    "name": "Province of Verbano-Cusio-Ossola",
+    "latitude": 46.1399688,
+    "longitude": 8.2724649,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VC",
+    "name": "Province of Vercelli",
+    "latitude": 45.3202204,
+    "longitude": 8.418508,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VR",
+    "name": "Province of Verona",
+    "latitude": 45.4418498,
+    "longitude": 11.0735316,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VV",
+    "name": "Province of Vibo Valentia",
+    "latitude": 38.6378565,
+    "longitude": 16.2051484,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VI",
+    "name": "Province of Vicenza",
+    "latitude": 45.6983995,
+    "longitude": 11.5661465,
+    "countryCode": "IT"
+  },
+  {
+    "code": "VT",
+    "name": "Province of Viterbo",
+    "latitude": 42.400242,
+    "longitude": 11.8891721,
+    "countryCode": "IT"
+  },
+  {
+    "code": "BZ",
+    "name": "South Tyrol",
+    "latitude": 46.494945,
+    "longitude": 11.3402657,
+    "countryCode": "IT"
+  },
+  {
+    "code": "TN",
+    "name": "Trentino",
+    "latitude": 46.0512004,
+    "longitude": 11.1175392,
+    "countryCode": "IT"
+  },
+  {
+    "code": "AR",
+    "name": "Arezzo",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "IT"
+  }
+]

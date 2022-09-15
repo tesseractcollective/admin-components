@@ -1,0 +1,226 @@
+[
+  {
+    "code": "CO-AMA",
+    "name": "Amazonas",
+    "latitude": -1.4429123,
+    "longitude": -71.5723953,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-ANT",
+    "name": "Antioquia",
+    "latitude": 7.1986064,
+    "longitude": -75.3412179,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-ARA",
+    "name": "Arauca",
+    "latitude": 6.547306,
+    "longitude": -71.0022311,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-ATL",
+    "name": "Atlántico",
+    "latitude": 10.6966159,
+    "longitude": -74.8741045,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-BOL",
+    "name": "Bolívar",
+    "latitude": 8.6704382,
+    "longitude": -74.0300122,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-BOY",
+    "name": "Boyacá",
+    "latitude": 5.454511,
+    "longitude": -73.362003,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-CAL",
+    "name": "Caldas",
+    "latitude": 5.29826,
+    "longitude": -75.2479061,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-CAQ",
+    "name": "Caquetá",
+    "latitude": 0.869892,
+    "longitude": -73.8419063,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-CAS",
+    "name": "Casanare",
+    "latitude": 5.7589269,
+    "longitude": -71.5723953,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-CAU",
+    "name": "Cauca",
+    "latitude": 2.7049813,
+    "longitude": -76.8259652,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-CES",
+    "name": "Cesar",
+    "latitude": 9.3372948,
+    "longitude": -73.6536209,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-CHO",
+    "name": "Chocó",
+    "latitude": 5.2528033,
+    "longitude": -76.8259652,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-COR",
+    "name": "Córdoba",
+    "latitude": 8.049293,
+    "longitude": -75.57405,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-CUN",
+    "name": "Cundinamarca",
+    "latitude": 5.026003,
+    "longitude": -74.0300122,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-GUA",
+    "name": "Guainía",
+    "latitude": 2.585393,
+    "longitude": -68.5247149,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-GUV",
+    "name": "Guaviare",
+    "latitude": 2.043924,
+    "longitude": -72.331113,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-HUL",
+    "name": "Huila",
+    "latitude": 2.5359349,
+    "longitude": -75.5276699,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-LAG",
+    "name": "La Guajira",
+    "latitude": 11.3547743,
+    "longitude": -72.5204827,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-MAG",
+    "name": "Magdalena",
+    "latitude": 10.4113014,
+    "longitude": -74.4056612,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-MET",
+    "name": "Meta",
+    "latitude": 39.7673258,
+    "longitude": -104.9753595,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-NAR",
+    "name": "Nariño",
+    "latitude": 1.289151,
+    "longitude": -77.35794,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-NSA",
+    "name": "Norte de Santander",
+    "latitude": 7.9462831,
+    "longitude": -72.8988069,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-PUT",
+    "name": "Putumayo",
+    "latitude": 0.4359506,
+    "longitude": -75.5276699,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-QUI",
+    "name": "Quindío",
+    "latitude": 4.4610191,
+    "longitude": -75.667356,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-RIS",
+    "name": "Risaralda",
+    "latitude": 5.3158475,
+    "longitude": -75.9927652,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-SAP",
+    "name": "San Andrés, Providencia y Santa Catalina",
+    "latitude": 12.5567324,
+    "longitude": -81.7185253,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-SUC",
+    "name": "Sucre",
+    "latitude": 8.813977,
+    "longitude": -74.723283,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-TOL",
+    "name": "Tolima",
+    "latitude": 4.0925168,
+    "longitude": -75.1545381,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-VAU",
+    "name": "Vaupés",
+    "latitude": 0.8553561,
+    "longitude": -70.8119953,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-VID",
+    "name": "Vichada",
+    "latitude": 4.4234452,
+    "longitude": -69.2877535,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-SAN",
+    "name": "Santander",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "CO"
+  },
+  {
+    "code": "CO-VAC",
+    "name": "Valle del Cauca",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "CO"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "code": "AL-01",
+    "name": "Berat County",
+    "latitude": 40.6953012,
+    "longitude": 20.0449662,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-09",
+    "name": "Dibër County",
+    "latitude": 41.5888163,
+    "longitude": 20.2355647,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-02",
+    "name": "Durrës County",
+    "latitude": 41.5080972,
+    "longitude": 19.6163185,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-03",
+    "name": "Elbasan County",
+    "latitude": 41.1266672,
+    "longitude": 20.2355647,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-04",
+    "name": "Fier County",
+    "latitude": 40.9191392,
+    "longitude": 19.6639309,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-05",
+    "name": "Gjirokastër County",
+    "latitude": 40.0672874,
+    "longitude": 20.1045229,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-06",
+    "name": "Korçë County",
+    "latitude": 40.590567,
+    "longitude": 20.6168921,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-07",
+    "name": "Kukës County",
+    "latitude": 42.0807464,
+    "longitude": 20.4142923,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-08",
+    "name": "Lezhë County",
+    "latitude": 41.7813759,
+    "longitude": 19.8067916,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-10",
+    "name": "Shkodër County",
+    "latitude": 42.150371,
+    "longitude": 19.6639309,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-11",
+    "name": "Tirana County",
+    "latitude": 41.2427598,
+    "longitude": 19.8067916,
+    "countryCode": "AL"
+  },
+  {
+    "code": "AL-12",
+    "name": "Vlorë County",
+    "latitude": 40.150096,
+    "longitude": 19.8067916,
+    "countryCode": "AL"
+  }
+]

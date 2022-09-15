@@ -1,0 +1,296 @@
+[
+  {
+    "code": "AB",
+    "name": "Alba",
+    "latitude": 44.7009153,
+    "longitude": 8.0356911,
+    "countryCode": "RO"
+  },
+  {
+    "code": "AR",
+    "name": "Arad County",
+    "latitude": 46.2283651,
+    "longitude": 21.6597819,
+    "countryCode": "RO"
+  },
+  {
+    "code": "AG",
+    "name": "Arges",
+    "latitude": 45.0722527,
+    "longitude": 24.8142726,
+    "countryCode": "RO"
+  },
+  {
+    "code": "BC",
+    "name": "Bacău County",
+    "latitude": 46.3258184,
+    "longitude": 26.662378,
+    "countryCode": "RO"
+  },
+  {
+    "code": "BH",
+    "name": "Bihor County",
+    "latitude": 47.0157516,
+    "longitude": 22.172266,
+    "countryCode": "RO"
+  },
+  {
+    "code": "BN",
+    "name": "Bistrița-Năsăud County",
+    "latitude": 47.2486107,
+    "longitude": 24.5322814,
+    "countryCode": "RO"
+  },
+  {
+    "code": "BT",
+    "name": "Botoșani County",
+    "latitude": 47.8924042,
+    "longitude": 26.7591781,
+    "countryCode": "RO"
+  },
+  {
+    "code": "BR",
+    "name": "Braila",
+    "latitude": 45.2652463,
+    "longitude": 27.9594714,
+    "countryCode": "RO"
+  },
+  {
+    "code": "BV",
+    "name": "Brașov County",
+    "latitude": 45.7781844,
+    "longitude": 25.22258,
+    "countryCode": "RO"
+  },
+  {
+    "code": "B",
+    "name": "Bucharest",
+    "latitude": 44.4267674,
+    "longitude": 26.1025384,
+    "countryCode": "RO"
+  },
+  {
+    "code": "BZ",
+    "name": "Buzău County",
+    "latitude": 45.3350912,
+    "longitude": 26.7107578,
+    "countryCode": "RO"
+  },
+  {
+    "code": "CL",
+    "name": "Călărași County",
+    "latitude": 44.3658715,
+    "longitude": 26.7548607,
+    "countryCode": "RO"
+  },
+  {
+    "code": "CS",
+    "name": "Caraș-Severin County",
+    "latitude": 45.1139646,
+    "longitude": 22.0740993,
+    "countryCode": "RO"
+  },
+  {
+    "code": "CJ",
+    "name": "Cluj County",
+    "latitude": 46.7941797,
+    "longitude": 23.6121492,
+    "countryCode": "RO"
+  },
+  {
+    "code": "CT",
+    "name": "Constanța County",
+    "latitude": 44.212987,
+    "longitude": 28.2550055,
+    "countryCode": "RO"
+  },
+  {
+    "code": "CV",
+    "name": "Covasna County",
+    "latitude": 45.9426347,
+    "longitude": 25.8918984,
+    "countryCode": "RO"
+  },
+  {
+    "code": "DB",
+    "name": "Dâmbovița County",
+    "latitude": 44.9289893,
+    "longitude": 25.425385,
+    "countryCode": "RO"
+  },
+  {
+    "code": "DJ",
+    "name": "Dolj County",
+    "latitude": 44.1623022,
+    "longitude": 23.6325054,
+    "countryCode": "RO"
+  },
+  {
+    "code": "GL",
+    "name": "Galați County",
+    "latitude": 45.7800569,
+    "longitude": 27.8251576,
+    "countryCode": "RO"
+  },
+  {
+    "code": "GR",
+    "name": "Giurgiu County",
+    "latitude": 43.9037076,
+    "longitude": 25.9699265,
+    "countryCode": "RO"
+  },
+  {
+    "code": "GJ",
+    "name": "Gorj County",
+    "latitude": 44.9485595,
+    "longitude": 23.2427079,
+    "countryCode": "RO"
+  },
+  {
+    "code": "HR",
+    "name": "Harghita County",
+    "latitude": 46.4928507,
+    "longitude": 25.6456696,
+    "countryCode": "RO"
+  },
+  {
+    "code": "HD",
+    "name": "Hunedoara County",
+    "latitude": 45.793638,
+    "longitude": 22.9975993,
+    "countryCode": "RO"
+  },
+  {
+    "code": "IL",
+    "name": "Ialomița County",
+    "latitude": 44.603133,
+    "longitude": 27.3789914,
+    "countryCode": "RO"
+  },
+  {
+    "code": "IS",
+    "name": "Iași County",
+    "latitude": 47.2679653,
+    "longitude": 27.2185662,
+    "countryCode": "RO"
+  },
+  {
+    "code": "IF",
+    "name": "Ilfov County",
+    "latitude": 44.535548,
+    "longitude": 26.2324886,
+    "countryCode": "RO"
+  },
+  {
+    "code": "MM",
+    "name": "Maramureș County",
+    "latitude": 46.5569904,
+    "longitude": 24.6723215,
+    "countryCode": "RO"
+  },
+  {
+    "code": "MH",
+    "name": "Mehedinți County",
+    "latitude": 44.5515053,
+    "longitude": 22.9044157,
+    "countryCode": "RO"
+  },
+  {
+    "code": "MS",
+    "name": "Mureș County",
+    "latitude": 46.5569904,
+    "longitude": 24.6723215,
+    "countryCode": "RO"
+  },
+  {
+    "code": "NT",
+    "name": "Neamț County",
+    "latitude": 46.9758685,
+    "longitude": 26.3818764,
+    "countryCode": "RO"
+  },
+  {
+    "code": "OT",
+    "name": "Olt County",
+    "latitude": 44.200797,
+    "longitude": 24.5022981,
+    "countryCode": "RO"
+  },
+  {
+    "code": "PH",
+    "name": "Prahova County",
+    "latitude": 45.0891906,
+    "longitude": 26.0829313,
+    "countryCode": "RO"
+  },
+  {
+    "code": "SJ",
+    "name": "Sălaj County",
+    "latitude": 47.2090813,
+    "longitude": 23.2121901,
+    "countryCode": "RO"
+  },
+  {
+    "code": "SM",
+    "name": "Satu Mare County",
+    "latitude": 47.7668905,
+    "longitude": 22.9241377,
+    "countryCode": "RO"
+  },
+  {
+    "code": "SB",
+    "name": "Sibiu County",
+    "latitude": 45.9269106,
+    "longitude": 24.2254807,
+    "countryCode": "RO"
+  },
+  {
+    "code": "SV",
+    "name": "Suceava County",
+    "latitude": 47.5505548,
+    "longitude": 25.741062,
+    "countryCode": "RO"
+  },
+  {
+    "code": "TR",
+    "name": "Teleorman County",
+    "latitude": 44.0160491,
+    "longitude": 25.2986628,
+    "countryCode": "RO"
+  },
+  {
+    "code": "TM",
+    "name": "Timiș County",
+    "latitude": 45.8138902,
+    "longitude": 21.3331055,
+    "countryCode": "RO"
+  },
+  {
+    "code": "TL",
+    "name": "Tulcea County",
+    "latitude": 45.0450565,
+    "longitude": 29.0324912,
+    "countryCode": "RO"
+  },
+  {
+    "code": "VL",
+    "name": "Vâlcea County",
+    "latitude": 45.0798051,
+    "longitude": 24.0835283,
+    "countryCode": "RO"
+  },
+  {
+    "code": "VS",
+    "name": "Vaslui County",
+    "latitude": 46.4631059,
+    "longitude": 27.7398031,
+    "countryCode": "RO"
+  },
+  {
+    "code": "VN",
+    "name": "Vrancea County",
+    "latitude": 45.8134876,
+    "longitude": 27.0657531,
+    "countryCode": "RO"
+  }
+]

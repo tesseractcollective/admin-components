@@ -1,0 +1,142 @@
+[
+  {
+    "code": "Kainuu",
+    "name": "Kainuu",
+    "latitude": 64.3736564,
+    "longitude": 28.7437475,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Kymenlaakso",
+    "name": "Kymenlaakso",
+    "latitude": 60.780512,
+    "longitude": 26.8829336,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Pirkanmaa",
+    "name": "Pirkanmaa",
+    "latitude": 61.6986918,
+    "longitude": 23.7895598,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Satakunta",
+    "name": "Satakunta",
+    "latitude": 61.5932758,
+    "longitude": 22.1483081,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Itä-Uusimaa",
+    "name": "Uusimaa",
+    "latitude": 60.21872,
+    "longitude": 25.271621,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Ahvenanmaa",
+    "name": "Ahvenanmaa",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Etelä-Karjala",
+    "name": "Etelä-Karjala",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Etelä-Pohjanmaa",
+    "name": "Etelä-Pohjanmaa",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Etelä-Savo",
+    "name": "Etelä-Savo",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Kanta-Häme",
+    "name": "Kanta-Häme",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Keski-Pohjanmaa",
+    "name": "Keski-Pohjanmaa",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Keski-Suomi",
+    "name": "Keski-Suomi",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Lappi",
+    "name": "Lappi",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Päijät-Häme",
+    "name": "Päijät-Häme",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Pohjanmaa",
+    "name": "Pohjanmaa",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Pohjois-Karjala",
+    "name": "Pohjois-Karjala",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Pohjois-Pohjanmaa",
+    "name": "Pohjois-Pohjanmaa",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Pohjois-Savo",
+    "name": "Pohjois-Savo",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Uusimaa",
+    "name": "Uusimaa",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  },
+  {
+    "code": "Varsinais-Suomi",
+    "name": "Varsinais-Suomi",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "FI"
+  }
+]

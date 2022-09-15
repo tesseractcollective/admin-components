@@ -1,0 +1,149 @@
+[
+  {
+    "code": "SE-K",
+    "name": "Blekinge",
+    "latitude": 56.2783837,
+    "longitude": 15.0180058,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-W",
+    "name": "Dalarna County",
+    "latitude": 61.0917012,
+    "longitude": 14.6663653,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-X",
+    "name": "Gävleborg County",
+    "latitude": 61.3011993,
+    "longitude": 16.1534214,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-I",
+    "name": "Gotland County",
+    "latitude": 57.4684121,
+    "longitude": 18.4867447,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-N",
+    "name": "Halland County",
+    "latitude": 56.8966805,
+    "longitude": 12.8033993,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-F",
+    "name": "Jönköping County",
+    "latitude": 57.3708434,
+    "longitude": 14.3439174,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-H",
+    "name": "Kalmar County",
+    "latitude": 57.2350156,
+    "longitude": 16.1849349,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-G",
+    "name": "Kronoberg County",
+    "latitude": 56.7183403,
+    "longitude": 14.4114673,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-BD",
+    "name": "Norrbotten County",
+    "latitude": 66.8309216,
+    "longitude": 20.3991966,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-T",
+    "name": "Örebro County",
+    "latitude": 59.535036,
+    "longitude": 15.0065731,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-E",
+    "name": "Östergötland County",
+    "latitude": 58.3453635,
+    "longitude": 15.5197844,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-M",
+    "name": "Skåne County",
+    "latitude": 55.9902572,
+    "longitude": 13.5957692,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-D",
+    "name": "Södermanland County",
+    "latitude": 59.0336349,
+    "longitude": 16.7518899,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-AB",
+    "name": "Stockholm County",
+    "latitude": 59.6024958,
+    "longitude": 18.1384383,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-C",
+    "name": "Uppsala County",
+    "latitude": 60.0092262,
+    "longitude": 17.2714588,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-S",
+    "name": "Värmland County",
+    "latitude": 59.7294065,
+    "longitude": 13.2354024,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-AC",
+    "name": "Västerbotten County",
+    "latitude": 65.3337311,
+    "longitude": 16.5161694,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-Y",
+    "name": "Västernorrland County",
+    "latitude": 63.4276473,
+    "longitude": 17.7292444,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-U",
+    "name": "Västmanland County",
+    "latitude": 59.6713879,
+    "longitude": 16.2158953,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-O",
+    "name": "Västra Götaland County",
+    "latitude": 58.2527926,
+    "longitude": 13.0596425,
+    "countryCode": "SE"
+  },
+  {
+    "code": "SE-Z",
+    "name": "Jämtlands län",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "SE"
+  }
+]
