@@ -1,0 +1,40 @@
+.button-container {
+  background-color: var(--primary-color) !important;
+  .selected-flag {
+    background: var(--primary-color) !important;
+  }
+
+  .country-list {
+    padding: 0px 0.5rem !important;
+    :first-child:hover {
+      background: var(--form-background) !important;
+    }
+
+    > li:hover {
+      background: var(--primary-color) !important;
+      color: white !important;
+      .dial-code {
+        color: white !important;
+      }
+    }
+
+    .country {
+      color: var(--text-color) !important;
+    }
+
+    .country.active,
+    .country.highlight {
+      background: var(--primary-color) !important;
+      color: white !important;
+      .dial-code {
+        color: white !important;
+      }
+    }
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: var(--form-background) !important;
+}

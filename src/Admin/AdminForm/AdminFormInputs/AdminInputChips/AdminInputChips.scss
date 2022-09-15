@@ -1,0 +1,25 @@
+.field-chips-container {
+  .p-chips .p-chips-multiple-container {
+    padding: 0.75rem 0.75rem;
+  }
+  .p-chips,
+  .p-component,
+  .p-inputwrapper > .p-inputtext,
+  .p-chips-multiple-container {
+    width: 100%;
+    gap: 8px !important;
+  }
+  .p-chips-token,
+  .p-highlight {
+    background: var(--primary-color) !important;
+    margin-right: 0px !important;
+  }
+  .p-chips-token-label {
+    max-width: 12ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .p-chips-input-token > input::placeholder {
+    color: var(--text-color-secondary) !important;
+  }
+}
