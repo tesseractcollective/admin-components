@@ -1,5 +1,5 @@
-import { DataTableRowClickEventParams, DataTableSelectParams } from "primereact/datatable"
-import { Address, Attribute } from "./types"
+import { DataTableRowClickEventParams, DataTableSelectParams } from 'primereact/datatable'
+import { Address, Attribute } from './types'
 
 export function valueForAttribute(attributes: Attribute[] | undefined, name: string): string {
   const attribute = attributes?.find(attr => attr.name === name)
@@ -25,13 +25,7 @@ export function addressSingleLineFormat(address: Address): string {
     streets += `, ${address?.street2}`
   }
 
-  const formatedAddress = [
-    streets,
-    address?.city,
-    address?.stateCode,
-    address?.postalCode,
-    address?.countryCode.toUpperCase(),
-  ]
+  const formatedAddress = [streets, address?.city, address?.stateCode, address?.postalCode, address?.countryCode.toUpperCase()]
     .filter(Boolean)
     .join(', ')
 
@@ -74,21 +68,20 @@ export function isEqual(obj1: any, obj2: any) {
 }
 
 export default function dateFormat(date: string): string {
-  const dateToFormat = new Date(date.replace(/-/g, "/")); // Safari doesn't support - in dates
-  const split = dateToFormat.toDateString().slice(4).split(" ");
-  return `${split[0]} ${split[1]}, ${split[2]}`;
+  const dateToFormat = new Date(date.replace(/-/g, '/')) // Safari doesn't support - in dates
+  const split = dateToFormat.toDateString().slice(4).split(' ')
+  return `${split[0]} ${split[1]}, ${split[2]}`
 }
 
 export function formatDateString(date: string): string {
   const dateStringOptions: Intl.DateTimeFormatOptions = {
-    hour: "numeric",
-    minute: "2-digit",
-  };
-  return new Date(date).toLocaleDateString(undefined, dateStringOptions);
+    hour: 'numeric',
+    minute: '2-digit'
+  }
+  return new Date(date).toLocaleDateString(undefined, dateStringOptions)
 }
 
-export const moneyFormat = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-});
-
+export const moneyFormat = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD'
+})

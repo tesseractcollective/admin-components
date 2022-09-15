@@ -1,0 +1,70 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "useTabs": false,
+        "printWidth": 150,
+        "tabWidth": 2,
+        "semi": false,
+        "arrowParens": "avoid",
+        "endOfLine": "auto"
+      }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "no-restricted-exports": ["off", { "restrictedNamedExports": ["default"] }],
+    "no-restricted-syntax": ["off", "ExportDefaultDeclaration"],
+    "max-len": ["warn", { "code": 150 }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "react/jsx-no-constructed-context-values": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "import/no-unresolved": 0,
+    "camelcase": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/function-component-definition": 0,
+    "react/require-default-props": [2, { "ignoreFunctionalComponents": true }],
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-no-useless-fragment": 0,
+    "react/destructuring-assignment": 0,
+    "no-nested-ternary": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "react/no-unstable-nested-components": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+    "@typescript-eslint/ban-ts-comment": 0,
+    "no-console": 0,
+    "no-underscore-dangle": 0,
+    "no-param-reassign": 0,
+    "no-alert": 0,
+    "react/display-name": "off",
+    "@typescript-eslint/ban-types": "off"
+  }
+}

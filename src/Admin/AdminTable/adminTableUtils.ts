@@ -46,7 +46,8 @@ function whereClauseForFilter(path: Array<string>, filter: DataTableFilterMetaDa
         value: matchModeToEqualityFunction[filter.matchMode](filter.value)
       }
     }
-  } else if (rest.length === 0) {
+  }
+  if (rest.length === 0) {
     return {
       [key]: matchModeToEqualityFunction[filter.matchMode](filter.value)
     }
@@ -167,9 +168,11 @@ export function valueForPath(path: string[], item: Record<string, any>, existing
       ...existingValue,
       [rest[0]]: valueForPath(rest, item[key], existingValue?.[rest[0]])
     }
-  } else if ('name' in item && item.name === key) {
+  }
+  if ('name' in item && item.name === key) {
     return item.value
-  } else if (Array.isArray(item)) {
+  }
+  if (Array.isArray(item)) {
     return item
       .map(child => valueForPath(path, child, existingValue))
       .filter(value => !!value)

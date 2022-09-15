@@ -12,7 +12,6 @@ function useTheme() {
         setThemeName('light')
       }
     }
-
     handleMatchEvent(window.matchMedia('(prefers-color-scheme: dark)'))
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', handleMatchEvent)
 
@@ -23,7 +22,9 @@ function useTheme() {
         } else {
           setThemeName('light')
         }
-      } catch {}
+      } catch {
+        // ignore
+      }
     }
     updateFromStorage()
     window.addEventListener('storage', updateFromStorage)
