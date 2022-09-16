@@ -1,0 +1,114 @@
+[
+  {
+    "code": "CL-AI",
+    "name": "Aisén del General Carlos Ibañez del Campo",
+    "latitude": -46.378345,
+    "longitude": -72.3007623,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-AN",
+    "name": "Antofagasta",
+    "latitude": -23.8369104,
+    "longitude": -69.2877535,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-AP",
+    "name": "Arica y Parinacota",
+    "latitude": -18.5940485,
+    "longitude": -69.4784541,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-AT",
+    "name": "Atacama",
+    "latitude": -27.5660558,
+    "longitude": -70.050314,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-BI",
+    "name": "Biobío",
+    "latitude": -37.4464428,
+    "longitude": -72.1416132,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-CO",
+    "name": "Coquimbo",
+    "latitude": -30.540181,
+    "longitude": -70.8119953,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-AR",
+    "name": "La Araucanía",
+    "latitude": -38.948921,
+    "longitude": -72.331113,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-LI",
+    "name": "Libertador General Bernardo O'Higgins",
+    "latitude": -34.5755374,
+    "longitude": -71.0022311,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-LL",
+    "name": "Los Lagos",
+    "latitude": -41.9197779,
+    "longitude": -72.1416132,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-LR",
+    "name": "Los Ríos",
+    "latitude": -40.2310217,
+    "longitude": -72.331113,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-MA",
+    "name": "Magallanes y de la Antártica Chilena",
+    "latitude": -52.2064316,
+    "longitude": -72.1685001,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-ML",
+    "name": "Maule",
+    "latitude": -35.5163603,
+    "longitude": -71.5723953,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-NB",
+    "name": "Ñuble",
+    "latitude": -36.7225743,
+    "longitude": -71.7622481,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-RM",
+    "name": "Región Metropolitana de Santiago",
+    "latitude": -33.4375545,
+    "longitude": -70.6504896,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-TA",
+    "name": "Tarapacá",
+    "latitude": -20.2028799,
+    "longitude": -69.2877535,
+    "countryCode": "CL"
+  },
+  {
+    "code": "CL-VS",
+    "name": "Valparaíso",
+    "latitude": -33.047238,
+    "longitude": -71.6126885,
+    "countryCode": "CL"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "code": "BAW",
+    "name": "Baden-Württemberg",
+    "latitude": 48.6616037,
+    "longitude": 9.3501336,
+    "countryCode": "DE"
+  },
+  {
+    "code": "BER",
+    "name": "Berlin",
+    "latitude": 52.5200066,
+    "longitude": 13.404954,
+    "countryCode": "DE"
+  },
+  {
+    "code": "BRG",
+    "name": "Brandenburg",
+    "latitude": 52.4125287,
+    "longitude": 12.5316444,
+    "countryCode": "DE"
+  },
+  {
+    "code": "BRE",
+    "name": "Bremen",
+    "latitude": 53.0792962,
+    "longitude": 8.8016936,
+    "countryCode": "DE"
+  },
+  {
+    "code": "HAM",
+    "name": "Hamburg",
+    "latitude": 53.5510846,
+    "longitude": 9.9936819,
+    "countryCode": "DE"
+  },
+  {
+    "code": "HES",
+    "name": "Hesse",
+    "latitude": 50.6520515,
+    "longitude": 9.1624376,
+    "countryCode": "DE"
+  },
+  {
+    "code": "MEC",
+    "name": "Mecklenburg-Vorpommern",
+    "latitude": 53.6126505,
+    "longitude": 12.4295953,
+    "countryCode": "DE"
+  },
+  {
+    "code": "SAR",
+    "name": "Saarland",
+    "latitude": 49.3964234,
+    "longitude": 7.0229607,
+    "countryCode": "DE"
+  },
+  {
+    "code": "SCN",
+    "name": "Schleswig-Holstein",
+    "latitude": 54.2193672,
+    "longitude": 9.6961167,
+    "countryCode": "DE"
+  },
+  {
+    "code": "BAY",
+    "name": "Bayern",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "DE"
+  },
+  {
+    "code": "NDS",
+    "name": "Niedersachsen",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "DE"
+  },
+  {
+    "code": "NRW",
+    "name": "Nordrhein-Westfalen",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "DE"
+  },
+  {
+    "code": "RHE",
+    "name": "Rheinland-Pfalz",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "DE"
+  },
+  {
+    "code": "SAS",
+    "name": "Sachsen",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "DE"
+  },
+  {
+    "code": "SAC",
+    "name": "Sachsen-Anhalt",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "DE"
+  },
+  {
+    "code": "THE",
+    "name": "Thüringen",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "DE"
+  }
+]

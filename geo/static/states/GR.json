@@ -1,0 +1,100 @@
+[
+  {
+    "code": "GR-I",
+    "name": "Attica Region",
+    "latitude": 38.0457568,
+    "longitude": 23.8584737,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-H",
+    "name": "Central Greece Region",
+    "latitude": 38.6043984,
+    "longitude": 22.7152131,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-B",
+    "name": "Central Macedonia",
+    "latitude": 40.621173,
+    "longitude": 23.1918021,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-M",
+    "name": "Crete Region",
+    "latitude": 35.240117,
+    "longitude": 24.8092691,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-A",
+    "name": "East Macedonia and Thrace",
+    "latitude": 41.1295126,
+    "longitude": 24.8877191,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-D",
+    "name": "Epirus Region",
+    "latitude": 39.5706413,
+    "longitude": 20.7642843,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-F",
+    "name": "Ionian Islands Region",
+    "latitude": 37.9694898,
+    "longitude": 21.3802372,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-J",
+    "name": "Peloponnese Region",
+    "latitude": 37.5079472,
+    "longitude": 22.37349,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-L",
+    "name": "South Aegean",
+    "latitude": 37.0855302,
+    "longitude": 25.1489215,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-G",
+    "name": "West Greece Region",
+    "latitude": 38.5115496,
+    "longitude": 21.5706786,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-C",
+    "name": "West Macedonia Region",
+    "latitude": 40.3004058,
+    "longitude": 21.7903559,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-69",
+    "name": "Ágion Óros",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-E",
+    "name": "Thessalía",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "GR"
+  },
+  {
+    "code": "GR-K",
+    "name": "Vóreio Aigaío",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "GR"
+  }
+]

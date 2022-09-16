@@ -1,0 +1,72 @@
+[
+  {
+    "code": "GY-BA",
+    "name": "Barima-Waini",
+    "latitude": 7.4882419,
+    "longitude": -59.6564494,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-CU",
+    "name": "Cuyuni-Mazaruni",
+    "latitude": 6.4642141,
+    "longitude": -60.2110752,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-DE",
+    "name": "Demerara-Mahaica",
+    "latitude": 6.546426,
+    "longitude": -58.0982046,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-EB",
+    "name": "East Berbice-Corentyne",
+    "latitude": 2.7477922,
+    "longitude": -57.4627259,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-ES",
+    "name": "Essequibo Islands-West Demerara",
+    "latitude": 6.5720132,
+    "longitude": -58.4629997,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-MA",
+    "name": "Mahaica-Berbice",
+    "latitude": 6.238496,
+    "longitude": -57.9162555,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-PM",
+    "name": "Pomeroon-Supenaam",
+    "latitude": 7.1294166,
+    "longitude": -58.9206295,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-PT",
+    "name": "Potaro-Siparuni",
+    "latitude": 4.7855853,
+    "longitude": -59.2879977,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-UD",
+    "name": "Upper Demerara-Berbice",
+    "latitude": 5.3064879,
+    "longitude": -58.1892921,
+    "countryCode": "GY"
+  },
+  {
+    "code": "GY-UT",
+    "name": "Upper Takutu-Upper Essequibo",
+    "latitude": 2.9239595,
+    "longitude": -58.7373634,
+    "countryCode": "GY"
+  }
+]

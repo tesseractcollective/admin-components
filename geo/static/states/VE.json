@@ -1,0 +1,177 @@
+[
+  {
+    "code": "VE-Z",
+    "name": "Amazonas",
+    "latitude": -3.4168427,
+    "longitude": -65.8560646,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-B",
+    "name": "Anzoátegui",
+    "latitude": 8.5913073,
+    "longitude": -63.9586111,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-C",
+    "name": "Apure",
+    "latitude": 6.9269483,
+    "longitude": -68.5247149,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-D",
+    "name": "Aragua",
+    "latitude": 10.0635758,
+    "longitude": -67.2847875,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-E",
+    "name": "Barinas",
+    "latitude": 8.6231498,
+    "longitude": -70.2371045,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-F",
+    "name": "Bolívar",
+    "latitude": 37.6144838,
+    "longitude": -93.4104749,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-G",
+    "name": "Carabobo",
+    "latitude": 10.1176433,
+    "longitude": -68.0477509,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-H",
+    "name": "Cojedes",
+    "latitude": 9.3816682,
+    "longitude": -68.3339275,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-Y",
+    "name": "Delta Amacuro",
+    "latitude": 8.8499307,
+    "longitude": -61.1403196,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-A",
+    "name": "Distrito Capital",
+    "latitude": 41.2614846,
+    "longitude": -95.9310807,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-I",
+    "name": "Falcón",
+    "latitude": 11.1810674,
+    "longitude": -69.8597406,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-W",
+    "name": "Federal Dependencies of Venezuela",
+    "latitude": 10.9377053,
+    "longitude": -65.3569573,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-J",
+    "name": "Guárico",
+    "latitude": 8.7489309,
+    "longitude": -66.2367172,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-X",
+    "name": "La Guaira",
+    "latitude": 29.3052268,
+    "longitude": -94.7913854,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-K",
+    "name": "Lara",
+    "latitude": 33.9822165,
+    "longitude": -118.1322747,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-L",
+    "name": "Mérida",
+    "latitude": 20.9673702,
+    "longitude": -89.5925857,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-M",
+    "name": "Miranda",
+    "latitude": 42.3519383,
+    "longitude": -71.5290766,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-N",
+    "name": "Monagas",
+    "latitude": 9.3241652,
+    "longitude": -63.0147578,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-O",
+    "name": "Nueva Esparta",
+    "latitude": 10.9970723,
+    "longitude": -63.9113296,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-P",
+    "name": "Portuguesa",
+    "latitude": 9.0943999,
+    "longitude": -69.097023,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-R",
+    "name": "Sucre",
+    "latitude": -19.035345,
+    "longitude": -65.2592128,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-S",
+    "name": "Táchira",
+    "latitude": 7.9137001,
+    "longitude": -72.1416132,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-T",
+    "name": "Trujillo",
+    "latitude": 36.6734343,
+    "longitude": -121.6287588,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-U",
+    "name": "Yaracuy",
+    "latitude": 10.339389,
+    "longitude": -68.8108849,
+    "countryCode": "VE"
+  },
+  {
+    "code": "VE-V",
+    "name": "Zulia",
+    "latitude": 10.2910237,
+    "longitude": -72.1416132,
+    "countryCode": "VE"
+  }
+]

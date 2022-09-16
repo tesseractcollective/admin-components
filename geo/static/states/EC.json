@@ -1,0 +1,170 @@
+[
+  {
+    "code": "EC-A",
+    "name": "Azuay",
+    "latitude": -2.8943068,
+    "longitude": -78.9968344,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-B",
+    "name": "Bolívar",
+    "latitude": -1.7095828,
+    "longitude": -79.0450429,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-F",
+    "name": "Cañar",
+    "latitude": -2.5589315,
+    "longitude": -78.9388191,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-C",
+    "name": "Carchi",
+    "latitude": 0.5026912,
+    "longitude": -77.9042521,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-H",
+    "name": "Chimborazo",
+    "latitude": -1.6647995,
+    "longitude": -78.6543255,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-X",
+    "name": "Cotopaxi",
+    "latitude": -0.8384206,
+    "longitude": -78.6662678,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-O",
+    "name": "El Oro",
+    "latitude": -3.2592413,
+    "longitude": -79.9583541,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-E",
+    "name": "Esmeraldas",
+    "latitude": 0.9681789,
+    "longitude": -79.6517202,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-W",
+    "name": "Galápagos",
+    "latitude": -0.9537691,
+    "longitude": -90.9656019,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-G",
+    "name": "Guayas",
+    "latitude": -1.9574839,
+    "longitude": -79.9192702,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-I",
+    "name": "Imbabura",
+    "latitude": 0.3499768,
+    "longitude": -78.1260129,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-L",
+    "name": "Loja",
+    "latitude": -3.99313,
+    "longitude": -79.20422,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-R",
+    "name": "Los Ríos",
+    "latitude": -1.0230607,
+    "longitude": -79.4608897,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-M",
+    "name": "Manabí",
+    "latitude": -1.0543434,
+    "longitude": -80.452644,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-S",
+    "name": "Morona-Santiago",
+    "latitude": -2.3051062,
+    "longitude": -78.1146866,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-N",
+    "name": "Napo",
+    "latitude": -0.9955964,
+    "longitude": -77.8129684,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-D",
+    "name": "Orellana",
+    "latitude": -0.4545163,
+    "longitude": -76.9950286,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-Y",
+    "name": "Pastaza",
+    "latitude": -1.4882265,
+    "longitude": -78.0031057,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-P",
+    "name": "Pichincha",
+    "latitude": -0.1464847,
+    "longitude": -78.4751945,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-SE",
+    "name": "Santa Elena",
+    "latitude": -2.2267105,
+    "longitude": -80.859499,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-SD",
+    "name": "Santo Domingo de los Tsáchilas",
+    "latitude": -0.2521882,
+    "longitude": -79.1879383,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-U",
+    "name": "Sucumbíos",
+    "latitude": 0.0889231,
+    "longitude": -76.8897557,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-T",
+    "name": "Tungurahua",
+    "latitude": -1.2635284,
+    "longitude": -78.5660852,
+    "countryCode": "EC"
+  },
+  {
+    "code": "EC-Z",
+    "name": "Zamora Chinchipe",
+    "latitude": -4.0655892,
+    "longitude": -78.9503525,
+    "countryCode": "EC"
+  }
+]

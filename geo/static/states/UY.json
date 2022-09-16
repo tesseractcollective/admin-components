@@ -1,0 +1,135 @@
+[
+  {
+    "code": "UY-AR",
+    "name": "Artigas Department",
+    "latitude": -30.6175112,
+    "longitude": -56.9594559,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-CA",
+    "name": "Canelones Department",
+    "latitude": -34.5408717,
+    "longitude": -55.93076,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-CL",
+    "name": "Cerro Largo Department",
+    "latitude": -32.4411032,
+    "longitude": -54.3521753,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-CO",
+    "name": "Colonia Department",
+    "latitude": -34.1294678,
+    "longitude": -57.6605184,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-DU",
+    "name": "Durazno Department",
+    "latitude": -33.0232454,
+    "longitude": -56.0284644,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-FS",
+    "name": "Flores Department",
+    "latitude": -33.5733753,
+    "longitude": -56.8945028,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-FD",
+    "name": "Florida Department",
+    "latitude": 28.0359495,
+    "longitude": -82.4579289,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-LA",
+    "name": "Lavalleja Department",
+    "latitude": -33.9226175,
+    "longitude": -54.9765794,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-MA",
+    "name": "Maldonado Department",
+    "latitude": -34.5597932,
+    "longitude": -54.8628552,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-MO",
+    "name": "Montevideo Department",
+    "latitude": -34.8181587,
+    "longitude": -56.2138256,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-PA",
+    "name": "Paysandú Department",
+    "latitude": -32.0667366,
+    "longitude": -57.3364789,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-RN",
+    "name": "Río Negro Department",
+    "latitude": -32.7676356,
+    "longitude": -57.4295207,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-RV",
+    "name": "Rivera Department",
+    "latitude": -31.4817421,
+    "longitude": -55.2435759,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-RO",
+    "name": "Rocha Department",
+    "latitude": -33.9690081,
+    "longitude": -54.021485,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-SA",
+    "name": "Salto Department",
+    "latitude": -31.388028,
+    "longitude": -57.9612455,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-SJ",
+    "name": "San José Department",
+    "latitude": 37.3492968,
+    "longitude": -121.9056049,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-SO",
+    "name": "Soriano Department",
+    "latitude": -33.5102792,
+    "longitude": -57.7498103,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-TA",
+    "name": "Tacuarembó Department",
+    "latitude": -31.7206837,
+    "longitude": -55.9859887,
+    "countryCode": "UY"
+  },
+  {
+    "code": "UY-TT",
+    "name": "Treinta y Tres Department",
+    "latitude": -33.0685086,
+    "longitude": -54.2858627,
+    "countryCode": "UY"
+  }
+]

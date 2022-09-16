@@ -1,0 +1,170 @@
+[
+  {
+    "code": "AR-B",
+    "name": "Buenos Aires",
+    "latitude": -37.2017285,
+    "longitude": -59.8410697,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-K",
+    "name": "Catamarca",
+    "latitude": -28.4715877,
+    "longitude": -65.7877209,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-H",
+    "name": "Chaco",
+    "latitude": -27.4257175,
+    "longitude": -59.0243784,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-U",
+    "name": "Chubut",
+    "latitude": -43.2934246,
+    "longitude": -65.1114818,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-X",
+    "name": "Córdoba",
+    "latitude": -31.3992876,
+    "longitude": -64.2643842,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-W",
+    "name": "Corrientes",
+    "latitude": -27.4692131,
+    "longitude": -58.8306349,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-E",
+    "name": "Entre Ríos",
+    "latitude": -31.7746654,
+    "longitude": -60.4956461,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-P",
+    "name": "Formosa",
+    "latitude": -26.1894804,
+    "longitude": -58.2242806,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-Y",
+    "name": "Jujuy",
+    "latitude": -24.1843397,
+    "longitude": -65.302177,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-L",
+    "name": "La Pampa",
+    "latitude": -36.6147573,
+    "longitude": -64.2839209,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-F",
+    "name": "La Rioja",
+    "latitude": -29.4193793,
+    "longitude": -66.8559932,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-M",
+    "name": "Mendoza",
+    "latitude": -32.8894587,
+    "longitude": -68.8458386,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-N",
+    "name": "Misiones",
+    "latitude": -27.4269255,
+    "longitude": -55.9467076,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-Q",
+    "name": "Neuquén",
+    "latitude": -38.94587,
+    "longitude": -68.0730925,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-R",
+    "name": "Río Negro",
+    "latitude": -40.8261434,
+    "longitude": -63.0266339,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-A",
+    "name": "Salta",
+    "latitude": -24.7997688,
+    "longitude": -65.4150367,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-J",
+    "name": "San Juan",
+    "latitude": -31.5316976,
+    "longitude": -68.5676962,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-D",
+    "name": "San Luis\t",
+    "latitude": -33.2962042,
+    "longitude": -66.3294948,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-Z",
+    "name": "Santa Cruz",
+    "latitude": -51.6352821,
+    "longitude": -69.2474353,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-S",
+    "name": "Santa Fe",
+    "latitude": -31.5855109,
+    "longitude": -60.7238016,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-G",
+    "name": "Santiago del Estero",
+    "latitude": -27.7833574,
+    "longitude": -64.264167,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-V",
+    "name": "Tierra del Fuego",
+    "latitude": -54.8053998,
+    "longitude": -68.3242061,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-T",
+    "name": "Tucumán",
+    "latitude": -26.8221127,
+    "longitude": -65.2192903,
+    "countryCode": "AR"
+  },
+  {
+    "code": "AR-C",
+    "name": "Ciudad Autónoma de Buenos Aires",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "AR"
+  }
+]

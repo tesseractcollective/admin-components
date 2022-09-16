@@ -1,0 +1,72 @@
+[
+  {
+    "code": "SR-BR",
+    "name": "Brokopondo District",
+    "latitude": 4.7710247,
+    "longitude": -55.0493375,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-CM",
+    "name": "Commewijne District",
+    "latitude": 5.740211,
+    "longitude": -54.8731219,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-CR",
+    "name": "Coronie District",
+    "latitude": 5.6943271,
+    "longitude": -56.2929381,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-MA",
+    "name": "Marowijne District",
+    "latitude": 5.6268128,
+    "longitude": -54.2593118,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-NI",
+    "name": "Nickerie District",
+    "latitude": 5.5855469,
+    "longitude": -56.8311117,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-PR",
+    "name": "Para District",
+    "latitude": 5.4817318,
+    "longitude": -55.2259207,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-SA",
+    "name": "Saramacca District",
+    "latitude": 5.7240813,
+    "longitude": -55.6689636,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-SI",
+    "name": "Sipaliwini District",
+    "latitude": 3.6567382,
+    "longitude": -56.2035387,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-WA",
+    "name": "Wanica District",
+    "latitude": 5.7323762,
+    "longitude": -55.2701235,
+    "countryCode": "SR"
+  },
+  {
+    "code": "SR-PM",
+    "name": "Paramaribo",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "SR"
+  }
+]

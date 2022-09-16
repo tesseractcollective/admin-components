@@ -1,0 +1,107 @@
+[
+  {
+    "code": "EE-37",
+    "name": "Harju County",
+    "latitude": 59.3334239,
+    "longitude": 25.2466974,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-39",
+    "name": "Hiiu County",
+    "latitude": 58.9239553,
+    "longitude": 22.5919468,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-44",
+    "name": "Ida-Viru County",
+    "latitude": 59.2592663,
+    "longitude": 27.4136535,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-51",
+    "name": "Järva County",
+    "latitude": 58.8866713,
+    "longitude": 25.5000624,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-49",
+    "name": "Jõgeva County",
+    "latitude": 58.7506143,
+    "longitude": 26.3604878,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-57",
+    "name": "Lääne County",
+    "latitude": 58.9722742,
+    "longitude": 23.8740834,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-59",
+    "name": "Lääne-Viru County",
+    "latitude": 59.3018816,
+    "longitude": 26.3280312,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-67",
+    "name": "Pärnu County",
+    "latitude": 58.5261952,
+    "longitude": 24.4020159,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-65",
+    "name": "Põlva County",
+    "latitude": 58.1160622,
+    "longitude": 27.2066394,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-70",
+    "name": "Rapla County",
+    "latitude": 58.8492625,
+    "longitude": 24.7346569,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-74",
+    "name": "Saare County",
+    "latitude": 58.4849721,
+    "longitude": 22.6136408,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-78",
+    "name": "Tartu County",
+    "latitude": 58.4057128,
+    "longitude": 26.801576,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-82",
+    "name": "Valga County",
+    "latitude": 57.9103441,
+    "longitude": 26.1601819,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-84",
+    "name": "Viljandi County",
+    "latitude": 58.2821746,
+    "longitude": 25.5752233,
+    "countryCode": "EE"
+  },
+  {
+    "code": "EE-86",
+    "name": "Võru County",
+    "latitude": 57.7377372,
+    "longitude": 27.1398938,
+    "countryCode": "EE"
+  }
+]
