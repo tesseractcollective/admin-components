@@ -1,0 +1,198 @@
+[
+  {
+    "code": "BG-01",
+    "name": "Blagoevgrad Province",
+    "latitude": 42.0208614,
+    "longitude": 23.0943356,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-02",
+    "name": "Burgas Province",
+    "latitude": 42.5048,
+    "longitude": 27.4626079,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-08",
+    "name": "Dobrich Province",
+    "latitude": 43.572786,
+    "longitude": 27.8272802,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-07",
+    "name": "Gabrovo Province",
+    "latitude": 42.86847,
+    "longitude": 25.316889,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-26",
+    "name": "Haskovo Province",
+    "latitude": 41.9344178,
+    "longitude": 25.5554672,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-09",
+    "name": "Kardzhali Province",
+    "latitude": 41.6338416,
+    "longitude": 25.3776687,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-10",
+    "name": "Kyustendil Province",
+    "latitude": 42.2868799,
+    "longitude": 22.6939635,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-11",
+    "name": "Lovech Province",
+    "latitude": 43.1367798,
+    "longitude": 24.7139335,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-12",
+    "name": "Montana Province",
+    "latitude": 43.4085148,
+    "longitude": 23.2257589,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-13",
+    "name": "Pazardzhik Province",
+    "latitude": 42.1927567,
+    "longitude": 24.3336226,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-14",
+    "name": "Pernik Province",
+    "latitude": 42.605199,
+    "longitude": 23.0377916,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-15",
+    "name": "Pleven Province",
+    "latitude": 43.4170169,
+    "longitude": 24.6066708,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-16",
+    "name": "Plovdiv Province",
+    "latitude": 42.1354079,
+    "longitude": 24.7452904,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-17",
+    "name": "Razgrad Province",
+    "latitude": 43.5271705,
+    "longitude": 26.5241228,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-18",
+    "name": "Ruse Province",
+    "latitude": 43.8355964,
+    "longitude": 25.9656144,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-27",
+    "name": "Shumen",
+    "latitude": 43.2712398,
+    "longitude": 26.9361286,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-19",
+    "name": "Silistra Province",
+    "latitude": 44.1147101,
+    "longitude": 27.2671454,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-20",
+    "name": "Sliven Province",
+    "latitude": 42.6816702,
+    "longitude": 26.3228569,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-21",
+    "name": "Smolyan Province",
+    "latitude": 41.5774148,
+    "longitude": 24.7010871,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-22",
+    "name": "Sofia City Province",
+    "latitude": 42.7570109,
+    "longitude": 23.4504683,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-23",
+    "name": "Sofia Province",
+    "latitude": 42.67344,
+    "longitude": 23.8334937,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-24",
+    "name": "Stara Zagora Province",
+    "latitude": 42.4257709,
+    "longitude": 25.6344855,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-25",
+    "name": "Targovishte Province",
+    "latitude": 43.2462349,
+    "longitude": 26.5691251,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-03",
+    "name": "Varna Province",
+    "latitude": 43.2046477,
+    "longitude": 27.9105488,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-04",
+    "name": "Veliko Tarnovo Province",
+    "latitude": 43.0756539,
+    "longitude": 25.61715,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-05",
+    "name": "Vidin Province",
+    "latitude": 43.9961739,
+    "longitude": 22.8679515,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-06",
+    "name": "Vratsa Province",
+    "latitude": 43.2101806,
+    "longitude": 23.552921,
+    "countryCode": "BG"
+  },
+  {
+    "code": "BG-28",
+    "name": "Yambol Province",
+    "latitude": 42.4841494,
+    "longitude": 26.5035296,
+    "countryCode": "BG"
+  }
+]

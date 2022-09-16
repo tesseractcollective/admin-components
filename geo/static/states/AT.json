@@ -1,0 +1,65 @@
+[
+  {
+    "code": "BL",
+    "name": "Burgenland",
+    "latitude": 47.1537165,
+    "longitude": 16.2688797,
+    "countryCode": "AT"
+  },
+  {
+    "code": "SB",
+    "name": "Salzburg",
+    "latitude": 47.80949,
+    "longitude": 13.05501,
+    "countryCode": "AT"
+  },
+  {
+    "code": "VB",
+    "name": "Vorarlberg",
+    "latitude": 47.2497427,
+    "longitude": 9.9797373,
+    "countryCode": "AT"
+  },
+  {
+    "code": "KN",
+    "name": "Kärnten",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "AT"
+  },
+  {
+    "code": "NO",
+    "name": "Niederösterreich",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "AT"
+  },
+  {
+    "code": "OO",
+    "name": "Oberösterreich",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "AT"
+  },
+  {
+    "code": "ST",
+    "name": "Steiermark",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "AT"
+  },
+  {
+    "code": "TI",
+    "name": "Tirol",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "AT"
+  },
+  {
+    "code": "WI",
+    "name": "Wien",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "AT"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "code": "CN-AH",
+    "name": "Anhui",
+    "latitude": 30.6006773,
+    "longitude": 117.9249002,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-BJ",
+    "name": "Beijing",
+    "latitude": 39.9041999,
+    "longitude": 116.4073963,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-CQ",
+    "name": "Chongqing",
+    "latitude": 29.4315861,
+    "longitude": 106.912251,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-FJ",
+    "name": "Fujian",
+    "latitude": 26.4836842,
+    "longitude": 117.9249002,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-GS",
+    "name": "Gansu",
+    "latitude": 35.7518326,
+    "longitude": 104.2861116,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-GD",
+    "name": "Guangdong",
+    "latitude": 23.3790333,
+    "longitude": 113.7632828,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-GX",
+    "name": "Guangxi Zhuang",
+    "latitude": 23.7247599,
+    "longitude": 108.8076195,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-GZ",
+    "name": "Guizhou",
+    "latitude": 26.8429645,
+    "longitude": 107.2902839,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-HI",
+    "name": "Hainan",
+    "latitude": 19.5663947,
+    "longitude": 109.949686,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-HE",
+    "name": "Hebei",
+    "latitude": 37.8956594,
+    "longitude": 114.9042208,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-HL",
+    "name": "Heilongjiang",
+    "latitude": 47.1216472,
+    "longitude": 128.738231,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-HA",
+    "name": "Henan",
+    "latitude": 34.2904302,
+    "longitude": 113.3823545,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-HK",
+    "name": "Hong Kong SAR",
+    "latitude": 22.3193039,
+    "longitude": 114.1693611,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-HB",
+    "name": "Hubei",
+    "latitude": 30.7378118,
+    "longitude": 112.2384017,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-HN",
+    "name": "Hunan",
+    "latitude": 36.7341294,
+    "longitude": -95.9344902,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-NM",
+    "name": "Inner Mongolia",
+    "latitude": 43.37822,
+    "longitude": 115.0594815,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-JS",
+    "name": "Jiangsu",
+    "latitude": 33.1401715,
+    "longitude": 119.7889248,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-JX",
+    "name": "Jiangxi",
+    "latitude": 27.0874564,
+    "longitude": 114.9042208,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-JL",
+    "name": "Jilin",
+    "latitude": 43.837883,
+    "longitude": 126.549572,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-LN",
+    "name": "Liaoning",
+    "latitude": 41.9436543,
+    "longitude": 122.5290376,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-MO",
+    "name": "Macau SAR",
+    "latitude": 22.198745,
+    "longitude": 113.543873,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-NX",
+    "name": "Ningxia Huizu",
+    "latitude": 37.198731,
+    "longitude": 106.1580937,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-QH",
+    "name": "Qinghai",
+    "latitude": 35.744798,
+    "longitude": 96.4077358,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-SN",
+    "name": "Shaanxi",
+    "latitude": 35.3939908,
+    "longitude": 109.1880047,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-SD",
+    "name": "Shandong",
+    "latitude": 37.8006064,
+    "longitude": -122.2699918,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-SH",
+    "name": "Shanghai",
+    "latitude": 31.230416,
+    "longitude": 121.473701,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-SX",
+    "name": "Shanxi",
+    "latitude": 37.2425649,
+    "longitude": 111.8568586,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-SC",
+    "name": "Sichuan",
+    "latitude": 30.2638032,
+    "longitude": 102.8054753,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-TW",
+    "name": "Taiwan",
+    "latitude": 23.69781,
+    "longitude": 120.960515,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-TJ",
+    "name": "Tianjin",
+    "latitude": 39.1252291,
+    "longitude": 117.0153435,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-XJ",
+    "name": "Xinjiang",
+    "latitude": 42.5246357,
+    "longitude": 87.5395855,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-XZ",
+    "name": "Xizang",
+    "latitude": 30.1533605,
+    "longitude": 88.7878678,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-YN",
+    "name": "Yunnan",
+    "latitude": 24.4752847,
+    "longitude": 101.3431058,
+    "countryCode": "CN"
+  },
+  {
+    "code": "CN-ZJ",
+    "name": "Zhejiang",
+    "latitude": 29.1416432,
+    "longitude": 119.7889248,
+    "countryCode": "CN"
+  }
+]

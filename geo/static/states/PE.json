@@ -1,0 +1,184 @@
+[
+  {
+    "code": "PE-AMA",
+    "name": "Amazonas",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-ANC",
+    "name": "Áncash",
+    "latitude": -9.3250497,
+    "longitude": -77.5619419,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-APU",
+    "name": "Apurímac",
+    "latitude": -14.0504533,
+    "longitude": -73.087749,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-ARE",
+    "name": "Arequipa",
+    "latitude": -16.4090474,
+    "longitude": -71.537451,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-AYA",
+    "name": "Ayacucho",
+    "latitude": -13.1638737,
+    "longitude": -74.2235641,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-CAJ",
+    "name": "Cajamarca",
+    "latitude": -7.1617465,
+    "longitude": -78.5127855,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-CAL",
+    "name": "Callao",
+    "latitude": -12.0508491,
+    "longitude": -77.1259843,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-CUS",
+    "name": "Cusco",
+    "latitude": -13.53195,
+    "longitude": -71.9674626,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-HUV",
+    "name": "Huancavelica",
+    "latitude": -12.7861978,
+    "longitude": -74.9764024,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-HUC",
+    "name": "Huanuco",
+    "latitude": -9.9207648,
+    "longitude": -76.2410843,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-ICA",
+    "name": "Ica",
+    "latitude": 42.3528832,
+    "longitude": -71.0430097,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-JUN",
+    "name": "Junín",
+    "latitude": -11.1581925,
+    "longitude": -75.9926306,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-LAL",
+    "name": "La Libertad",
+    "latitude": 13.490697,
+    "longitude": -89.3084607,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-LAM",
+    "name": "Lambayeque",
+    "latitude": -6.7197666,
+    "longitude": -79.9080757,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-LIM",
+    "name": "Lima",
+    "latitude": -12.0463731,
+    "longitude": -77.042754,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-LOR",
+    "name": "Loreto",
+    "latitude": -4.3741643,
+    "longitude": -76.1304264,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-MDD",
+    "name": "Madre de Dios",
+    "latitude": -11.7668705,
+    "longitude": -70.8119953,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-MOQ",
+    "name": "Moquegua",
+    "latitude": -17.1927361,
+    "longitude": -70.9328138,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-PAS",
+    "name": "Pasco",
+    "latitude": 46.2305049,
+    "longitude": -119.0922316,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-PIU",
+    "name": "Piura",
+    "latitude": -5.1782884,
+    "longitude": -80.6548882,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-PUN",
+    "name": "Puno",
+    "latitude": -15.8402218,
+    "longitude": -70.0218805,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-SAM",
+    "name": "San Martín",
+    "latitude": 37.0849464,
+    "longitude": -121.6102216,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-TAC",
+    "name": "Tacna",
+    "latitude": -18.0065679,
+    "longitude": -70.2462741,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-TUM",
+    "name": "Tumbes",
+    "latitude": -3.5564921,
+    "longitude": -80.4270885,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-UCA",
+    "name": "Ucayali",
+    "latitude": -9.8251183,
+    "longitude": -73.087749,
+    "countryCode": "PE"
+  },
+  {
+    "code": "PE-LMA",
+    "name": "Municipalidad Metropolitana de Lima",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PE"
+  }
+]

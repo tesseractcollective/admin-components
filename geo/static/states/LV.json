@@ -1,0 +1,842 @@
+[
+  {
+    "code": "LV-DGV",
+    "name": "Daugavpils",
+    "latitude": 55.874736,
+    "longitude": 26.536179,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Jēkabpils",
+    "name": "Jēkabpils",
+    "latitude": 56.501455,
+    "longitude": 25.878299,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-JEL",
+    "name": "Jelgava",
+    "latitude": 56.6511091,
+    "longitude": 23.7213541,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-JUR",
+    "name": "Jūrmala",
+    "latitude": 56.947079,
+    "longitude": 23.6168485,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-LPX",
+    "name": "Liepāja",
+    "latitude": 56.5046678,
+    "longitude": 21.010806,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-REZ",
+    "name": "Rēzekne",
+    "latitude": 56.5099223,
+    "longitude": 27.3331357,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-RIX",
+    "name": "Riga",
+    "latitude": 56.9496487,
+    "longitude": 24.1051865,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Valmiera",
+    "name": "Valmiera",
+    "latitude": 57.5384659,
+    "longitude": 25.4263618,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-VEN",
+    "name": "Ventspils",
+    "latitude": 57.3937216,
+    "longitude": 21.5647066,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ādažu novads",
+    "name": "Ādažu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Aglonas novads",
+    "name": "Aglonas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-AI",
+    "name": "Aizkraukles novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Aizputes novads",
+    "name": "Aizputes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Aknīstes novads",
+    "name": "Aknīstes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Alojas novads",
+    "name": "Alojas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Alsungas novads",
+    "name": "Alsungas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-AL",
+    "name": "Alūksnes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Amatas novads",
+    "name": "Amatas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Apes novads",
+    "name": "Apes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Auces novads",
+    "name": "Auces novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Babītes novads",
+    "name": "Babītes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Baldones novads",
+    "name": "Baldones novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Baltinavas novads",
+    "name": "Baltinavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-BL",
+    "name": "Balvu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-BU",
+    "name": "Bauskas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Beverīnas novads",
+    "name": "Beverīnas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Brocēnu novads",
+    "name": "Brocēnu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Burtnieku novads",
+    "name": "Burtnieku novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Carnikavas novads",
+    "name": "Carnikavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-CE",
+    "name": "Cēsu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Cesvaines novads",
+    "name": "Cesvaines novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ciblas novads",
+    "name": "Ciblas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Dagdas novads",
+    "name": "Dagdas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-DA",
+    "name": "Daugavpils novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-DO",
+    "name": "Dobeles novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Dundagas novads",
+    "name": "Dundagas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Durbes novads",
+    "name": "Durbes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Engures novads",
+    "name": "Engures novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ērgļu novads",
+    "name": "Ērgļu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Garkalnes novads",
+    "name": "Garkalnes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Grobiņas novads",
+    "name": "Grobiņas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-GU",
+    "name": "Gulbenes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Iecavas novads",
+    "name": "Iecavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ikšķiles novads",
+    "name": "Ikšķiles novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ilūkstes novads",
+    "name": "Ilūkstes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Inčukalna novads",
+    "name": "Inčukalna novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Jaunjelgavas novads",
+    "name": "Jaunjelgavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Jaunpiebalgas novads",
+    "name": "Jaunpiebalgas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Jaunpils novads",
+    "name": "Jaunpils novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-JK",
+    "name": "Jēkabpils novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-JL",
+    "name": "Jelgavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Kandavas novads",
+    "name": "Kandavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Kārsavas novads",
+    "name": "Kārsavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ķeguma novads",
+    "name": "Ķeguma novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ķekavas novads",
+    "name": "Ķekavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Kokneses novads",
+    "name": "Kokneses novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-KR",
+    "name": "Krāslavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Krimuldas novads",
+    "name": "Krimuldas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Krustpils novads",
+    "name": "Krustpils novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-KU",
+    "name": "Kuldīgas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Lielvārdes novads",
+    "name": "Lielvārdes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-LE",
+    "name": "Liepājas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Līgatnes novads",
+    "name": "Līgatnes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-LM",
+    "name": "Limbažu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Līvānu novads",
+    "name": "Līvānu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Lubānas novads",
+    "name": "Lubānas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-LU",
+    "name": "Ludzas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-MA",
+    "name": "Madonas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Mālpils novads",
+    "name": "Mālpils novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Mārupes novads",
+    "name": "Mārupes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Mazsalacas novads",
+    "name": "Mazsalacas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Naukšēnu novads",
+    "name": "Naukšēnu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Neretas novads",
+    "name": "Neretas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Nīcas novads",
+    "name": "Nīcas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-OG",
+    "name": "Ogres novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Olaines novads",
+    "name": "Olaines novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ozolnieku novads",
+    "name": "Ozolnieku novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Pārgaujas novads",
+    "name": "Pārgaujas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Pāvilostas novads",
+    "name": "Pāvilostas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Pļaviņu novads",
+    "name": "Pļaviņu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-PR",
+    "name": "Preiļu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Priekules novads",
+    "name": "Priekules novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Priekuļu novads",
+    "name": "Priekuļu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Raunas novads",
+    "name": "Raunas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-RE",
+    "name": "Rēzeknes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Riebiņu novads",
+    "name": "Riebiņu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-RI",
+    "name": "Rīgas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Rojas novads",
+    "name": "Rojas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Ropažu novads",
+    "name": "Ropažu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Rucavas novads",
+    "name": "Rucavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Rugāju novads",
+    "name": "Rugāju novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Rūjienas novads",
+    "name": "Rūjienas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Rundāles novads",
+    "name": "Rundāles novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Salacgrīvas novads",
+    "name": "Salacgrīvas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Salas novads",
+    "name": "Salas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Salaspils novads",
+    "name": "Salaspils novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-SA",
+    "name": "Saldus novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Saulkrastu novads",
+    "name": "Saulkrastu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Sējas novads",
+    "name": "Sējas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Siguldas novads",
+    "name": "Siguldas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Skrīveru novads",
+    "name": "Skrīveru novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Skrundas novads",
+    "name": "Skrundas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Smiltenes novads",
+    "name": "Smiltenes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Stopiņu novads",
+    "name": "Stopiņu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Strenču novads",
+    "name": "Strenču novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-TA",
+    "name": "Talsu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Tērvetes novads",
+    "name": "Tērvetes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-TU",
+    "name": "Tukuma novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Vaiņodes novads",
+    "name": "Vaiņodes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-VK",
+    "name": "Valkas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-VM",
+    "name": "Valmieras novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Varakļānu novads",
+    "name": "Varakļānu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Vārkavas novads",
+    "name": "Vārkavas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Vecpiebalgas novads",
+    "name": "Vecpiebalgas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Vecumnieku novads",
+    "name": "Vecumnieku novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "LV-VE",
+    "name": "Ventspils novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Viesītes novads",
+    "name": "Viesītes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Viļakas novads",
+    "name": "Viļakas novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Viļānu novads",
+    "name": "Viļānu novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  },
+  {
+    "code": "Zilupes novads",
+    "name": "Zilupes novads",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "LV"
+  }
+]

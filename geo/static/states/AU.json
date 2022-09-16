@@ -1,0 +1,58 @@
+[
+  {
+    "code": "ACT",
+    "name": "Australian Capital Territory",
+    "latitude": -35.4734679,
+    "longitude": 149.0123679,
+    "countryCode": "AU"
+  },
+  {
+    "code": "NSW",
+    "name": "New South Wales",
+    "latitude": -31.2532183,
+    "longitude": 146.921099,
+    "countryCode": "AU"
+  },
+  {
+    "code": "NT",
+    "name": "Northern Territory",
+    "latitude": -19.4914108,
+    "longitude": 132.5509603,
+    "countryCode": "AU"
+  },
+  {
+    "code": "QLD",
+    "name": "Queensland",
+    "latitude": -20.9175738,
+    "longitude": 142.7027956,
+    "countryCode": "AU"
+  },
+  {
+    "code": "SA",
+    "name": "South Australia",
+    "latitude": -30.0002315,
+    "longitude": 136.2091547,
+    "countryCode": "AU"
+  },
+  {
+    "code": "TAS",
+    "name": "Tasmania",
+    "latitude": -41.4545196,
+    "longitude": 145.9706647,
+    "countryCode": "AU"
+  },
+  {
+    "code": "VIC",
+    "name": "Victoria",
+    "latitude": -36.4856423,
+    "longitude": 140.9779425,
+    "countryCode": "AU"
+  },
+  {
+    "code": "WA",
+    "name": "Western Australia",
+    "latitude": -27.6728168,
+    "longitude": 121.6283098,
+    "countryCode": "AU"
+  }
+]

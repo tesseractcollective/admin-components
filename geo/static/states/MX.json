@@ -1,0 +1,226 @@
+[
+  {
+    "code": "AGU",
+    "name": "Aguascalientes",
+    "latitude": 21.8852562,
+    "longitude": -102.2915677,
+    "countryCode": "MX"
+  },
+  {
+    "code": "BCN",
+    "name": "Baja California",
+    "latitude": 30.8406338,
+    "longitude": -115.2837585,
+    "countryCode": "MX"
+  },
+  {
+    "code": "CAM",
+    "name": "Campeche",
+    "latitude": 19.8301251,
+    "longitude": -90.5349087,
+    "countryCode": "MX"
+  },
+  {
+    "code": "CHP",
+    "name": "Chiapas",
+    "latitude": 16.7569318,
+    "longitude": -93.1292353,
+    "countryCode": "MX"
+  },
+  {
+    "code": "CHH",
+    "name": "Chihuahua",
+    "latitude": 28.6329957,
+    "longitude": -106.0691004,
+    "countryCode": "MX"
+  },
+  {
+    "code": "COA",
+    "name": "Coahuila",
+    "latitude": 27.058676,
+    "longitude": -101.7068294,
+    "countryCode": "MX"
+  },
+  {
+    "code": "COL",
+    "name": "Colima",
+    "latitude": 19.2452342,
+    "longitude": -103.7240868,
+    "countryCode": "MX"
+  },
+  {
+    "code": "DUR",
+    "name": "Durango",
+    "latitude": 37.27528,
+    "longitude": -107.8800667,
+    "countryCode": "MX"
+  },
+  {
+    "code": "GUA",
+    "name": "Guanajuato",
+    "latitude": 21.0190145,
+    "longitude": -101.2573586,
+    "countryCode": "MX"
+  },
+  {
+    "code": "GRO",
+    "name": "Guerrero",
+    "latitude": 17.4391926,
+    "longitude": -99.5450974,
+    "countryCode": "MX"
+  },
+  {
+    "code": "HID",
+    "name": "Hidalgo",
+    "latitude": 26.1003547,
+    "longitude": -98.2630684,
+    "countryCode": "MX"
+  },
+  {
+    "code": "JAL",
+    "name": "Jalisco",
+    "latitude": 20.6595382,
+    "longitude": -103.3494376,
+    "countryCode": "MX"
+  },
+  {
+    "code": "CMX",
+    "name": "México",
+    "latitude": 23.634501,
+    "longitude": -102.552784,
+    "countryCode": "MX"
+  },
+  {
+    "code": "MIC",
+    "name": "Michoacán",
+    "latitude": 19.5665192,
+    "longitude": -101.7068294,
+    "countryCode": "MX"
+  },
+  {
+    "code": "MOR",
+    "name": "Morelos",
+    "latitude": 18.6813049,
+    "longitude": -99.1013498,
+    "countryCode": "MX"
+  },
+  {
+    "code": "NAY",
+    "name": "Nayarit",
+    "latitude": 21.7513844,
+    "longitude": -104.8454619,
+    "countryCode": "MX"
+  },
+  {
+    "code": "NLE",
+    "name": "Nuevo León",
+    "latitude": 25.592172,
+    "longitude": -99.9961947,
+    "countryCode": "MX"
+  },
+  {
+    "code": "OAX",
+    "name": "Oaxaca",
+    "latitude": 17.0731842,
+    "longitude": -96.7265889,
+    "countryCode": "MX"
+  },
+  {
+    "code": "PUE",
+    "name": "Puebla",
+    "latitude": 19.0414398,
+    "longitude": -98.2062727,
+    "countryCode": "MX"
+  },
+  {
+    "code": "QUE",
+    "name": "Querétaro",
+    "latitude": 20.5887932,
+    "longitude": -100.3898881,
+    "countryCode": "MX"
+  },
+  {
+    "code": "ROO",
+    "name": "Quintana Roo",
+    "latitude": 19.1817393,
+    "longitude": -88.4791376,
+    "countryCode": "MX"
+  },
+  {
+    "code": "SLP",
+    "name": "San Luis Potosí",
+    "latitude": 22.1564699,
+    "longitude": -100.9855409,
+    "countryCode": "MX"
+  },
+  {
+    "code": "SIN",
+    "name": "Sinaloa",
+    "latitude": 25.1721091,
+    "longitude": -107.4795173,
+    "countryCode": "MX"
+  },
+  {
+    "code": "SON",
+    "name": "Sonora",
+    "latitude": 37.9829496,
+    "longitude": -120.3821724,
+    "countryCode": "MX"
+  },
+  {
+    "code": "TAB",
+    "name": "Tabasco",
+    "latitude": 17.8409173,
+    "longitude": -92.6189273,
+    "countryCode": "MX"
+  },
+  {
+    "code": "TAM",
+    "name": "Tamaulipas",
+    "latitude": 24.26694,
+    "longitude": -98.8362755,
+    "countryCode": "MX"
+  },
+  {
+    "code": "TLA",
+    "name": "Tlaxcala",
+    "latitude": 19.318154,
+    "longitude": -98.2374954,
+    "countryCode": "MX"
+  },
+  {
+    "code": "VER",
+    "name": "Veracruz",
+    "latitude": 19.173773,
+    "longitude": -96.1342241,
+    "countryCode": "MX"
+  },
+  {
+    "code": "YUC",
+    "name": "Yucatán",
+    "latitude": 20.7098786,
+    "longitude": -89.0943377,
+    "countryCode": "MX"
+  },
+  {
+    "code": "ZAC",
+    "name": "Zacatecas",
+    "latitude": 22.7708555,
+    "longitude": -102.5832426,
+    "countryCode": "MX"
+  },
+  {
+    "code": "BCS",
+    "name": "Baja California Sur",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "MX"
+  },
+  {
+    "code": "MEX",
+    "name": "Estado de México",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "MX"
+  }
+]

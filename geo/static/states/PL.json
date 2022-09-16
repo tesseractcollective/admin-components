@@ -1,0 +1,114 @@
+[
+  {
+    "code": "PL-02",
+    "name": "dolnośląskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-04",
+    "name": "kujawsko-pomorskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-06",
+    "name": "lubelskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-08",
+    "name": "lubuskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-14",
+    "name": "mazowieckie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-12",
+    "name": "małopolskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-16",
+    "name": "opolskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-18",
+    "name": "podkarpackie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-20",
+    "name": "podlaskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-22",
+    "name": "pomorskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-24",
+    "name": "śląskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-26",
+    "name": "świętokrzyskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-28",
+    "name": "warmińsko-mazurskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-30",
+    "name": "wielkopolskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-32",
+    "name": "zachodniopomorskie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  },
+  {
+    "code": "PL-10",
+    "name": "łódzkie",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "PL"
+  }
+]

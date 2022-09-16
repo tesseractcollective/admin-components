@@ -1,0 +1,37 @@
+[
+  {
+    "code": "DK-84",
+    "name": "Capital Region of Denmark",
+    "latitude": 55.6751812,
+    "longitude": 12.5493261,
+    "countryCode": "DK"
+  },
+  {
+    "code": "DK-82",
+    "name": "Central Denmark Region",
+    "latitude": 56.302139,
+    "longitude": 9.302777,
+    "countryCode": "DK"
+  },
+  {
+    "code": "DK-81",
+    "name": "North Denmark Region",
+    "latitude": 56.8307416,
+    "longitude": 9.4930527,
+    "countryCode": "DK"
+  },
+  {
+    "code": "DK-83",
+    "name": "Region of Southern Denmark",
+    "latitude": 55.3307714,
+    "longitude": 9.0924903,
+    "countryCode": "DK"
+  },
+  {
+    "code": "DK-85",
+    "name": "Region Zealand",
+    "latitude": 55.4632518,
+    "longitude": 11.7214979,
+    "countryCode": "DK"
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "code": "HR-07",
+    "name": "Bjelovar-Bilogora County",
+    "latitude": 45.8987972,
+    "longitude": 16.8423093,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-12",
+    "name": "Brod-Posavina County",
+    "latitude": 45.2637951,
+    "longitude": 17.3264562,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-19",
+    "name": "Dubrovnik-Neretva County",
+    "latitude": 43.0766588,
+    "longitude": 17.5268471,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-18",
+    "name": "Istria County",
+    "latitude": 45.1286455,
+    "longitude": 13.901542,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-06",
+    "name": "Koprivnica-Križevci County",
+    "latitude": 46.1568919,
+    "longitude": 16.8390826,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-02",
+    "name": "Krapina-Zagorje County",
+    "latitude": 46.1013393,
+    "longitude": 15.8809693,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-09",
+    "name": "Lika-Senj County",
+    "latitude": 44.6192218,
+    "longitude": 15.4701608,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-20",
+    "name": "Međimurje County",
+    "latitude": 46.3766644,
+    "longitude": 16.4213298,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-14",
+    "name": "Osijek-Baranja County",
+    "latitude": 45.5576428,
+    "longitude": 18.3942141,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-11",
+    "name": "Požega-Slavonia County",
+    "latitude": 45.3417868,
+    "longitude": 17.8114359,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-08",
+    "name": "Primorje-Gorski Kotar County",
+    "latitude": 45.3173996,
+    "longitude": 14.8167466,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-15",
+    "name": "Šibenik-Knin County",
+    "latitude": 43.9281485,
+    "longitude": 16.1037694,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-03",
+    "name": "Sisak-Moslavina County",
+    "latitude": 45.3837926,
+    "longitude": 16.5380994,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-17",
+    "name": "Split-Dalmatia County",
+    "latitude": 43.5240328,
+    "longitude": 16.8178377,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-05",
+    "name": "Varaždin County",
+    "latitude": 46.2317473,
+    "longitude": 16.3360559,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-10",
+    "name": "Virovitica-Podravina County",
+    "latitude": 45.6557985,
+    "longitude": 17.7932472,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-16",
+    "name": "Vukovar-Syrmia County",
+    "latitude": 45.1773552,
+    "longitude": 18.8053527,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-13",
+    "name": "Zadar County",
+    "latitude": 44.146939,
+    "longitude": 15.6164943,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-21",
+    "name": "Zagreb",
+    "latitude": 45.8150108,
+    "longitude": 15.9819189,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-01",
+    "name": "Zagreb County",
+    "latitude": 45.8706612,
+    "longitude": 16.395491,
+    "countryCode": "HR"
+  },
+  {
+    "code": "HR-04",
+    "name": "Karlovačka županija",
+    "latitude": null,
+    "longitude": null,
+    "countryCode": "HR"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "code": "AB",
+    "name": "Alberta",
+    "latitude": 53.9332706,
+    "longitude": -116.5765035,
+    "countryCode": "CA"
+  },
+  {
+    "code": "BC",
+    "name": "British Columbia",
+    "latitude": 53.7266683,
+    "longitude": -127.6476205,
+    "countryCode": "CA"
+  },
+  {
+    "code": "MB",
+    "name": "Manitoba",
+    "latitude": 53.7608608,
+    "longitude": -98.8138762,
+    "countryCode": "CA"
+  },
+  {
+    "code": "NB",
+    "name": "New Brunswick",
+    "latitude": 46.5653163,
+    "longitude": -66.4619164,
+    "countryCode": "CA"
+  },
+  {
+    "code": "NL",
+    "name": "Newfoundland and Labrador",
+    "latitude": 53.1355091,
+    "longitude": -57.6604364,
+    "countryCode": "CA"
+  },
+  {
+    "code": "NT",
+    "name": "Northwest Territories",
+    "latitude": 64.8255441,
+    "longitude": -124.8457334,
+    "countryCode": "CA"
+  },
+  {
+    "code": "NS",
+    "name": "Nova Scotia",
+    "latitude": 44.6819866,
+    "longitude": -63.744311,
+    "countryCode": "CA"
+  },
+  {
+    "code": "NU",
+    "name": "Nunavut",
+    "latitude": 70.2997711,
+    "longitude": -83.107577,
+    "countryCode": "CA"
+  },
+  {
+    "code": "ON",
+    "name": "Ontario",
+    "latitude": 51.253775,
+    "longitude": -85.323214,
+    "countryCode": "CA"
+  },
+  {
+    "code": "PE",
+    "name": "Prince Edward Island",
+    "latitude": 46.510712,
+    "longitude": -63.4168136,
+    "countryCode": "CA"
+  },
+  {
+    "code": "QC",
+    "name": "Quebec",
+    "latitude": 52.9399159,
+    "longitude": -73.5491361,
+    "countryCode": "CA"
+  },
+  {
+    "code": "SK",
+    "name": "Saskatchewan",
+    "latitude": 52.9399159,
+    "longitude": -106.4508639,
+    "countryCode": "CA"
+  },
+  {
+    "code": "YT",
+    "name": "Yukon",
+    "latitude": 35.5067215,
+    "longitude": -97.7625441,
+    "countryCode": "CA"
+  }
+]
