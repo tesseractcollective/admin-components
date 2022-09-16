@@ -1,7 +1,7 @@
 # Admin Components
 
 TODO:
-- [ ] fix AdminInputState: we need to include states in the repo, or grab them from a public endpoint. A good source is https://github.com/dr5hn/countries-states-cities-database
+- [ ] fix AdminInputState: grab states from our public API. (e.g. https://geo.tesseractcollective.com/states/US.json)
 - [ ] fix AdminInputNationalId
 - [ ] fix AdminInputDate by adding material UI dependencies 
 - [ ] create example app

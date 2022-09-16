@@ -18,3 +18,4 @@ custom:
     distributionFolder: static
     indexDocument: index.html
     singlePageApp: false
+    noConfirm: true
