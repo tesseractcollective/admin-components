@@ -1,16 +1,19 @@
 {
   "name": "example-app",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "author": "Tesseract Collective",
+  "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3000",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "admin-components": "../../src/Admin"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

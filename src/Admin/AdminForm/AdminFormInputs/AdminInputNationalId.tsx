@@ -1,8 +1,13 @@
 import React from 'react'
 import { InputText } from 'primereact/inputtext'
 import { Controller } from 'react-hook-form'
-import { NationalIdTypeEnum } from 'graphql/generated/graphqlRequest'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
+
+enum NationalIdTypeEnum {
+  UsSsn = 'UsSsn',
+  UsEin = 'UsEin',
+  Other = 'Other'
+}
 
 export type AdminInputNationalIdProps = AdminInputBaseProps & {
   idType: NationalIdTypeEnum

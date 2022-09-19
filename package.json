@@ -11,14 +11,19 @@
     "lint": "npx eslint src --fix"
   },
   "dependencies": {
+    "@date-io/moment": "2.15.0",
+    "@material-ui/pickers": "3.3.10",
     "case": "^1.6.3",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "graphql-ws": "^5.10.2",
+    "moment": "2.29.4",
     "nanoid": "^4.0.0",
     "primereact": "^8.5.0",
     "react-ace": "^10.1.0",
-    "react-hook-form": "^7.35.0"
+    "react-hook-form": "^7.35.0",
+    "react-phone-input-2": "2.15.1",
+    "react-phone-number-input": "3.2.11"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.37.0",

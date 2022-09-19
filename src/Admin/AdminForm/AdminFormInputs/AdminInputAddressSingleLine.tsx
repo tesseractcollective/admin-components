@@ -3,7 +3,7 @@ import { InputText } from 'primereact/inputtext'
 import { Controller } from 'react-hook-form'
 import { buildClassName, validateProps } from '../AdminForm'
 import { AdminInputTextProps } from './AdminInputText'
-import { addressSingleLineFormat } from '../../adminUtils'
+import { addressSingleLineFormat } from '../../utils'
 
 export type AdminAddressSingleLineInputProps = AdminInputTextProps
 

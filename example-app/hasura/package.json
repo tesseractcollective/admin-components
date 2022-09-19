@@ -1,0 +1,15 @@
+{
+  "name": "hasura",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Tesseract Collective",
+  "license": "MIT",
+  "scripts": {
+    "docker:init": "docker-compose up -d",
+    "start": "hasura console --envfile ../secrets/secrets-local.env",
+    "metadata:apply": "hasura metadata apply --envfile ../secrets/secrets-local.env",
+    "metadata:export": "hasura metadata export --envfile ../secrets/secrets-local.env",
+    "metadata:reload": "hasura metadata reload --envfile ../secrets/secrets-local.env",
+    "migrate:apply": "hasura migrate apply --envfile ../secrets/secrets-local.env"
+  }
+}

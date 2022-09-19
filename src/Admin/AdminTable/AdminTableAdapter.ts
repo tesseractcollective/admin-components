@@ -108,7 +108,7 @@ export class AdminTableHasuraAdapter extends AdminTableAdapter {
       // }
       const result = await this.dataAdapter.infiniteManyQuery(options)
       return this.createNewState(e, fields, result, error)
-    } catch (graphqlError) {
+    } catch (graphqlError: any) {
       // TODO: parse error
       console.log(graphqlError)
       error = graphqlError

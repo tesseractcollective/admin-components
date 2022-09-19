@@ -24,7 +24,7 @@ export const AdminDetailAttributes: React.FC<AdminDetailAttributesProps> = ({ at
           <div className="grid grid-cols-1 gap-y-3">
             {group.types.map(type => {
               const attribute = attributes.find(a => a.name === type.name)
-              return adminDetailForAttribute(attribute, { type, key: `${group.name + type.name}` })
+              return <>{adminDetailForAttribute(attribute, { type, key: `${group.name + type.name}` })}</>
             })}
           </div>
         </Card>
