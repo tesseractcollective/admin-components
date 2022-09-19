@@ -1,10 +1,7 @@
 // eslint-disable-next-line max-classes-per-file
 import { DataTableFilterMeta, DataTableMultiSortMetaType, DataTablePFSEvent, DataTableSortOrderType } from 'primereact/datatable'
-
-import { buildOrderBy, buildWhere, valueForPath } from './adminTableUtils'
+import { buildOrderBy, buildWhere, valueForPath, WhereClause } from './adminTableUtils'
 import { HasuraDataAdapter } from '../DataAdapter'
-
-export type WhereClause = Record<string, any>
 
 export interface AdminTableState {
   current: any[]
