@@ -1,0 +1,1 @@
+CREATE TABLE "public"."addresses" ("id" serial NOT NULL, "user_id" uuid NOT NULL, "address_1" text NOT NULL, "address_2" text NOT NULL, "state_name" text NOT NULL, "state_code" text NOT NULL, "country_name" text NOT NULL, "country_code" text NOT NULL, "postal_code" numeric NOT NULL, PRIMARY KEY ("id") );
