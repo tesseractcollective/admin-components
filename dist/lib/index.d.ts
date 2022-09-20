@@ -1,6 +1,7 @@
 import { DataTableRowClickEventParams, DataTableSelectParams, DataTableSortOrderType, DataTableFilterMeta, DataTablePFSEvent, DataTableMultiSortMetaType, DataTableProps, DataTable } from 'primereact/datatable';
 import { GraphQLClient } from 'graphql-request';
 import { DocumentNode, GraphQLSchema } from 'graphql';
+import { WhereClause as WhereClause$1 } from 'Admin/AdminTable/adminTableUtils';
 import { GraphQLResponse } from 'graphql-request/dist/types';
 import { Client } from 'graphql-ws';
 import React from 'react';
@@ -124,7 +125,7 @@ interface DataAdapters {
     dataAdapter: HasuraDataAdapter;
     tableAdapter: AdminTableHasuraAdapter;
 }
-declare function useDataAdapter(typename: string, fieldsFragment: DocumentNode, baseWhere?: WhereClause, client?: GraphQLClient): DataAdapters;
+declare function useDataAdapter(typename: string, fieldsFragment: DocumentNode, baseWhere?: WhereClause$1, client?: GraphQLClient): DataAdapters;
 
 declare type ThemeName = 'light' | 'dark';
 
@@ -164,6 +165,7 @@ declare class HasuraDataAdapter implements DataAdapter {
 }
 
 declare type WhereClause = Record<string, any>;
+
 interface AdminTableState {
     current: any[];
     total: number;
@@ -352,11 +354,6 @@ interface AdminInputFieldProps {
 declare const adminInputForAttributeType: (type: AttributeType, props: AdminInputFieldProps) => React.FC<AdminInputBaseProps>;
 declare const adminInputsForAttributeTypes: (attributeTypes: AttributeType[], props: AdminInputFieldProps) => React.FC<AdminInputBaseProps>[];
 
-declare type AdminDetailTextProps$2 = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    showTime?: boolean;
-};
-declare const AdminDetailText$2: React.FC<AdminDetailTextProps$2>;
-
 interface AdminDetailBaseProps {
     value?: string;
     type?: AttributeType;
@@ -365,9 +362,10 @@ interface AdminDetailBaseProps {
     hideLabel?: boolean;
 }
 declare type AdminDetailLabelWrapperProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+declare type AdminDetailTextProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 declare const AdminDetailLabelWrapper: React.FC<AdminDetailLabelWrapperProps>;
 declare const getValue: (props: AdminDetailBaseProps) => any;
-declare const detailComponentForValueType: (type: ValueType | undefined) => React.FC<AdminDetailTextProps$2>;
+declare const detailComponentForValueType: (type: ValueType | undefined) => React.FC<AdminDetailTextProps>;
 declare const adminDetailForAttribute: (attribute: Attribute | undefined, props?: AdminDetailLabelWrapperProps) => React.FC<AdminDetailBaseProps>;
 declare const adminDetailsForAttributes: (attributes: Attribute[], props: AdminDetailBaseProps) => React.FC<AdminDetailBaseProps>[];
 declare const findTypeInTypes: (types: AttributeType[], name: string) => AttributeType | undefined;
@@ -376,15 +374,18 @@ declare const findTypeInGroups: (groups: AttributeGroup[], name: string) => Attr
 declare type AdminDetailCodeProps = AdminDetailBaseProps & IAceEditorProps;
 declare const AdminDetailCode: React.FC<AdminDetailCodeProps>;
 
+declare type AdminDetailDateProps = AdminDetailTextProps & {
+    showTime?: boolean;
+};
+declare const AdminDetailDate: React.FC<AdminDetailDateProps>;
+
 declare const AdminDetailJson: React.FC<AdminDetailCodeProps>;
 
 declare type AdminDetailLinkProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 declare const AdminDetailLink: React.FC<AdminDetailLinkProps>;
 
-declare type AdminDetailTextProps$1 = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
-declare const AdminDetailText$1: React.FC<AdminDetailTextProps$1>;
+declare const AdminDetailRichText: React.FC<AdminDetailTextProps>;
 
-declare type AdminDetailTextProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 declare const AdminDetailText: React.FC<AdminDetailTextProps>;
 
 declare const AdminDetailYaml: React.FC<AdminDetailCodeProps>;
@@ -396,4 +397,4 @@ interface AdminDetailAttributesProps {
 }
 declare const AdminDetailAttributes: React.FC<AdminDetailAttributesProps>;
 
-export { Address, AddressCountry, AddressState, AdminDetailAttributes, AdminDetailAttributesProps, AdminDetailBaseProps, AdminDetailCode, AdminDetailText$2 as AdminDetailDate, AdminDetailJson, AdminDetailLabelWrapper, AdminDetailLabelWrapperProps, AdminDetailLink, AdminDetailText$1 as AdminDetailRichText, AdminDetailText, AdminDetailYaml, AdminForm, AdminFormAttributes, AdminFormAttributesProps, AdminFormProps, AdminInputBaseProps, AdminInputBoolean, AdminInputCelsius, AdminInputChips, AdminInputCode, AdminInputCountry, AdminInputDate, AdminInputEmail, AdminInputFieldProps, AdminInputJson, AdminInputLink, AdminInputNationalId, AdminInputNumber, AdminInputPhone, AdminInputRelation, AdminInputRichText, AdminInputSelect, AdminInputState, AdminInputText, AdminInputToggle, AdminInputYaml, AdminTable, AdminTableAdapter, AdminTableAdapterEvent, AdminTableHasuraAdapter, AdminTableState, Attribute, AttributeGroup, AttributeType, DataAdapter, DataAdapters, ExportOptions, HasuraDataAdapter, HasuraGraphQLNamingConvention, InfiniteQueryOptions, InfiniteQueryResponse, SubscriptionCallback, ThemeName, ValueType, WhereClause, addressSingleLineFormat, adminDetailForAttribute, adminDetailsForAttributes, adminInputForAttributeType, adminInputsForAttributeTypes, buildClassName, dateBody, dateTimeBody, detailComponentForValueType, findTypeInGroups, findTypeInTypes, formatDateString, getValue, inputForValueType, isEqual, moneyBody, moneyFormat, rowToNewTab, useDataAdapter, utils_d as utils, validateProps, valueForAttribute };
+export { Address, AddressCountry, AddressState, AdminDetailAttributes, AdminDetailAttributesProps, AdminDetailBaseProps, AdminDetailCode, AdminDetailDate, AdminDetailJson, AdminDetailLabelWrapper, AdminDetailLabelWrapperProps, AdminDetailLink, AdminDetailRichText, AdminDetailText, AdminDetailTextProps, AdminDetailYaml, AdminForm, AdminFormAttributes, AdminFormAttributesProps, AdminFormProps, AdminInputBaseProps, AdminInputBoolean, AdminInputCelsius, AdminInputChips, AdminInputCode, AdminInputCountry, AdminInputDate, AdminInputEmail, AdminInputFieldProps, AdminInputJson, AdminInputLink, AdminInputNationalId, AdminInputNumber, AdminInputPhone, AdminInputRelation, AdminInputRichText, AdminInputSelect, AdminInputState, AdminInputText, AdminInputToggle, AdminInputYaml, AdminTable, AdminTableAdapter, AdminTableAdapterEvent, AdminTableHasuraAdapter, AdminTableState, Attribute, AttributeGroup, AttributeType, DataAdapter, DataAdapters, ExportOptions, HasuraDataAdapter, HasuraGraphQLNamingConvention, InfiniteQueryOptions, InfiniteQueryResponse, SubscriptionCallback, ThemeName, ValueType, addressSingleLineFormat, adminDetailForAttribute, adminDetailsForAttributes, adminInputForAttributeType, adminInputsForAttributeTypes, buildClassName, dateBody, dateTimeBody, detailComponentForValueType, findTypeInGroups, findTypeInTypes, formatDateString, getValue, inputForValueType, isEqual, moneyBody, moneyFormat, rowToNewTab, useDataAdapter, utils_d as utils, validateProps, valueForAttribute };

@@ -1,7 +1,7 @@
 import React from 'react';
-import { AdminDetailBaseProps } from '../AdminDetail';
-export declare type AdminDetailTextProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
+import { AdminDetailTextProps } from '../AdminDetail';
+declare type AdminDetailDateProps = AdminDetailTextProps & {
     showTime?: boolean;
 };
-declare const AdminDetailText: React.FC<AdminDetailTextProps>;
-export default AdminDetailText;
+declare const AdminDetailDate: React.FC<AdminDetailDateProps>;
+export default AdminDetailDate;

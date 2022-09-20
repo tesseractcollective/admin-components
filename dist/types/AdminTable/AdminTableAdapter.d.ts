@@ -1,6 +1,6 @@
 import { DataTableFilterMeta, DataTableMultiSortMetaType, DataTablePFSEvent, DataTableSortOrderType } from 'primereact/datatable';
+import { WhereClause } from './adminTableUtils';
 import { HasuraDataAdapter } from '../DataAdapter';
-export declare type WhereClause = Record<string, any>;
 export interface AdminTableState {
     current: any[];
     total: number;

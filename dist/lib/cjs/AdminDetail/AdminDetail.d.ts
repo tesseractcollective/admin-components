@@ -1,6 +1,5 @@
 import React from 'react';
 import { Attribute, AttributeGroup, AttributeType, ValueType } from '../types';
-import { AdminDetailTextProps } from './AdminDetailComponents/AdminDetailDate';
 export interface AdminDetailBaseProps {
     value?: string;
     type?: AttributeType;
@@ -9,6 +8,7 @@ export interface AdminDetailBaseProps {
     hideLabel?: boolean;
 }
 export declare type AdminDetailLabelWrapperProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+export declare type AdminDetailTextProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 export declare const AdminDetailLabelWrapper: React.FC<AdminDetailLabelWrapperProps>;
 export declare const getValue: (props: AdminDetailBaseProps) => any;
 export declare const detailComponentForValueType: (type: ValueType | undefined) => React.FC<AdminDetailTextProps>;

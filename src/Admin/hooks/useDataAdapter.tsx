@@ -1,7 +1,8 @@
 import { useMemo } from 'react'
 import { GraphQLClient } from 'graphql-request'
 import { DocumentNode } from 'graphql'
-import { HasuraDataAdapter, HasuraGraphQLNamingConvention, AdminTableHasuraAdapter, WhereClause } from '..'
+import { HasuraDataAdapter, HasuraGraphQLNamingConvention, AdminTableHasuraAdapter } from '..'
+import { WhereClause } from 'Admin/AdminTable/adminTableUtils'
 
 const namingConvention: HasuraGraphQLNamingConvention = 'hasuraDefault'
 const localGraphQLClientUrl = 'http://localhost:8080/v1/graphql'
