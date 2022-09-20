@@ -33,6 +33,7 @@ export const AdminFormAttributes: React.FC<AdminFormAttributesProps> = props => 
     groups.forEach(group => fieldsArr.push(adminInputsForAttributeTypes(group?.types as any, { control })))
     return fieldsArr
   }
+
   useEffect(() => {
     if (shouldSave) {
       performSave()
@@ -42,9 +43,7 @@ export const AdminFormAttributes: React.FC<AdminFormAttributesProps> = props => 
   return (
     <>
       <AdminForm onSubmit={performSave} className="mt-4 ml-2">
-        <div className="grid grid-cols-1 gap-y-7 justify-items-stretch">
-          <>{...fields()}</>
-        </div>
+        <div className="grid grid-cols-1 gap-y-7 justify-items-stretch">{...fields()}</div>
         {shouldSave === undefined && (
           <div className="pt-3 pb-3">
             <Button label="Save" className="p-button-primary" type="submit" />
