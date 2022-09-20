@@ -1,0 +1,14 @@
+{
+  "name": "geo-tesseractcollective-com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tesseract Collective",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "serverless deploy --stage prod"
+  },
+  "devDependencies": {
+    "fullstack-serverless": "^0.8.0",
+    "serverless": "^3.22.0"
+  }
+}
