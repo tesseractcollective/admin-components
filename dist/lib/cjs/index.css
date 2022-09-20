@@ -1,27 +1,3 @@
-.field-chips-container .p-chips .p-chips-multiple-container {
-  padding: 0.75rem 0.75rem;
-}
-.field-chips-container .p-chips,
-.field-chips-container .p-component,
-.field-chips-container .p-inputwrapper > .p-inputtext,
-.field-chips-container .p-chips-multiple-container {
-  width: 100%;
-  gap: 8px !important;
-}
-.field-chips-container .p-chips-token,
-.field-chips-container .p-highlight {
-  background: var(--primary-color) !important;
-  margin-right: 0px !important;
-}
-.field-chips-container .p-chips-token-label {
-  max-width: 12ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.field-chips-container .p-chips-input-token > input::placeholder {
-  color: var(--text-color-secondary) !important;
-}
-
 .button-container {
   background-color: var(--primary-color) !important;
 }
@@ -58,6 +34,30 @@
   display: flex;
   align-items: center;
   background: var(--form-background) !important;
+}
+
+.field-chips-container .p-chips .p-chips-multiple-container {
+  padding: 0.75rem 0.75rem;
+}
+.field-chips-container .p-chips,
+.field-chips-container .p-component,
+.field-chips-container .p-inputwrapper > .p-inputtext,
+.field-chips-container .p-chips-multiple-container {
+  width: 100%;
+  gap: 8px !important;
+}
+.field-chips-container .p-chips-token,
+.field-chips-container .p-highlight {
+  background: var(--primary-color) !important;
+  margin-right: 0px !important;
+}
+.field-chips-container .p-chips-token-label {
+  max-width: 12ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.field-chips-container .p-chips-input-token > input::placeholder {
+  color: var(--text-color-secondary) !important;
 }
 
 .react-tel-input {

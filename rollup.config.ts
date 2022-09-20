@@ -14,6 +14,7 @@ import packageJson from './package.json'
 export default [
   {
     input: 'src/Admin/index.ts',
+    inlineDynamicImports: true,
     output: [
       {
         file: packageJson.main,
@@ -34,7 +35,7 @@ export default [
       }),
       nodeResolve({
         preferBuiltins: true,
-        moduleDirectories: ['node_modules', 'src']
+        moduleDirectories: ['node_modules']
       }),
       commonjs(),
       terser(),
