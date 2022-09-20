@@ -1,16 +1,15 @@
-import { AdminTable, useDataAdapter } from 'admin-components'
+import { AdminTable, useDataAdapter } from '@tesseractcollective/admin-components'
 import { Column } from 'primereact/column'
 import React from 'react'
+import { UserFieldsFragmentDoc } from '../../graphql/generated/graphqlRequest'
 
 const UsersTable: React.FC = () => {
-  const { tableAdapter } = useDataAdapter('users', UsersTableFragment)
+  const { tableAdapter } = useDataAdapter('users', UserFieldsFragmentDoc)
   return (
     <div>
-      <AdminTable adapter={tableAdapter}>
-        <Column field="column_1" header="Column 1" sortable filter />
-        <Column field="column_2" header="Column 2" sortable filter />
-        <Column field="column_3" header="Column 3" sortable filter />
-      </AdminTable>
+      {/* <AdminTable adapter={tableAdapter}>
+        <Column field="id" header="ID" sortable filter />
+      </AdminTable> */}
     </div>
   )
 }

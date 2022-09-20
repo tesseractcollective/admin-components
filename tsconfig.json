@@ -2,7 +2,13 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "declaration": true,
+    "noImplicitAny": false,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "outDir": "./dist/lib",
+    "baseUrl": "src",
+    "declarationDir": "./dist/types",
+    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
@@ -13,7 +19,8 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx"
-  }
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "./example-app"]
 }

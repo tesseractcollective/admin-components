@@ -1,18 +1,22 @@
 {
-  "name": "admin-components",
+  "name": "@tesseractcollective/admin-components",
   "version": "1.0.0",
   "description": "Form and Data Table Components for Admin Interfaces",
-  "main": "index.ts",
+  "main": "dist/lib/cjs/index.js",
+  "module": "dist/lib/esm/index.js",
+  "types": "dist/lib/index.d.ts",
   "repository": "git@github.com:tesseractcollective/admin-components.git",
   "author": "Tesseract Collective",
   "license": "MIT",
   "scripts": {
     "format": "prettier --write src/**/*.ts{x}",
+    "build": "tsc && rollup -c",
     "lint": "npx eslint src --fix"
   },
   "dependencies": {
     "@date-io/moment": "2.15.0",
     "@material-ui/pickers": "3.3.10",
+    "builtin-modules": "3.3.0",
     "case": "^1.6.3",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
@@ -26,6 +30,11 @@
     "react-phone-number-input": "3.2.11"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "22.0.2",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "14.1.0",
+    "@rollup/plugin-typescript": "8.5.0",
+    "@types/rollup-plugin-peer-deps-external": "2.2.1",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
     "eslint": "^8.2.0",
@@ -39,6 +48,12 @@
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "2.7.1",
+    "rollup": "2.79.0",
+    "rollup-plugin-dts": "4.2.2",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-scss": "3.0.0",
+    "rollup-plugin-terser": "7.0.2",
+    "sass": "1.54.9",
     "typescript": "4.8.3"
   },
   "eslintConfig": {

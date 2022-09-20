@@ -1,0 +1,3 @@
+fragment addressFields on Addresses {
+  id
+}

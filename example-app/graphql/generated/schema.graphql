@@ -1,0 +1,1121 @@
+schema {
+  query: query_root
+  mutation: mutation_root
+  subscription: subscription_root
+}
+
+"""whether this query should be cached (Hasura Cloud only)"""
+directive @cached(
+  """refresh the cache entry"""
+  refresh: Boolean! = false
+
+  """measured in seconds"""
+  ttl: Int! = 60
+) on QUERY
+
+"""
+columns and relationships of "addresses"
+"""
+type Addresses {
+  address1: String!
+  address2: String!
+  countryCode: String!
+  countryName: String!
+  id: Int!
+  postalCode: numeric!
+  stateCode: String!
+  stateName: String!
+  userId: Int!
+}
+
+"""
+aggregated selection of "addresses"
+"""
+type AddressesAggregate {
+  aggregate: AddressesAggregateFields
+  nodes: [Addresses!]!
+}
+
+"""
+aggregate fields of "addresses"
+"""
+type AddressesAggregateFields {
+  avg: AddressesAvgFields
+  count(columns: [AddressesSelectColumn!], distinct: Boolean): Int!
+  max: AddressesMaxFields
+  min: AddressesMinFields
+  stddev: AddressesStddevFields
+  stddevPop: AddressesStddevPopFields
+  stddevSamp: AddressesStddevSampFields
+  sum: AddressesSumFields
+  varPop: AddressesVarPopFields
+  varSamp: AddressesVarSampFields
+  variance: AddressesVarianceFields
+}
+
+"""aggregate avg on columns"""
+type AddressesAvgFields {
+  id: Float
+  postalCode: Float
+  userId: Float
+}
+
+"""
+Boolean expression to filter rows from the table "addresses". All fields are combined with a logical 'AND'.
+"""
+input AddressesBoolExp {
+  _and: [AddressesBoolExp!]
+  _not: AddressesBoolExp
+  _or: [AddressesBoolExp!]
+  address1: StringComparisonExp
+  address2: StringComparisonExp
+  countryCode: StringComparisonExp
+  countryName: StringComparisonExp
+  id: IntComparisonExp
+  postalCode: NumericComparisonExp
+  stateCode: StringComparisonExp
+  stateName: StringComparisonExp
+  userId: IntComparisonExp
+}
+
+"""
+unique or primary key constraints on table "addresses"
+"""
+enum AddressesConstraint {
+  """
+  unique or primary key constraint on columns "id"
+  """
+  addresses_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "addresses"
+"""
+input AddressesIncInput {
+  id: Int
+  postalCode: numeric
+  userId: Int
+}
+
+"""
+input type for inserting data into table "addresses"
+"""
+input AddressesInsertInput {
+  address1: String
+  address2: String
+  countryCode: String
+  countryName: String
+  id: Int
+  postalCode: numeric
+  stateCode: String
+  stateName: String
+  userId: Int
+}
+
+"""aggregate max on columns"""
+type AddressesMaxFields {
+  address1: String
+  address2: String
+  countryCode: String
+  countryName: String
+  id: Int
+  postalCode: numeric
+  stateCode: String
+  stateName: String
+  userId: Int
+}
+
+"""aggregate min on columns"""
+type AddressesMinFields {
+  address1: String
+  address2: String
+  countryCode: String
+  countryName: String
+  id: Int
+  postalCode: numeric
+  stateCode: String
+  stateName: String
+  userId: Int
+}
+
+"""
+response of any mutation on the table "addresses"
+"""
+type AddressesMutationResponse {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [Addresses!]!
+}
+
+"""
+on_conflict condition type for table "addresses"
+"""
+input AddressesOnConflict {
+  constraint: AddressesConstraint!
+  update_columns: [AddressesUpdateColumn!]! = []
+  where: AddressesBoolExp
+}
+
+"""Ordering options when selecting data from "addresses"."""
+input AddressesOrderBy {
+  address1: OrderBy
+  address2: OrderBy
+  countryCode: OrderBy
+  countryName: OrderBy
+  id: OrderBy
+  postalCode: OrderBy
+  stateCode: OrderBy
+  stateName: OrderBy
+  userId: OrderBy
+}
+
+"""primary key columns input for table: addresses"""
+input AddressesPkColumnsInput {
+  id: Int!
+}
+
+"""
+select columns of table "addresses"
+"""
+enum AddressesSelectColumn {
+  """column name"""
+  address1
+
+  """column name"""
+  address2
+
+  """column name"""
+  countryCode
+
+  """column name"""
+  countryName
+
+  """column name"""
+  id
+
+  """column name"""
+  postalCode
+
+  """column name"""
+  stateCode
+
+  """column name"""
+  stateName
+
+  """column name"""
+  userId
+}
+
+"""
+input type for updating data in table "addresses"
+"""
+input AddressesSetInput {
+  address1: String
+  address2: String
+  countryCode: String
+  countryName: String
+  id: Int
+  postalCode: numeric
+  stateCode: String
+  stateName: String
+  userId: Int
+}
+
+"""aggregate stddev on columns"""
+type AddressesStddevFields {
+  id: Float
+  postalCode: Float
+  userId: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type AddressesStddevPopFields {
+  id: Float
+  postalCode: Float
+  userId: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type AddressesStddevSampFields {
+  id: Float
+  postalCode: Float
+  userId: Float
+}
+
+"""
+Streaming cursor of the table "addresses"
+"""
+input AddressesStreamCursorInput {
+  """Stream column input with initial value"""
+  initialValue: AddressesStreamCursorValueInput!
+
+  """cursor ordering"""
+  ordering: CursorOrdering
+}
+
+"""Initial value of the column from where the streaming should start"""
+input AddressesStreamCursorValueInput {
+  address1: String
+  address2: String
+  countryCode: String
+  countryName: String
+  id: Int
+  postalCode: numeric
+  stateCode: String
+  stateName: String
+  userId: Int
+}
+
+"""aggregate sum on columns"""
+type AddressesSumFields {
+  id: Int
+  postalCode: numeric
+  userId: Int
+}
+
+"""
+update columns of table "addresses"
+"""
+enum AddressesUpdateColumn {
+  """column name"""
+  address1
+
+  """column name"""
+  address2
+
+  """column name"""
+  countryCode
+
+  """column name"""
+  countryName
+
+  """column name"""
+  id
+
+  """column name"""
+  postalCode
+
+  """column name"""
+  stateCode
+
+  """column name"""
+  stateName
+
+  """column name"""
+  userId
+}
+
+input AddressesUpdates {
+  """increments the numeric columns with given value of the filtered values"""
+  _inc: AddressesIncInput
+
+  """sets the columns of the filtered rows to the given values"""
+  _set: AddressesSetInput
+  where: AddressesBoolExp!
+}
+
+"""aggregate var_pop on columns"""
+type AddressesVarPopFields {
+  id: Float
+  postalCode: Float
+  userId: Float
+}
+
+"""aggregate var_samp on columns"""
+type AddressesVarSampFields {
+  id: Float
+  postalCode: Float
+  userId: Float
+}
+
+"""aggregate variance on columns"""
+type AddressesVarianceFields {
+  id: Float
+  postalCode: Float
+  userId: Float
+}
+
+"""ordering argument of a cursor"""
+enum CursorOrdering {
+  """ascending ordering of the cursor"""
+  ASC
+
+  """descending ordering of the cursor"""
+  DESC
+}
+
+"""
+Boolean expression to compare columns of type "Int". All fields are combined with logical 'AND'.
+"""
+input IntComparisonExp {
+  _eq: Int
+  _gt: Int
+  _gte: Int
+  _in: [Int!]
+  _isNull: Boolean
+  _lt: Int
+  _lte: Int
+  _neq: Int
+  _nin: [Int!]
+}
+
+"""
+Boolean expression to compare columns of type "numeric". All fields are combined with logical 'AND'.
+"""
+input NumericComparisonExp {
+  _eq: numeric
+  _gt: numeric
+  _gte: numeric
+  _in: [numeric!]
+  _isNull: Boolean
+  _lt: numeric
+  _lte: numeric
+  _neq: numeric
+  _nin: [numeric!]
+}
+
+"""column ordering options"""
+enum OrderBy {
+  """in ascending order, nulls last"""
+  ASC
+
+  """in ascending order, nulls first"""
+  ASC_NULLS_FIRST
+
+  """in ascending order, nulls last"""
+  ASC_NULLS_LAST
+
+  """in descending order, nulls first"""
+  DESC
+
+  """in descending order, nulls first"""
+  DESC_NULLS_FIRST
+
+  """in descending order, nulls last"""
+  DESC_NULLS_LAST
+}
+
+"""
+Boolean expression to compare columns of type "String". All fields are combined with logical 'AND'.
+"""
+input StringComparisonExp {
+  _eq: String
+  _gt: String
+  _gte: String
+
+  """does the column match the given case-insensitive pattern"""
+  _ilike: String
+  _in: [String!]
+
+  """
+  does the column match the given POSIX regular expression, case insensitive
+  """
+  _iregex: String
+  _isNull: Boolean
+
+  """does the column match the given pattern"""
+  _like: String
+  _lt: String
+  _lte: String
+  _neq: String
+
+  """does the column NOT match the given case-insensitive pattern"""
+  _nilike: String
+  _nin: [String!]
+
+  """
+  does the column NOT match the given POSIX regular expression, case insensitive
+  """
+  _niregex: String
+
+  """does the column NOT match the given pattern"""
+  _nlike: String
+
+  """
+  does the column NOT match the given POSIX regular expression, case sensitive
+  """
+  _nregex: String
+
+  """does the column NOT match the given SQL regular expression"""
+  _nsimilar: String
+
+  """
+  does the column match the given POSIX regular expression, case sensitive
+  """
+  _regex: String
+
+  """does the column match the given SQL regular expression"""
+  _similar: String
+}
+
+"""
+Boolean expression to compare columns of type "timestamptz". All fields are combined with logical 'AND'.
+"""
+input TimestamptzComparisonExp {
+  _eq: timestamptz
+  _gt: timestamptz
+  _gte: timestamptz
+  _in: [timestamptz!]
+  _isNull: Boolean
+  _lt: timestamptz
+  _lte: timestamptz
+  _neq: timestamptz
+  _nin: [timestamptz!]
+}
+
+"""
+columns and relationships of "users"
+"""
+type Users {
+  countryCode: String!
+  createdAt: timestamptz!
+  deletedAt: timestamptz
+  email: String!
+  id: Int!
+  name: String!
+  phone: numeric!
+  updatedAt: timestamptz!
+}
+
+"""
+aggregated selection of "users"
+"""
+type UsersAggregate {
+  aggregate: UsersAggregateFields
+  nodes: [Users!]!
+}
+
+"""
+aggregate fields of "users"
+"""
+type UsersAggregateFields {
+  avg: UsersAvgFields
+  count(columns: [UsersSelectColumn!], distinct: Boolean): Int!
+  max: UsersMaxFields
+  min: UsersMinFields
+  stddev: UsersStddevFields
+  stddevPop: UsersStddevPopFields
+  stddevSamp: UsersStddevSampFields
+  sum: UsersSumFields
+  varPop: UsersVarPopFields
+  varSamp: UsersVarSampFields
+  variance: UsersVarianceFields
+}
+
+"""aggregate avg on columns"""
+type UsersAvgFields {
+  id: Float
+  phone: Float
+}
+
+"""
+Boolean expression to filter rows from the table "users". All fields are combined with a logical 'AND'.
+"""
+input UsersBoolExp {
+  _and: [UsersBoolExp!]
+  _not: UsersBoolExp
+  _or: [UsersBoolExp!]
+  countryCode: StringComparisonExp
+  createdAt: TimestamptzComparisonExp
+  deletedAt: TimestamptzComparisonExp
+  email: StringComparisonExp
+  id: IntComparisonExp
+  name: StringComparisonExp
+  phone: NumericComparisonExp
+  updatedAt: TimestamptzComparisonExp
+}
+
+"""
+unique or primary key constraints on table "users"
+"""
+enum UsersConstraint {
+  """
+  unique or primary key constraint on columns "email"
+  """
+  users_email_key
+
+  """
+  unique or primary key constraint on columns "id"
+  """
+  users_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "users"
+"""
+input UsersIncInput {
+  id: Int
+  phone: numeric
+}
+
+"""
+input type for inserting data into table "users"
+"""
+input UsersInsertInput {
+  countryCode: String
+  createdAt: timestamptz
+  deletedAt: timestamptz
+  email: String
+  id: Int
+  name: String
+  phone: numeric
+  updatedAt: timestamptz
+}
+
+"""aggregate max on columns"""
+type UsersMaxFields {
+  countryCode: String
+  createdAt: timestamptz
+  deletedAt: timestamptz
+  email: String
+  id: Int
+  name: String
+  phone: numeric
+  updatedAt: timestamptz
+}
+
+"""aggregate min on columns"""
+type UsersMinFields {
+  countryCode: String
+  createdAt: timestamptz
+  deletedAt: timestamptz
+  email: String
+  id: Int
+  name: String
+  phone: numeric
+  updatedAt: timestamptz
+}
+
+"""
+response of any mutation on the table "users"
+"""
+type UsersMutationResponse {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [Users!]!
+}
+
+"""
+on_conflict condition type for table "users"
+"""
+input UsersOnConflict {
+  constraint: UsersConstraint!
+  update_columns: [UsersUpdateColumn!]! = []
+  where: UsersBoolExp
+}
+
+"""Ordering options when selecting data from "users"."""
+input UsersOrderBy {
+  countryCode: OrderBy
+  createdAt: OrderBy
+  deletedAt: OrderBy
+  email: OrderBy
+  id: OrderBy
+  name: OrderBy
+  phone: OrderBy
+  updatedAt: OrderBy
+}
+
+"""primary key columns input for table: users"""
+input UsersPkColumnsInput {
+  id: Int!
+}
+
+"""
+select columns of table "users"
+"""
+enum UsersSelectColumn {
+  """column name"""
+  countryCode
+
+  """column name"""
+  createdAt
+
+  """column name"""
+  deletedAt
+
+  """column name"""
+  email
+
+  """column name"""
+  id
+
+  """column name"""
+  name
+
+  """column name"""
+  phone
+
+  """column name"""
+  updatedAt
+}
+
+"""
+input type for updating data in table "users"
+"""
+input UsersSetInput {
+  countryCode: String
+  createdAt: timestamptz
+  deletedAt: timestamptz
+  email: String
+  id: Int
+  name: String
+  phone: numeric
+  updatedAt: timestamptz
+}
+
+"""aggregate stddev on columns"""
+type UsersStddevFields {
+  id: Float
+  phone: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type UsersStddevPopFields {
+  id: Float
+  phone: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type UsersStddevSampFields {
+  id: Float
+  phone: Float
+}
+
+"""
+Streaming cursor of the table "users"
+"""
+input UsersStreamCursorInput {
+  """Stream column input with initial value"""
+  initialValue: UsersStreamCursorValueInput!
+
+  """cursor ordering"""
+  ordering: CursorOrdering
+}
+
+"""Initial value of the column from where the streaming should start"""
+input UsersStreamCursorValueInput {
+  countryCode: String
+  createdAt: timestamptz
+  deletedAt: timestamptz
+  email: String
+  id: Int
+  name: String
+  phone: numeric
+  updatedAt: timestamptz
+}
+
+"""aggregate sum on columns"""
+type UsersSumFields {
+  id: Int
+  phone: numeric
+}
+
+"""
+update columns of table "users"
+"""
+enum UsersUpdateColumn {
+  """column name"""
+  countryCode
+
+  """column name"""
+  createdAt
+
+  """column name"""
+  deletedAt
+
+  """column name"""
+  email
+
+  """column name"""
+  id
+
+  """column name"""
+  name
+
+  """column name"""
+  phone
+
+  """column name"""
+  updatedAt
+}
+
+input UsersUpdates {
+  """increments the numeric columns with given value of the filtered values"""
+  _inc: UsersIncInput
+
+  """sets the columns of the filtered rows to the given values"""
+  _set: UsersSetInput
+  where: UsersBoolExp!
+}
+
+"""aggregate var_pop on columns"""
+type UsersVarPopFields {
+  id: Float
+  phone: Float
+}
+
+"""aggregate var_samp on columns"""
+type UsersVarSampFields {
+  id: Float
+  phone: Float
+}
+
+"""aggregate variance on columns"""
+type UsersVarianceFields {
+  id: Float
+  phone: Float
+}
+
+"""mutation root"""
+type mutation_root {
+  """
+  delete data from the table: "addresses"
+  """
+  deleteAddresses(
+    """filter the rows which have to be deleted"""
+    where: AddressesBoolExp!
+  ): AddressesMutationResponse
+
+  """
+  delete single row from the table: "addresses"
+  """
+  deleteAddressesByPk(id: Int!): Addresses
+
+  """
+  delete data from the table: "users"
+  """
+  deleteUsers(
+    """filter the rows which have to be deleted"""
+    where: UsersBoolExp!
+  ): UsersMutationResponse
+
+  """
+  delete single row from the table: "users"
+  """
+  deleteUsersByPk(id: Int!): Users
+
+  """
+  insert data into the table: "addresses"
+  """
+  insertAddresses(
+    """the rows to be inserted"""
+    objects: [AddressesInsertInput!]!
+
+    """upsert condition"""
+    onConflict: AddressesOnConflict
+  ): AddressesMutationResponse
+
+  """
+  insert a single row into the table: "addresses"
+  """
+  insertAddressesOne(
+    """the row to be inserted"""
+    object: AddressesInsertInput!
+
+    """upsert condition"""
+    onConflict: AddressesOnConflict
+  ): Addresses
+
+  """
+  insert data into the table: "users"
+  """
+  insertUsers(
+    """the rows to be inserted"""
+    objects: [UsersInsertInput!]!
+
+    """upsert condition"""
+    onConflict: UsersOnConflict
+  ): UsersMutationResponse
+
+  """
+  insert a single row into the table: "users"
+  """
+  insertUsersOne(
+    """the row to be inserted"""
+    object: UsersInsertInput!
+
+    """upsert condition"""
+    onConflict: UsersOnConflict
+  ): Users
+
+  """
+  update data of the table: "addresses"
+  """
+  updateAddresses(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: AddressesIncInput
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: AddressesSetInput
+
+    """filter the rows which have to be updated"""
+    where: AddressesBoolExp!
+  ): AddressesMutationResponse
+
+  """
+  update single row of the table: "addresses"
+  """
+  updateAddressesByPk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: AddressesIncInput
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: AddressesSetInput
+    pk_columns: AddressesPkColumnsInput!
+  ): Addresses
+
+  """
+  update multiples rows of table: "addresses"
+  """
+  updateAddressesMany(
+    """updates to execute, in order"""
+    updates: [AddressesUpdates!]!
+  ): [AddressesMutationResponse]
+
+  """
+  update data of the table: "users"
+  """
+  updateUsers(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: UsersIncInput
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: UsersSetInput
+
+    """filter the rows which have to be updated"""
+    where: UsersBoolExp!
+  ): UsersMutationResponse
+
+  """
+  update single row of the table: "users"
+  """
+  updateUsersByPk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: UsersIncInput
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: UsersSetInput
+    pk_columns: UsersPkColumnsInput!
+  ): Users
+
+  """
+  update multiples rows of table: "users"
+  """
+  updateUsersMany(
+    """updates to execute, in order"""
+    updates: [UsersUpdates!]!
+  ): [UsersMutationResponse]
+}
+
+scalar numeric
+
+type query_root {
+  """
+  fetch data from the table: "addresses"
+  """
+  addresses(
+    """distinct select on columns"""
+    distinctOn: [AddressesSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [AddressesOrderBy!]
+
+    """filter the rows returned"""
+    where: AddressesBoolExp
+  ): [Addresses!]!
+
+  """
+  fetch aggregated fields from the table: "addresses"
+  """
+  addressesAggregate(
+    """distinct select on columns"""
+    distinctOn: [AddressesSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [AddressesOrderBy!]
+
+    """filter the rows returned"""
+    where: AddressesBoolExp
+  ): AddressesAggregate!
+
+  """fetch data from the table: "addresses" using primary key columns"""
+  addressesByPk(id: Int!): Addresses
+
+  """
+  fetch data from the table: "users"
+  """
+  users(
+    """distinct select on columns"""
+    distinctOn: [UsersSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [UsersOrderBy!]
+
+    """filter the rows returned"""
+    where: UsersBoolExp
+  ): [Users!]!
+
+  """
+  fetch aggregated fields from the table: "users"
+  """
+  usersAggregate(
+    """distinct select on columns"""
+    distinctOn: [UsersSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [UsersOrderBy!]
+
+    """filter the rows returned"""
+    where: UsersBoolExp
+  ): UsersAggregate!
+
+  """fetch data from the table: "users" using primary key columns"""
+  usersByPk(id: Int!): Users
+}
+
+type subscription_root {
+  """
+  fetch data from the table: "addresses"
+  """
+  addresses(
+    """distinct select on columns"""
+    distinctOn: [AddressesSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [AddressesOrderBy!]
+
+    """filter the rows returned"""
+    where: AddressesBoolExp
+  ): [Addresses!]!
+
+  """
+  fetch aggregated fields from the table: "addresses"
+  """
+  addressesAggregate(
+    """distinct select on columns"""
+    distinctOn: [AddressesSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [AddressesOrderBy!]
+
+    """filter the rows returned"""
+    where: AddressesBoolExp
+  ): AddressesAggregate!
+
+  """fetch data from the table: "addresses" using primary key columns"""
+  addressesByPk(id: Int!): Addresses
+
+  """
+  fetch data from the table in a streaming manner : "addresses"
+  """
+  addressesStream(
+    """maximum number of rows returned in a single batch"""
+    batchSize: Int!
+
+    """cursor to stream the results returned by the query"""
+    cursor: [AddressesStreamCursorInput]!
+
+    """filter the rows returned"""
+    where: AddressesBoolExp
+  ): [Addresses!]!
+
+  """
+  fetch data from the table: "users"
+  """
+  users(
+    """distinct select on columns"""
+    distinctOn: [UsersSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [UsersOrderBy!]
+
+    """filter the rows returned"""
+    where: UsersBoolExp
+  ): [Users!]!
+
+  """
+  fetch aggregated fields from the table: "users"
+  """
+  usersAggregate(
+    """distinct select on columns"""
+    distinctOn: [UsersSelectColumn!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    orderBy: [UsersOrderBy!]
+
+    """filter the rows returned"""
+    where: UsersBoolExp
+  ): UsersAggregate!
+
+  """fetch data from the table: "users" using primary key columns"""
+  usersByPk(id: Int!): Users
+
+  """
+  fetch data from the table in a streaming manner : "users"
+  """
+  usersStream(
+    """maximum number of rows returned in a single batch"""
+    batchSize: Int!
+
+    """cursor to stream the results returned by the query"""
+    cursor: [UsersStreamCursorInput]!
+
+    """filter the rows returned"""
+    where: UsersBoolExp
+  ): [Users!]!
+}
+
+scalar timestamptz
