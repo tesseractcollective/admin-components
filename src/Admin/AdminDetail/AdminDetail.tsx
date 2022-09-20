@@ -4,8 +4,6 @@ import { nanoid } from 'nanoid'
 import { classNames } from 'primereact/utils'
 import { Attribute, AttributeGroup, AttributeType, ValueType } from '../types'
 import * as AdminDetails from './AdminDetailComponents'
-import { AdminDetailTextProps } from './AdminDetailComponents/AdminDetailDate'
-
 export interface AdminDetailBaseProps {
   value?: string
   type?: AttributeType
@@ -15,6 +13,8 @@ export interface AdminDetailBaseProps {
 }
 
 export type AdminDetailLabelWrapperProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+
+export type AdminDetailTextProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 export const AdminDetailLabelWrapper: React.FC<AdminDetailLabelWrapperProps> = props => {
   const { value: _value, type, attribute, labelClassName, children, hideLabel, ...rest } = props

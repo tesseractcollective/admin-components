@@ -8,7 +8,8 @@ import {
   DataTableSortOrderType
 } from 'primereact/datatable'
 import { HasuraGraphQLNamingConvention } from '../DataAdapter'
-import { WhereClause } from './AdminTableAdapter'
+
+export type WhereClause = Record<string, any>
 
 const matchModeToEqualityFunction: Record<DataTableFilterMatchModeType, Function> = {
   contains: (value: any) => (typeof value === 'string' ? { _ilike: `%${value}%` } : { _eq: value }),
