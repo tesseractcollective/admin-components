@@ -4,7 +4,7 @@ import { DocumentNode } from 'graphql'
 import { HasuraDataAdapter, HasuraGraphQLNamingConvention, AdminTableHasuraAdapter } from '..'
 import { WhereClause } from 'Admin/AdminTable/adminTableUtils'
 
-const namingConvention: HasuraGraphQLNamingConvention = 'hasuraDefault'
+const namingConvention: HasuraGraphQLNamingConvention = 'graphqlDefault'
 const localGraphQLClientUrl = 'http://localhost:8080/v1/graphql'
 
 export interface DataAdapters {
@@ -13,7 +13,16 @@ export interface DataAdapters {
 }
 
 export function useDataAdapter(typename: string, fieldsFragment: DocumentNode, baseWhere?: WhereClause, client?: GraphQLClient): DataAdapters {
-  const graphQLClient = useMemo(() => client || new GraphQLClient(localGraphQLClientUrl), [client])
+  const graphQLClient = useMemo(
+    () =>
+      client ||
+      new GraphQLClient(localGraphQLClientUrl, {
+        headers: {
+          'x-hasura-admin-secret': 'myadminsecretkey'
+        }
+      }),
+    [client]
+  )
   const dataAdapter = useMemo(
     () => new HasuraDataAdapter(graphQLClient, typename, fieldsFragment, namingConvention),
     [typename, fieldsFragment, graphQLClient]

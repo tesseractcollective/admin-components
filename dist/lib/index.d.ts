@@ -99,27 +99,8 @@ declare function valueForAttribute(attributes: Attribute[] | undefined, name: st
 declare const rowToNewTab: (event: DataTableRowClickEventParams | DataTableSelectParams, route: string, onRowClick: (row: any, path?: string) => void) => void;
 declare function addressSingleLineFormat(address: Address): string;
 declare function isEqual(obj1: any, obj2: any): boolean;
-declare function dateFormat(date: string): string;
 declare function formatDateString(date: string): string;
 declare const moneyFormat: Intl.NumberFormat;
-
-declare const utils_d_valueForAttribute: typeof valueForAttribute;
-declare const utils_d_rowToNewTab: typeof rowToNewTab;
-declare const utils_d_addressSingleLineFormat: typeof addressSingleLineFormat;
-declare const utils_d_isEqual: typeof isEqual;
-declare const utils_d_formatDateString: typeof formatDateString;
-declare const utils_d_moneyFormat: typeof moneyFormat;
-declare namespace utils_d {
-  export {
-    dateFormat as default,
-    utils_d_valueForAttribute as valueForAttribute,
-    utils_d_rowToNewTab as rowToNewTab,
-    utils_d_addressSingleLineFormat as addressSingleLineFormat,
-    utils_d_isEqual as isEqual,
-    utils_d_formatDateString as formatDateString,
-    utils_d_moneyFormat as moneyFormat,
-  };
-}
 
 interface DataAdapters {
     dataAdapter: HasuraDataAdapter;
@@ -397,4 +378,4 @@ interface AdminDetailAttributesProps {
 }
 declare const AdminDetailAttributes: React.FC<AdminDetailAttributesProps>;
 
-export { Address, AddressCountry, AddressState, AdminDetailAttributes, AdminDetailAttributesProps, AdminDetailBaseProps, AdminDetailCode, AdminDetailDate, AdminDetailJson, AdminDetailLabelWrapper, AdminDetailLabelWrapperProps, AdminDetailLink, AdminDetailRichText, AdminDetailText, AdminDetailTextProps, AdminDetailYaml, AdminForm, AdminFormAttributes, AdminFormAttributesProps, AdminFormProps, AdminInputBaseProps, AdminInputBoolean, AdminInputCelsius, AdminInputChips, AdminInputCode, AdminInputCountry, AdminInputDate, AdminInputEmail, AdminInputFieldProps, AdminInputJson, AdminInputLink, AdminInputNationalId, AdminInputNumber, AdminInputPhone, AdminInputRelation, AdminInputRichText, AdminInputSelect, AdminInputState, AdminInputText, AdminInputToggle, AdminInputYaml, AdminTable, AdminTableAdapter, AdminTableAdapterEvent, AdminTableHasuraAdapter, AdminTableState, Attribute, AttributeGroup, AttributeType, DataAdapter, DataAdapters, ExportOptions, HasuraDataAdapter, HasuraGraphQLNamingConvention, InfiniteQueryOptions, InfiniteQueryResponse, SubscriptionCallback, ThemeName, ValueType, addressSingleLineFormat, adminDetailForAttribute, adminDetailsForAttributes, adminInputForAttributeType, adminInputsForAttributeTypes, buildClassName, dateBody, dateTimeBody, detailComponentForValueType, findTypeInGroups, findTypeInTypes, formatDateString, getValue, inputForValueType, isEqual, moneyBody, moneyFormat, rowToNewTab, useDataAdapter, utils_d as utils, validateProps, valueForAttribute };
+export { Address, AddressCountry, AddressState, AdminDetailAttributes, AdminDetailAttributesProps, AdminDetailBaseProps, AdminDetailCode, AdminDetailDate, AdminDetailJson, AdminDetailLabelWrapper, AdminDetailLabelWrapperProps, AdminDetailLink, AdminDetailRichText, AdminDetailText, AdminDetailTextProps, AdminDetailYaml, AdminForm, AdminFormAttributes, AdminFormAttributesProps, AdminFormProps, AdminInputBaseProps, AdminInputBoolean, AdminInputCelsius, AdminInputChips, AdminInputCode, AdminInputCountry, AdminInputDate, AdminInputEmail, AdminInputFieldProps, AdminInputJson, AdminInputLink, AdminInputNationalId, AdminInputNumber, AdminInputPhone, AdminInputRelation, AdminInputRichText, AdminInputSelect, AdminInputState, AdminInputText, AdminInputToggle, AdminInputYaml, AdminTable, AdminTableAdapter, AdminTableAdapterEvent, AdminTableHasuraAdapter, AdminTableState, Attribute, AttributeGroup, AttributeType, DataAdapter, DataAdapters, ExportOptions, HasuraDataAdapter, HasuraGraphQLNamingConvention, InfiniteQueryOptions, InfiniteQueryResponse, SubscriptionCallback, ThemeName, ValueType, addressSingleLineFormat, adminDetailForAttribute, adminDetailsForAttributes, adminInputForAttributeType, adminInputsForAttributeTypes, buildClassName, dateBody, dateTimeBody, detailComponentForValueType, findTypeInGroups, findTypeInTypes, formatDateString, getValue, inputForValueType, isEqual, moneyBody, moneyFormat, rowToNewTab, useDataAdapter, validateProps, valueForAttribute };

@@ -1,7 +1,6 @@
 export * from './types';
 export * from './utils';
 export * from './hooks/useDataAdapter';
-export * as utils from './utils';
 export * from './useTheme';
 export * from './DataAdapter';
 export * from './AdminTable/AdminTable';
