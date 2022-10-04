@@ -1,6 +1,5 @@
 import React from 'react'
-import { AdminTable } from './../../../../src/Admin'
-import { useDataAdapter, gqlClient } from './../../../../src/hooks/useDataAdapter'
+import { AdminTable, useDataAdapter, gqlClient } from '@tesseractcollective/admin-components'
 import { Column } from 'primereact/column'
 import { Card } from 'primereact/card'
 import { UserFieldsFragmentDoc } from '../graphql/generated/graphqlRequest'

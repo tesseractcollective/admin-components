@@ -1,8 +1,9 @@
 {
-  "name": "admin-components",
+  "name": "@tesseractcollective/admin-components",
   "version": "1.0.0",
   "description": "Form and Data Table Components for Admin Interfaces",
-  "main": "index.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
   "repository": "git@github.com:tesseractcollective/admin-components.git",
   "author": "Tesseract Collective",
   "license": "MIT",
