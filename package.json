@@ -4,7 +4,8 @@
   "description": "Form and Data Table Components for Admin Interfaces",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
-  "repository": "git@github.com:tesseractcollective/admin-components.git",
+  "repository": "git@https://github.com/tesseractcollective/admin-components.git",
+  "private": false,
   "author": "Tesseract Collective",
   "license": "MIT",
   "scripts": {
