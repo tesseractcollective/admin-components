@@ -1,22 +1,24 @@
 import React, { ReactNode, useCallback, useEffect, useState } from 'react'
 import { Controller } from 'react-hook-form'
 import { classNames } from 'primereact/utils'
-import { Dropdown, DropdownProps } from 'primereact/dropdown'
 import { Skeleton } from 'primereact/skeleton'
 import { DataAdapter } from '../../DataAdapter'
 import { AdminInputBaseProps, validateProps } from '../AdminForm'
+import { AutoComplete, AutoCompleteProps } from 'primereact/autocomplete'
+import { useNavigate } from 'react-router-dom'
 
 interface InputRelationProps {
   relationshipColumnNameForLabel: string
   relationshipColumnNameForValue: string
   adapter: DataAdapter
-  where?: Record<string, any>
+  pkForRoute?: string
+  route?: string
 }
 
-export type AdminInputRelationProps = DropdownProps & AdminInputBaseProps & InputRelationProps
-type OptionProps = { value: any; label: string }
+export type AdminInputAutoCompleteProps = AutoCompleteProps & AdminInputBaseProps & InputRelationProps
+type OptionProps = { value: any; label: string; pk?: string }
 
-const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
+const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = props => {
   validateProps(props)
   const {
     control,
@@ -29,16 +31,19 @@ const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
     adapter,
     relationshipColumnNameForLabel,
     relationshipColumnNameForValue,
-    where,
     defaultValue,
+    pkForRoute,
+    route,
     onBlur,
     ...baseProps
   } = props
 
   const priorityLabel = attributeType?.label ?? label ?? name
 
-  const [options, setOptions] = useState<OptionProps[]>()
+  const [filteredOptions, setFilteredOptions] = useState<OptionProps[]>()
   const [lazyLoading, _setLazyLoading] = useState<any>(false)
+  const fieldValue = control?._getWatch(name)
+  const navigate = useNavigate()
 
   const itemTemplate = (tOptions: any): ReactNode => {
     const className = classNames('custom-scroll-item scroll-item', {
@@ -57,24 +62,33 @@ const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
       <div>{tOptions.label}</div>
     )
   }
-
   const getOptions = useCallback(async (): Promise<void> => {
-    // setLazyLoading(true)
-    await adapter?.infiniteManyQuery({ where, limit: 100 }).then(({ data }: Record<string, any>) => {
-      const items = data?.current?.map?.((item: Record<string, string>) => ({
-        value: item[relationshipColumnNameForValue],
-        label: item[relationshipColumnNameForLabel]
-      }))
-      setOptions(items || [])
-      // setLazyLoading(false)
-    })
-  }, [adapter, relationshipColumnNameForLabel, relationshipColumnNameForValue, where])
+    await adapter
+      ?.infiniteManyQuery({
+        limit: 100,
+        orderBy: { [name]: 'ASC' },
+        where: {
+          [name]: {
+            _isNull: false,
+            _ilike: fieldValue?.value ? `%${fieldValue?.value}%` : fieldValue ? `%${fieldValue}%` : '%%'
+          }
+        }
+      })
+      .then(({ data }: Record<string, any>) => {
+        const items = data?.current?.map?.((item: Record<string, string>) => ({
+          value: item[relationshipColumnNameForValue],
+          label: item[relationshipColumnNameForLabel],
+          pk: pkForRoute ? item[pkForRoute] : undefined
+        }))
+        setFilteredOptions(items)
+      })
+  }, [adapter, relationshipColumnNameForLabel, relationshipColumnNameForValue, fieldValue])
 
   useEffect(() => {
-    if (!options) {
+    if (!filteredOptions) {
       getOptions()
     }
-  }, [getOptions, options])
+  }, [getOptions, filteredOptions])
 
   return (
     <Controller
@@ -91,7 +105,7 @@ const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
         return (
           <div className={containerClassName}>
             <div className="p-float-label">
-              <Dropdown
+              <AutoComplete
                 {...inputProps}
                 className={`w-full ${invalid ? 'p-invalid' : ''}`}
                 onChange={e => {
@@ -100,28 +114,16 @@ const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
                   }
                   onChange({ target: { value: e.value } })
                 }}
+                field={props.field ?? 'value'}
                 onBlur={() => {
                   inputProps.onBlur()
                   onBlur && onBlur()
                 }}
-                // virtualScrollerOptions={
-                //   options && options.length < 100
-                //     ? undefined
-                //     : {
-                //         lazy: true,
-                //         itemSize: 100,
-                //         showLoader: true,
-                //         loading: lazyLoading,
-                //         delay: 0,
-                //         loadingTemplate: itemTemplate
-                //       }
-                // }
                 ref={ref}
-                filterBy="label"
-                options={options}
+                virtualScrollerOptions={{ itemSize: 50 }}
+                suggestions={filteredOptions}
+                completeMethod={getOptions}
                 itemTemplate={itemTemplate}
-                filter
-                showClear
                 {...baseProps}
               />
               <label htmlFor={name}>{priorityLabel}</label>
@@ -130,6 +132,23 @@ const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
               {helpText}
             </small>
             <small className="p-error p-d-block">{errorMessage}</small>
+            {filteredOptions?.[0]?.value === fieldValue && fieldValue ? (
+              <div className="text-yellow-500 flex items-center mt-1">
+                <i className="pi pi-exclamation-triangle mr-1" style={{ fontSize: '0.9rem' }} />
+                <small className="p-d-block">
+                  Already in the system.{' '}
+                  {filteredOptions?.[0]?.pk ? (
+                    <button
+                      type="button"
+                      className="text-blue-500 cursor-pointer underline"
+                      onClick={() => navigate(route ? route?.replace(':pk', filteredOptions?.[0]?.pk ?? '') : '')}
+                    >
+                      view
+                    </button>
+                  ) : null}
+                </small>
+              </div>
+            ) : null}
           </div>
         )
       }}
@@ -137,4 +156,4 @@ const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
   )
 }
 
-export default AdminInputRelation
+export default AdminInputAutoComplete

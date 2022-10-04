@@ -2,12 +2,17 @@ import React from 'react'
 import { Controller } from 'react-hook-form'
 import { InputTextProps, InputText } from 'primereact/inputtext'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
+import { InputTextarea, InputTextareaProps } from 'primereact/inputtextarea'
 
-export type AdminInputTextProps = InputTextProps & AdminInputBaseProps
+interface InputProps {
+  isTextArea?: boolean
+}
+
+export type AdminInputTextProps = InputTextProps & AdminInputBaseProps & InputTextareaProps & InputProps
 
 const AdminInputText: React.FC<AdminInputTextProps> = props => {
   validateProps(props)
-  const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseProps } = props
+  const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, isTextArea, onBlur, ...baseProps } = props
 
   const priorityLabel = attributeType?.label ?? label ?? name
   const description = attributeType?.description
@@ -28,20 +33,37 @@ const AdminInputText: React.FC<AdminInputTextProps> = props => {
         return (
           <div className={containerClassName}>
             <div className="p-float-label">
-              <InputText
-                {...baseProps}
-                {...attributeTypeProps}
-                id={name}
-                className={buildClassName(baseProps.className, errorMessage)}
-                value={field.value}
-                about={description}
-                onChange={field.onChange}
-                onBlur={() => {
-                  field.onBlur()
-                  onBlur && onBlur()
-                }}
-                ref={field.ref}
-              />
+              {!isTextArea ? (
+                <InputText
+                  {...baseProps}
+                  {...attributeTypeProps}
+                  id={name}
+                  className={buildClassName(baseProps.className, errorMessage)}
+                  value={field.value}
+                  about={description}
+                  onChange={field.onChange}
+                  onBlur={() => {
+                    field.onBlur()
+                    onBlur && onBlur()
+                  }}
+                  ref={field.ref}
+                />
+              ) : (
+                <InputTextarea
+                  {...baseProps}
+                  {...attributeTypeProps}
+                  id={name}
+                  className={buildClassName(baseProps.className, errorMessage)}
+                  value={field.value}
+                  about={description}
+                  onChange={field.onChange}
+                  onBlur={() => {
+                    field.onBlur()
+                    onBlur && onBlur()
+                  }}
+                  ref={field.ref}
+                />
+              )}
 
               <label htmlFor={name} className="capitalize">
                 {priorityLabel}

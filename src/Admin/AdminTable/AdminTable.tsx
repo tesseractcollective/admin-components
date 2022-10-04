@@ -1,17 +1,17 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { DataTable, DataTableGlobalFilterType, DataTablePFSEvent, DataTableProps } from 'primereact/datatable'
+import { isEqual } from '../'
 import { AdminTableAdapter, AdminTableState } from './AdminTableAdapter'
-import { isEqual } from '../utils'
 
 type AdminTableProps = {
   adapter: AdminTableAdapter
-  shouldSubscribe?: boolean
+  paginator?: boolean
 } & DataTableProps
 
 let debounceTimeout: any
 
 const _AdminTable: React.ForwardRefRenderFunction<DataTable, AdminTableProps> = (props, ref) => {
-  const { adapter, shouldSubscribe, filters, sortField, sortOrder, multiSortMeta, children, globalFilter: _gf, globalFilterFields, ...rest } = props
+  const { adapter, filters, sortField, sortOrder, multiSortMeta, children, globalFilter: _gf, globalFilterFields, paginator = true, ...rest } = props
 
   const [fields, setFields] = useState<string[]>([])
   const [tableState, setTableState] = useState<AdminTableState>(adapter.initialState)
@@ -51,17 +51,6 @@ const _AdminTable: React.ForwardRefRenderFunction<DataTable, AdminTableProps> = 
     onEvent(e)
     props.onPage?.(e)
   }
-
-  useEffect(() => {
-    if (shouldSubscribe) {
-      adapter.subscribe(fields, state => {
-        setTableState(state)
-      })
-    }
-    return () => {
-      adapter.unsubscribe()
-    }
-  }, [adapter, fields, shouldSubscribe])
 
   useEffect(() => {
     adapter.on('reload', () => {
@@ -186,7 +175,7 @@ const _AdminTable: React.ForwardRefRenderFunction<DataTable, AdminTableProps> = 
       onSort={onSort}
       filters={tableState.filters}
       onFilter={onFilter}
-      paginator
+      paginator={paginator}
       lazy
       first={tableState.first}
       rows={tableState.rows}

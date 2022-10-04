@@ -5,16 +5,17 @@ import { AttributeType } from '../types'
 
 export interface AdminInputBaseProps {
   name: string
-  control?: Control<any>
+  control?: Control
   label?: string
   helpText?: string
   containerClassName?: string
   attributeType?: AttributeType
   rules?: Omit<RegisterOptions, 'valueAsNumber' | 'valueAsDate' | 'setValueAs' | 'disabled'>
   onBlur?: () => void
-  onChange?: (e: any) => void
+  onChange?: () => void
   [key: string]: any
 }
+
 export interface AdminFormProps {
   className?: string
   children: React.ReactNode
@@ -24,9 +25,12 @@ export interface AdminFormProps {
   onInvalid?: (errors: any) => void
   shouldSubmit?: boolean
 }
+
 export const AdminForm: React.FC<AdminFormProps> = props => {
   const { className, children, defaultValues, attributeTypes: types, onSubmit, onInvalid, shouldSubmit } = props
+
   const formMethods = useForm<Record<string, any>>({ defaultValues })
+
   let attributeTypes: Record<string, AttributeType> = {}
   if (Array.isArray(types)) {
     types.forEach(type => {
@@ -35,24 +39,26 @@ export const AdminForm: React.FC<AdminFormProps> = props => {
   } else if (types) {
     attributeTypes = types
   }
+
   const { handleSubmit } = formMethods
+
   const handleShouldSubmit = useCallback((): void => {
     handleSubmit(
       e => onSubmit(e),
       e => onInvalid && onInvalid(e)
     )()
   }, [handleSubmit, onSubmit])
+
   useEffect(() => {
     if (shouldSubmit) handleShouldSubmit()
-    if (defaultValues) {
-      formMethods.reset(defaultValues)
-    }
-  }, [defaultValues, formMethods, handleShouldSubmit, shouldSubmit])
+  }, [shouldSubmit])
+
   return (
     <form className={className} onSubmit={handleSubmit(onSubmit)}>
       {React.Children.map(children, child => {
         const element = child as any
         const name = element?.props?.name
+
         return name
           ? React.createElement(element.type, {
               ...{
@@ -67,6 +73,7 @@ export const AdminForm: React.FC<AdminFormProps> = props => {
     </form>
   )
 }
+
 export function validateProps(props: AdminInputBaseProps & Record<string, any>): void {
   if (!props.control) {
     throw new Error('control prop required (control from React Hook Form')
@@ -75,6 +82,7 @@ export function validateProps(props: AdminInputBaseProps & Record<string, any>):
     throw new Error(`name ${props.name} does not match attribute type name ${props.attributeType.name}`)
   }
 }
+
 export function buildClassName(classNameFromProps: string | undefined, errorMessage?: string): string | undefined {
   return classNames(classNameFromProps, { 'w-full': !classNameFromProps }, { 'p-invalid': errorMessage })
 }

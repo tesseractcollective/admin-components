@@ -3,11 +3,28 @@ import { Controller } from 'react-hook-form'
 import { DropdownProps, Dropdown } from 'primereact/dropdown'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
 
-export type AdminInputSelectProps = DropdownProps & AdminInputBaseProps
+export type AdminInputSelectProps = DropdownProps &
+  AdminInputBaseProps & {
+    optionValueType?: 'string' | 'number'
+  }
 
 const AdminInputSelect: React.FC<AdminInputSelectProps> = props => {
   validateProps(props)
-  const { control, name, label, helpText, containerClassName, required, attributeType, onSelect, options, defaultValue, onBlur, ...baseProps } = props
+  const {
+    control,
+    name,
+    label,
+    helpText,
+    containerClassName,
+    required,
+    attributeType,
+    onSelect,
+    options,
+    defaultValue,
+    onBlur,
+    optionValueType,
+    ...baseProps
+  } = props
 
   const fieldProps = {
     ...baseProps,
@@ -32,13 +49,14 @@ const AdminInputSelect: React.FC<AdminInputSelectProps> = props => {
                 {...fieldProps}
                 id={name}
                 className={buildClassName(fieldProps.className, errorMessage)}
-                value={field.value}
+                value={optionValueType === 'number' ? `${field.value}` : field.value}
                 options={options || fieldProps.options}
                 onChange={e => {
+                  const value = optionValueType === 'number' ? Number(e.value) : e.value
                   if (onSelect) {
-                    onSelect(e.value)
+                    onSelect(value)
                   }
-                  field.onChange({ target: { value: e.value } })
+                  field.onChange({ target: { value: value } })
                 }}
                 onBlur={() => {
                   field.onBlur()

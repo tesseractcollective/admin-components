@@ -15,9 +15,9 @@ const ReactPhoneInput = (ReactPhoneInput2 as any).default ? (ReactPhoneInput2 as
 
 const AdminInputPhone: React.FC<AdminInputPhoneProps> = props => {
   validateProps(props)
-  const { control, name, helpText, containerClassName, required, attributeType, defaultValue, onBlur, onChange, ...baseProps } = props
+  const { control, name, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseProps } = props
   const validatePhoneNumber = (number?: string): boolean | string =>
-    isValidPhoneNumber(`+${number}`) || (!required && !number) ? true : 'Invalid Phone format'
+    number ? (isValidPhoneNumber(`+${number}`) ? true : 'Invalid Phone format') : true
 
   return (
     <Controller
@@ -72,11 +72,7 @@ const AdminInputPhone: React.FC<AdminInputPhoneProps> = props => {
               ref={field.ref}
               preferredCountries={['us']}
               value={field.value || ''}
-              onChange={(e: any, country: any) => {
-                // This on Change function allow us to handle the selected country
-                onChange?.(country)
-                field.onChange(e)
-              }}
+              onChange={field.onChange}
               onBlur={() => {
                 field.onBlur()
                 onBlur && onBlur()

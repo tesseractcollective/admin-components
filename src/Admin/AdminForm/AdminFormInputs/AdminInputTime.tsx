@@ -1,15 +1,16 @@
 import React from 'react'
-import { Checkbox, CheckboxProps } from 'primereact/checkbox'
 import { Controller } from 'react-hook-form'
+import { Calendar, CalendarProps } from 'primereact/calendar'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
 
-export type AdminInputBooleanProps = CheckboxProps & AdminInputBaseProps
+export type AdminInputTextProps = CalendarProps & AdminInputBaseProps
 
-const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
+const AdminInputText: React.FC<AdminInputTextProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseProps } = props
 
   const priorityLabel = attributeType?.label ?? label ?? name
+  const attributeTypeProps = attributeType?.props
 
   return (
     <Controller
@@ -25,15 +26,16 @@ const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
 
         return (
           <div className={containerClassName}>
-            <div className="field-checkbox flex items-center gap-2">
-              <Checkbox
+            <div className="p-float-label">
+              <Calendar
                 {...baseProps}
+                {...attributeTypeProps}
+                timeOnly
+                hourFormat="12"
+                id={name}
                 className={buildClassName(baseProps.className, errorMessage)}
-                style={{ width: '16px' }}
-                inputId={name}
                 value={field.value}
-                checked={field.value}
-                onChange={e => field.onChange(e.checked)}
+                onChange={field.onChange}
                 onBlur={() => {
                   field.onBlur()
                   onBlur && onBlur()
@@ -41,7 +43,7 @@ const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
                 ref={field.ref}
               />
 
-              <label htmlFor={name} className="capitalize p-text-secondary">
+              <label htmlFor={name} className="capitalize">
                 {priorityLabel}
               </label>
             </div>
@@ -56,4 +58,4 @@ const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
   )
 }
 
-export default AdminInputBoolean
+export default AdminInputText

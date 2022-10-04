@@ -12,6 +12,7 @@ function useTheme() {
         setThemeName('light')
       }
     }
+
     handleMatchEvent(window.matchMedia('(prefers-color-scheme: dark)'))
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', handleMatchEvent)
 

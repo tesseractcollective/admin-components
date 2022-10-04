@@ -15,14 +15,6 @@ export interface AttributeType {
   validation?: Record<string, any>
   [key: string]: any
 }
-export interface AttributeGroup {
-  name: string
-  label?: string
-  description?: string
-  meta?: Record<string, any>
-  order: number
-  types: AttributeType[]
-}
 
 export enum ValueType {
   Address = 'Address',

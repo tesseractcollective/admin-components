@@ -4,7 +4,6 @@ import AdminInputText, { AdminInputTextProps } from './AdminInputText'
 const AdminInputLink: React.FC<AdminInputTextProps> = props => {
   const isValidUrl = (url: string): string | boolean => {
     try {
-      if (!props.required && url === '') return true
       const urlObj = new URL(url)
       return urlObj ? true : 'Invalid URL'
     } catch (e) {

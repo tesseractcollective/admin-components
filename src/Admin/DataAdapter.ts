@@ -1,7 +1,6 @@
 import { DocumentNode, GraphQLSchema, Kind, print } from 'graphql'
 import { GraphQLClient } from 'graphql-request'
 import { GraphQLResponse } from 'graphql-request/dist/types'
-import { Client as WebSocketClient } from 'graphql-ws'
 
 export interface DataAdapter {
   infiniteManyQuery<T>(options?: InfiniteQueryOptions, fieldsFragmentOverride?: DocumentNode): Promise<GraphQLResponse<InfiniteQueryResponse<T>>>
@@ -26,8 +25,6 @@ export interface InfiniteQueryResponse<T> {
 
 export type HasuraGraphQLNamingConvention = 'hasuraDefault' | 'graphqlDefault'
 
-export type SubscriptionCallback = (error: any, data?: Record<string, any>) => void
-
 export class HasuraDataAdapter implements DataAdapter {
   client: GraphQLClient
 
@@ -39,58 +36,25 @@ export class HasuraDataAdapter implements DataAdapter {
 
   schema?: GraphQLSchema
 
-  webSocketClient?: WebSocketClient
-
-  previousSubscriptionValue?: string
-
   constructor(
     client: GraphQLClient,
     typename: string,
     fieldsFragment: DocumentNode,
     namingConvention: HasuraGraphQLNamingConvention,
-    schema?: GraphQLSchema,
-    webSocketClient?: WebSocketClient
+    schema?: GraphQLSchema
   ) {
     this.client = client
     this.typename = typename
     this.fieldsFragment = fieldsFragment
     this.namingConvention = namingConvention
     this.schema = schema
-    this.webSocketClient = webSocketClient
   }
 
   infiniteManyQuery<T>(options?: InfiniteQueryOptions, fieldsFragmentOverride?: DocumentNode): Promise<GraphQLResponse<InfiniteQueryResponse<T>>> {
     return this.client.rawRequest<InfiniteQueryResponse<T>, InfiniteQueryOptions>(this.buildInfiniteManyQuery(fieldsFragmentOverride), options)
   }
 
-  infiniteManySubscription(callback: SubscriptionCallback, options?: InfiniteQueryOptions, fieldsFragmentOverride?: DocumentNode): void {
-    const query = this.buildInfiniteManyQuery(fieldsFragmentOverride, true)
-    this.webSocketClient?.subscribe(
-      {
-        query,
-        variables: options as any
-      },
-      {
-        next: (value: any) => {
-          const valueString = JSON.stringify(value)
-          if (valueString !== this.previousSubscriptionValue) {
-            this.previousSubscriptionValue = valueString
-            callback(undefined, value.data)
-          }
-        },
-        error: error => {
-          callback(error, undefined)
-        },
-        complete: () => {}
-      }
-    )
-  }
-
-  unsubscribe(): void {
-    this.webSocketClient?.terminate()
-  }
-
-  private buildInfiniteManyQuery(fieldsFragmentOverride?: DocumentNode, isSubscription = false): string {
+  private buildInfiniteManyQuery(fieldsFragmentOverride?: DocumentNode): string {
     const fragmentDoc = fieldsFragmentOverride || this.fieldsFragment
     const fragmentDefinition = fragmentDoc.definitions.find(node => node.kind === Kind.FRAGMENT_DEFINITION)
     if (!fragmentDefinition || fragmentDefinition.kind !== Kind.FRAGMENT_DEFINITION) {
@@ -100,7 +64,7 @@ export class HasuraDataAdapter implements DataAdapter {
 
     if (this.namingConvention === 'hasuraDefault') {
       return `
-      ${isSubscription ? 'subscription' : 'query'} ${this.typename}List(
+      query ${this.typename}List(
         $where: ${this.typename}_bool_exp
         $orderBy: [${this.typename}_order_by!]
         $offset: Int
@@ -131,7 +95,7 @@ export class HasuraDataAdapter implements DataAdapter {
     const typeNamePascal = this.typename[0].toUpperCase() + this.typename.slice(1)
 
     return `
-    ${isSubscription ? 'subscription' : 'query'} ${this.typename}List(
+    query ${this.typename}List(
       $where: ${typeNamePascal}BoolExp
       $orderBy: [${typeNamePascal}OrderBy!]
       $offset: Int

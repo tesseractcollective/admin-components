@@ -1,7 +1,9 @@
 import React from 'react'
-import { AdminDetailTextProps, AdminDetailLabelWrapper, AdminDetailLabelWrapperProps, getValue } from '../AdminDetail'
+import { AdminDetailBaseProps, AdminDetailLabelWrapper, AdminDetailLabelWrapperProps, getValue } from '../AdminDetail'
 
-const AdminDetailRichText: React.FC<AdminDetailTextProps> = props => {
+export type AdminDetailTextProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+
+const AdminDetailText: React.FC<AdminDetailTextProps> = props => {
   const { className, attribute, type, value, ...rest } = props
 
   const wrapperProps: AdminDetailLabelWrapperProps = {
@@ -18,4 +20,4 @@ const AdminDetailRichText: React.FC<AdminDetailTextProps> = props => {
   )
 }
 
-export default AdminDetailRichText
+export default AdminDetailText

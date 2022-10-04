@@ -1,7 +1,10 @@
 // eslint-disable-next-line max-classes-per-file
-import { DataTableFilterMeta, DataTableMultiSortMetaType, DataTablePFSEvent, DataTableSortOrderType } from 'primereact/datatable'
-import { buildOrderBy, buildWhere, valueForPath, WhereClause } from './adminTableUtils'
+import { DataTableFilterMeta, DataTablePFSEvent, DataTableSortOrderType } from 'primereact/datatable'
+
+import { buildOrderBy, buildWhere, valueForPath } from './adminTableUtils'
 import { HasuraDataAdapter } from '../DataAdapter'
+
+export type WhereClause = Record<string, any>
 
 export interface AdminTableState {
   current: any[]
@@ -32,10 +35,6 @@ export abstract class AdminTableAdapter {
 
   abstract handlePrimeReactEvent(e: DataTablePFSEvent | undefined, fields: string[]): Promise<AdminTableState>
 
-  abstract subscribe(fields: string[], callback: (state: AdminTableState) => void): void
-
-  abstract unsubscribe(): void
-
   abstract fetchAllAsRecords(options: ExportOptions): Promise<Record<string, any>[]>
 
   on(event: AdminTableAdapterEvent, listener: EventListener): void {
@@ -56,13 +55,7 @@ export abstract class AdminTableAdapter {
 export class AdminTableHasuraAdapter extends AdminTableAdapter {
   dataAdapter: HasuraDataAdapter
 
-  lastEvent?: DataTablePFSEvent
-
   baseWhere?: WhereClause
-
-  baseDistinctOn?: string[]
-
-  baseOrderBy?: DataTableMultiSortMetaType
 
   readonly initialState: AdminTableState = {
     current: [],
@@ -71,64 +64,29 @@ export class AdminTableHasuraAdapter extends AdminTableAdapter {
     rows: 10
   }
 
-  constructor(dataAdapter: HasuraDataAdapter, baseWhere?: WhereClause, baseDistinctOn?: string[], baseOrderBy?: DataTableMultiSortMetaType) {
+  constructor(dataAdapter: HasuraDataAdapter, baseWhere?: WhereClause) {
     super()
     this.dataAdapter = dataAdapter
     this.baseWhere = baseWhere
-    this.baseDistinctOn = baseDistinctOn
-    this.baseOrderBy = baseOrderBy
   }
 
   async handlePrimeReactEvent(e: DataTablePFSEvent | undefined, fields: string[]): Promise<AdminTableState> {
-    this.lastEvent = e
     const rows = e?.rows || this.initialState.rows
     const first = e?.first || this.initialState.first
     const where = buildWhere(e?.filters, e?.globalFilter, e?.globalFilterFields, this.baseWhere)
-    const orderBy = buildOrderBy(this.dataAdapter.namingConvention, e?.sortField, e?.sortOrder, this.baseOrderBy)
+    const orderBy = buildOrderBy(this.dataAdapter.namingConvention, e?.sortField, e?.sortOrder, e?.multiSortMeta)
 
+    let { current, total } = this.initialState
     let error: string | undefined
 
     try {
-      const options = {
+      const result = await this.dataAdapter.infiniteManyQuery({
         limit: rows,
         offset: first,
         where,
-        distinctOn: this.baseDistinctOn,
         orderBy
-      }
-      // if (this.dataAdapter.webSocketClient) {
-      //   this.dataAdapter.websocketConfig = {
-      //     ...this.dataAdapter.websocketConfig,
-      //     options
-      //   }
-      //   this.dataAdapter.resetWebsocket()
-      // }
-      const result = await this.dataAdapter.infiniteManyQuery(options)
-      return this.createNewState(e, fields, result, error)
-    } catch (graphqlError) {
-      // TODO: parse error
-      console.log(graphqlError)
-      error = graphqlError
-      return this.createNewState(e, fields, undefined, error)
-    }
-  }
+      })
 
-  subscribe(fields: string[], callback: (state: AdminTableState) => void): void {
-    this.dataAdapter.infiniteManySubscription((error, data) => {
-      callback(this.createNewState(this.lastEvent, fields, data, error))
-    })
-  }
-
-  unsubscribe(): void {
-    this.dataAdapter.unsubscribe()
-  }
-
-  private createNewState(e: DataTablePFSEvent | undefined, fields: string[], result: any, error: string | undefined): AdminTableState {
-    const rows = e?.rows || this.initialState.rows
-    const first = e?.first || this.initialState.first
-    let { current, total } = this.initialState
-
-    if (result) {
       current =
         result.data?.current.map((item: any) => {
           const row: any = {}
@@ -142,6 +100,10 @@ export class AdminTableHasuraAdapter extends AdminTableAdapter {
           }
         }) || []
       total = result.data?.aggregate.aggregate.count || 0
+    } catch (graphqlError) {
+      // TODO: parse error
+      console.log(graphqlError)
+      error = graphqlError
     }
 
     const state: AdminTableState = {

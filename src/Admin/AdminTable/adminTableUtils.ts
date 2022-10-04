@@ -8,8 +8,7 @@ import {
   DataTableSortOrderType
 } from 'primereact/datatable'
 import { HasuraGraphQLNamingConvention } from '../DataAdapter'
-
-export type WhereClause = Record<string, any>
+import { WhereClause } from './AdminTableAdapter'
 
 const matchModeToEqualityFunction: Record<DataTableFilterMatchModeType, Function> = {
   contains: (value: any) => (typeof value === 'string' ? { _ilike: `%${value}%` } : { _eq: value }),
@@ -47,8 +46,7 @@ function whereClauseForFilter(path: Array<string>, filter: DataTableFilterMetaDa
         value: matchModeToEqualityFunction[filter.matchMode](filter.value)
       }
     }
-  }
-  if (rest.length === 0) {
+  } else if (rest.length === 0) {
     return {
       [key]: matchModeToEqualityFunction[filter.matchMode](filter.value)
     }
@@ -126,8 +124,9 @@ export function buildOrderBy(
   namingConvention: HasuraGraphQLNamingConvention,
   sortField?: string,
   sortOrder?: DataTableSortOrderType,
-  baseOrderBy?: DataTableMultiSortMetaType
-): Record<string, string>[] | undefined {
+  _multiSortMeta?: DataTableMultiSortMetaType
+): Record<string, string> | undefined {
+  // TODO: handle multiSort
   let sortMap = {
     '1': 'ASC_NULLS_LAST',
     '-1': 'DESC_NULLS_LAST'
@@ -138,25 +137,14 @@ export function buildOrderBy(
       '-1': 'desc_nulls_last'
     }
   }
-
-  const orderBy: Record<string, string>[] = []
-
-  if (baseOrderBy && baseOrderBy.length) {
-    orderBy.push(
-      ...baseOrderBy.map(order => {
-        if (!order.order) return { [order.field]: sortMap[`-1`] }
-        return { [order.field]: sortMap[`${order.order}`] }
-      })
-    )
+  if (!sortOrder || !sortField) {
+    return undefined
   }
-
-  if (sortOrder && sortField) {
-    const hasuraSortDirection = sortMap[`${sortOrder}`]
-    if (hasuraSortDirection) {
-      orderBy.push({ [sortField]: hasuraSortDirection })
-    }
+  const hasuraSortDirection = sortMap[`${sortOrder}`]
+  if (hasuraSortDirection) {
+    return { [sortField]: hasuraSortDirection }
   }
-  return orderBy.length ? orderBy : undefined
+  return undefined
 }
 
 export function valueForPath(path: string[], item: Record<string, any>, existingValue: any): any {
@@ -169,11 +157,9 @@ export function valueForPath(path: string[], item: Record<string, any>, existing
       ...existingValue,
       [rest[0]]: valueForPath(rest, item[key], existingValue?.[rest[0]])
     }
-  }
-  if ('name' in item && item.name === key) {
+  } else if ('name' in item && item.name === key) {
     return item.value
-  }
-  if (Array.isArray(item)) {
+  } else if (Array.isArray(item)) {
     return item
       .map(child => valueForPath(path, child, existingValue))
       .filter(value => !!value)

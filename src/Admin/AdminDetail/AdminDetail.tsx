@@ -1,9 +1,11 @@
-import React from 'react'
 import Case from 'case'
 import { nanoid } from 'nanoid'
 import { classNames } from 'primereact/utils'
-import { Attribute, AttributeGroup, AttributeType, ValueType } from '../types'
+import React from 'react'
+import { Attribute, AttributeType, ValueType } from '../types'
 import * as AdminDetails from './AdminDetailComponents'
+import { AdminDetailTextProps } from './AdminDetailComponents/AdminDetailDate'
+
 export interface AdminDetailBaseProps {
   value?: string
   type?: AttributeType
@@ -13,8 +15,6 @@ export interface AdminDetailBaseProps {
 }
 
 export type AdminDetailLabelWrapperProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
-
-export type AdminDetailTextProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 export const AdminDetailLabelWrapper: React.FC<AdminDetailLabelWrapperProps> = props => {
   const { value: _value, type, attribute, labelClassName, children, hideLabel, ...rest } = props
@@ -52,29 +52,10 @@ export const detailComponentForValueType = (type: ValueType | undefined): React.
   return Component as React.FC<AdminDetailTextProps>
 }
 
-export const adminDetailForAttribute = (attribute: Attribute | undefined, props?: AdminDetailLabelWrapperProps): React.FC<AdminDetailBaseProps> => {
+export const adminDetailForAttribute = (attribute: Attribute | undefined, props?: AdminDetailBaseProps): React.FC<AdminDetailBaseProps> => {
   const Component = detailComponentForValueType(attribute?.type.valueType)
   return (<Component {...props} key={attribute?.type.name || nanoid()} attribute={attribute} />) as any
 }
 
 export const adminDetailsForAttributes = (attributes: Attribute[], props: AdminDetailBaseProps): React.FC<AdminDetailBaseProps>[] =>
   attributes.map(attribute => adminDetailForAttribute(attribute, props)).filter(component => component !== null)
-
-export const findTypeInTypes = (types: AttributeType[], name: string): AttributeType | undefined => {
-  for (const type of types) {
-    if (type.name === name) {
-      return type
-    }
-  }
-  return undefined
-}
-
-export const findTypeInGroups = (groups: AttributeGroup[], name: string): AttributeType | undefined => {
-  for (const group of groups) {
-    const type = findTypeInTypes(group.types, name)
-    if (type) {
-      return type
-    }
-  }
-  return undefined
-}

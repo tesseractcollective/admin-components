@@ -7,7 +7,7 @@ const AdminInputEmail: React.FC<AdminInputTextProps> = props => {
       // eslint-disable-next-line max-len
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-    if (result.test(String(testEmail).toLowerCase()) || !testEmail) {
+    if (result.test(String(testEmail).toLowerCase())) {
       return true
     }
     return 'Email format is invalid'

@@ -7,7 +7,7 @@
   "author": "Tesseract Collective",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write src/**/*.ts{x}",
+    "format": "prettier --write **/*.ts{x,}",
     "lint": "npx eslint src --fix",
     "madge:check": "madge --circular --warning ./src"
   },

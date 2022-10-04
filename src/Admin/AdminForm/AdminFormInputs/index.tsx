@@ -16,7 +16,8 @@ import AdminInputState from './AdminInputState'
 import AdminInputText from './AdminInputText'
 import AdminInputToggle from './AdminInputToggle'
 import AdminInputYaml from './AdminInputYaml'
-import AdminInputNationalId from './AdminInputNationalId'
+import AdminInputAddressSingleLine from './AdminInputAddressSingleLine'
+import AdminInputFileUpload from './AdminInputFileUpload'
 
 // AdminInputAddress
 // AdminInputAddressSingleLine
@@ -44,24 +45,6 @@ export {
   AdminInputText,
   AdminInputToggle,
   AdminInputYaml,
-  AdminInputNationalId
+  AdminInputAddressSingleLine,
+  AdminInputFileUpload
 }
-
-// export const AdminInputBoolean = AdminInputBoolean;
-// AdminInputCelsius,
-// AdminInputChips,
-// AdminInputCode,
-// AdminInputCountry,
-// AdminInputDate,
-// AdminInputEmail,
-// AdminInputJson,
-// AdminInputLink,
-// AdminInputNumber,
-// AdminInputPhone,
-// AdminInputRelation,
-// AdminInputRichText,
-// AdminInputSelect,
-// AdminInputState,
-// AdminInputText,
-// AdminInputToggle,
-// AdminInputYaml
