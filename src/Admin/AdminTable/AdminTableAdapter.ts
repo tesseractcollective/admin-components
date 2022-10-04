@@ -100,7 +100,7 @@ export class AdminTableHasuraAdapter extends AdminTableAdapter {
           }
         }) || []
       total = result.data?.aggregate.aggregate.count || 0
-    } catch (graphqlError) {
+    } catch (graphqlError: any) {
       // TODO: parse error
       console.log(graphqlError)
       error = graphqlError
