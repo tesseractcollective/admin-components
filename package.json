@@ -12,7 +12,7 @@
     "format": "prettier --write **/*.ts{x,}",
     "lint": "npx eslint src --fix",
     "madge:check": "madge --circular --warning ./src",
-    "publish": "npm run lint && npm format && run  npm publish --access public"
+    "publish": "npm publish --access public"
   },
   "dependencies": {
     "@date-io/moment": "2.16.0",
