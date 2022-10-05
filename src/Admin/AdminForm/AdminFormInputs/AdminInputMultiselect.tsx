@@ -38,9 +38,6 @@ const AdminInputMultiSelect: React.FC<AdminInputMultiSelectProps> = props => {
                 value={field.value}
                 options={options || fieldProps.options}
                 onChange={field.onChange}
-                display="chip"
-                optionLabel="label"
-                optionValue="name"
                 showClear={baseProps.showClear ?? true}
                 showSelectAll={baseProps.showSelectAll ?? false}
                 ref={field.ref}
