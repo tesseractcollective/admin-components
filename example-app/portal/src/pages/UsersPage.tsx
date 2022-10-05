@@ -1,14 +1,13 @@
-import React from 'react'
-import { AdminTable, useDataAdapter, gqlClient } from '@tesseractcollective/admin-components'
+import React, { useContext } from 'react'
+import { AdminComponentContext, AdminTable, useDataAdapter } from '@tesseractcollective/admin-components'
 import { Column } from 'primereact/column'
 import { Card } from 'primereact/card'
 import { UserFieldsFragmentDoc } from '../graphql/generated/graphqlRequest'
 
-const client = gqlClient('https://tesseract-example.hasura.app/v1/graphql', 'jtW40EkPbgIadAVvoK1FImsNAiYEVYRAi7Xwfu9JPgSPI1Lxmophq0JBdAsdt7mx')
 
 const UsersPage: React.FC = () => {
+  const {client} = useContext(AdminComponentContext)
   const { tableAdapter } = useDataAdapter('users', UserFieldsFragmentDoc, client)
-
   return (
     <Card>
       <AdminTable className="mb-3" adapter={tableAdapter}>

@@ -11,14 +11,10 @@ export interface DataAdapters {
   tableAdapter: AdminTableHasuraAdapter
 }
 
-export function gqlClient(graphqlUrl: string, adminSecret: string): GraphQLClient {
-  const headers: RequestInit['headers'] = {
-    'x-hasura-admin-secret': adminSecret
+export function useDataAdapter(typename: string, fieldsFragment: DocumentNode, client?: GraphQLClient, baseWhere?: WhereClause): DataAdapters {
+  if (!client) {
+    throw new Error('No client provided to useDataAdapter')
   }
-  return new GraphQLClient(graphqlUrl, { headers })
-}
-
-export function useDataAdapter(typename: string, fieldsFragment: DocumentNode, client: GraphQLClient, baseWhere?: WhereClause): DataAdapters {
   const dataAdapter = useMemo(() => new HasuraDataAdapter(client, typename, fieldsFragment, namingConvention), [typename, fieldsFragment, client])
   const tableAdapter = useMemo(() => new AdminTableHasuraAdapter(dataAdapter, baseWhere), [baseWhere, dataAdapter])
   return { dataAdapter, tableAdapter }
