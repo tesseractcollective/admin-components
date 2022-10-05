@@ -18,6 +18,7 @@ import AdminInputToggle from './AdminInputToggle'
 import AdminInputYaml from './AdminInputYaml'
 import AdminInputAddressSingleLine from './AdminInputAddressSingleLine'
 import AdminInputFileUpload from './AdminInputFileUpload'
+import AdminInputMultiselect from './AdminInputMultiselect'
 
 // AdminInputAddress
 // AdminInputAddressSingleLine
@@ -46,5 +47,6 @@ export {
   AdminInputToggle,
   AdminInputYaml,
   AdminInputAddressSingleLine,
-  AdminInputFileUpload
+  AdminInputFileUpload,
+  AdminInputMultiselect
 }
