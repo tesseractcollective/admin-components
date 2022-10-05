@@ -31,10 +31,20 @@ function useTheme() {
     window.addEventListener('storage', updateFromStorage)
   }, [])
 
+  const updateThemeName = (newThemeName: ThemeName) => {
+    setThemeName(newThemeName)
+    try {
+      localStorage.setItem('isDark', newThemeName === 'dark' ? 'true' : 'false')
+    } catch {
+      // ignore
+    }
+  }
+
   return {
     themeName,
     isDarkMode: themeName === 'dark',
-    isLightMode: themeName === 'light'
+    isLightMode: themeName === 'light',
+    updateThemeName
   }
 }
 

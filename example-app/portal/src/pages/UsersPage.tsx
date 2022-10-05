@@ -4,10 +4,10 @@ import { Column } from 'primereact/column'
 import { Card } from 'primereact/card'
 import { UserFieldsFragmentDoc } from '../graphql/generated/graphqlRequest'
 
-
 const UsersPage: React.FC = () => {
-  const {client} = useContext(AdminComponentContext)
+  const { client } = useContext(AdminComponentContext)
   const { tableAdapter } = useDataAdapter('users', UserFieldsFragmentDoc, client)
+
   return (
     <Card>
       <AdminTable className="mb-3" adapter={tableAdapter}>

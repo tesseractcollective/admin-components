@@ -1,5 +1,4 @@
 import { AdminComponentWrapper } from '../../../src'
-import './App.css'
 import UsersPage from './pages/UsersPage'
 import { GraphQLClient } from 'graphql-request'
 
