@@ -2,24 +2,26 @@ import { GraphQLClient } from 'graphql-request'
 import React, { useEffect, createContext } from 'react'
 import 'primeicons/primeicons.css'
 import 'primereact/resources/primereact.min.css'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import '../../styles/theme.css'
 import '../../styles/index.css'
 import useTheme, { ThemeName } from './../useTheme'
 import { darkTheme, lightTheme } from './theme-colors'
 
+const queryClient = new QueryClient()
 interface Props {
   children: React.ReactNode
   client: GraphQLClient
 }
 
 interface IAdminComponentContext {
-  client?: GraphQLClient
+  client: GraphQLClient
   themeName: 'light' | 'dark'
   updateThemeName: (newThemeName: ThemeName) => void
 }
 
 export const AdminComponentContext = createContext<IAdminComponentContext>({
-  client: undefined,
+  client: new GraphQLClient(''),
   themeName: 'light',
   updateThemeName: () => {}
 })
@@ -40,15 +42,15 @@ export const AdminComponentWrapper: React.FC<Props> = props => {
     }
   }, [isDarkMode])
 
+  const defaultContext: IAdminComponentContext = {
+    client,
+    themeName,
+    updateThemeName
+  }
+
   return (
-    <AdminComponentContext.Provider
-      value={{
-        client,
-        themeName,
-        updateThemeName
-      }}
-    >
-      {children}
+    <AdminComponentContext.Provider value={defaultContext}>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </AdminComponentContext.Provider>
   )
 }

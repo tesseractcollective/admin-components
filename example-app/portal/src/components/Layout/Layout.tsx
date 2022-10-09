@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Toolbar } from 'primereact/toolbar'
 import { ThemeSwitch } from '../ThemeSwitch/ThemeSwitch'
-import { AdminComponentContext } from '../../../../../src'
+import { AdminComponentContext } from '@tesseractcollective/admin-components'
 
 interface Props {
   children: React.ReactNode
