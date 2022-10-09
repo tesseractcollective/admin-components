@@ -1,0 +1,111 @@
+.MuiPopover-root {
+  z-index: 999999 !important;
+}
+
+.MuiFormControl-root.p-invalid > .MuiInputBase-root > fieldset {
+  border-color: var(--form-error-border) !important;
+}
+.MuiFormControl-root.p-invalid > .MuiOutlinedInput-root:hover > fieldset {
+  border-color: var(--form-error-border) !important;
+}
+
+.MuiFormLabel-root {
+  color: var(--text-color-secondary) !important;
+  line-height: 0.5 !important;
+}
+
+.MuiOutlinedInput-root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: var(--text-color) !important;
+  background: var(--form-background);
+  padding: 12px !important;
+  transition: none;
+  appearance: none;
+  border-radius: var(--border-radius) !important;
+}
+.MuiOutlinedInput-root:hover > fieldset {
+  border: 1px solid var(--primary-color) !important;
+}
+.MuiOutlinedInput-root.Mui-focused > fieldset {
+  box-shadow: 0 0 0 1px var(--focus-ring);
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color);
+}
+.MuiOutlinedInput-input {
+  font-size: 1rem;
+  padding: 0 !important;
+  min-height: 26px;
+}
+
+.MuiIconButton-root {
+  color: var(--text-color) !important;
+}
+
+.MuiPickersYear-root {
+  color: var(--text-color) !important;
+}
+
+.MuiPickersSlideTransition-transitionContainer > * {
+  color: var(--text-color) !important;
+}
+
+.MuiPickersDay-day {
+  color: var(--text-color) !important;
+}
+.MuiPickersDay-day:hover {
+  background-color: var(--form-hover-border) !important;
+  color: white !important;
+}
+.MuiPickersDay-daySelected {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+.MuiPickersCalendarHeader-iconButton {
+  background: var(--form-background) !important;
+}
+.MuiPickersCalendarHeader-dayLabel {
+  color: var(--text-color) !important;
+}
+
+.MuiPickersBasePicker-pickerView {
+  background: var(--form-background) !important;
+}
+
+.MuiPickersToolbar-toolbar {
+  background-color: var(--primary-color) !important;
+}
+
+.MuiTypography-colorPrimary {
+  color: var(--primary-color) !important;
+}
+
+.MuiInputLabel-root {
+  margin-left: -4px;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+.MuiInputLabel-root.Mui-focused {
+  background-color: var(--surface-section);
+  padding: 6px !important;
+  margin-top: 0;
+  line-height: 1;
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(12px, -6px) scale(0.75) !important;
+  background-color: var(--surface-section);
+  padding: 6px !important;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.PrivateNotchedOutline-root-1,
+.MuiOutlinedInput-notchedOutline {
+  padding: 0px !important;
+  border-color: var(--form-border) !important;
+}
+.PrivateNotchedOutline-legendLabelled-3 {
+  z-index: 1 !important;
+  width: 0 !important;
+}

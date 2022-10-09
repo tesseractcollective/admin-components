@@ -6,7 +6,8 @@ import { MaterialUiPickersDate } from '@material-ui/pickers/typings/date'
 import { KeyboardDatePicker, KeyboardDatePickerProps } from '@material-ui/pickers/DatePicker'
 import { ParsableDate } from '@material-ui/pickers/constants/prop-types'
 import moment from 'moment'
-import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
+import { AdminInputBaseProps, buildClassName, validateProps } from '../../AdminForm'
+import './AdminInputDate.scss'
 
 export type AdminInputDateProps = AdminInputBaseProps &
   Omit<KeyboardDatePickerProps, 'onChange' | 'value'> & {
