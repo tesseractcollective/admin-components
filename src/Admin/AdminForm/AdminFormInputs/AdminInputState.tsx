@@ -46,6 +46,7 @@ const AdminInputState: React.FC<AdminInputStateProps> = props => {
   const [id] = useState(nanoid())
   const [isFirstRender, setIsFirstRender] = useState(true)
   const [hasFocus, setHasFocus] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [allStates, setAllStates] = useState<AddressState[]>([])
   const [states, setStates] = useState<AddressState[]>([])
   const [currentInput, setCurrentInput] = useState('')
@@ -58,8 +59,6 @@ const AdminInputState: React.FC<AdminInputStateProps> = props => {
     ...attributeType?.props
   }
 
-  // const { sdkClient } = useUserContext()
-
   const stateOptionTemplate = (option: AddressState): JSX.Element => (
     <div className="flex items-center">
       <div className="mr-3">{option.name}</div>
@@ -67,26 +66,25 @@ const AdminInputState: React.FC<AdminInputStateProps> = props => {
     </div>
   )
 
-  // useEffect(() => {
-  //   if (countryCode) {
-  //     sdkClient
-  //       .addressStatesByCountryCode({ countryCode })
-  //       .then(data => {
-  //         const statesData = data.addressStatesByCountryCode || []
-  //         setAllStates(statesData.sort((a, b) => a.name.localeCompare(b.name)))
-  //       })
-  //       .catch(() => {
-  //         toast.current?.show({
-  //           severity: 'error',
-  //           summary: `No states for country code ${countryCode}`,
-  //           life: 3000
-  //         })
-  //       })
-  //   } else if (!isFirstRender) {
-  //     setAllStates([])
-  //     setCurrentInput('')
-  //   }
-  // }, [sdkClient, countryCode, currentInput, isFirstRender])
+  useEffect(() => {
+    if (countryCode) {
+      setIsLoading(true)
+      fetch(`https://geo.tesseractcollective.com/states/${countryCode}.json`)
+        .then(response => response.json())
+        .then((s: AddressState[]) => {
+          setIsLoading(false)
+          setAllStates(s)
+          setStates(s)
+        })
+        .catch(error => {
+          toast.current?.show({ severity: 'error', summary: 'Error Message', detail: error.message })
+          setIsLoading(false)
+        })
+    } else {
+      setAllStates([])
+      setCurrentInput('')
+    }
+  }, [countryCode])
 
   useEffect(() => {
     setIsFirstRender(false)
@@ -126,7 +124,8 @@ const AdminInputState: React.FC<AdminInputStateProps> = props => {
                   field="name"
                   dropdown
                   delay={0}
-                  suggestions={states}
+                  disabled={isLoading || states.length === 0}
+                  suggestions={isLoading ? [] : states}
                   completeMethod={(e: AutoCompleteCompleteMethodParams) => {
                     setCurrentInput(e.query)
                     const { state, filteredStates } = searchState(e.query, allStates)

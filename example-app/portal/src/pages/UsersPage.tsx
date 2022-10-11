@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import { AdminComponentContext, AdminTable, useDataAdapter } from '@tesseractcollective/admin-components'
 import { Column } from 'primereact/column'
 import { Card } from 'primereact/card'
-import { UserFieldsFragmentDoc } from '../graphql/generated/graphqlRequest'
 import { Button } from 'primereact/button'
+import { Toast } from 'primereact/toast'
+import { UserFieldsFragmentDoc } from '../graphql/generated/graphqlRequest'
 import { AddUsers } from '../components/AddUsers/AddUsers'
 import { useUpsertUsersMutation } from '../graphql/generated/resourceApi'
 
@@ -12,6 +13,7 @@ const UsersPage: React.FC = () => {
   const { tableAdapter } = useDataAdapter('users', UserFieldsFragmentDoc, client)
   const [showAddUser, setShowAddUser] = React.useState(false)
   const [loading, setLoading] = React.useState(false)
+  const toast = useRef<Toast>(null)
   const userUpsert = useUpsertUsersMutation(client)
   const onSubmit = async (data: Record<string, any>) => {
     try {
@@ -19,9 +21,12 @@ const UsersPage: React.FC = () => {
       await userUpsert.mutateAsync({
         objects: data
       })
+      tableAdapter.reload()
+      toast.current?.show({ severity: 'success', summary: 'Success Message', detail: 'Added User' })
       setShowAddUser(false)
-    } catch (error) {
+    } catch (error: any) {
       console.error(error)
+      toast.current?.show({ severity: 'error', summary: 'Error Message', detail: error.message })
     } finally {
       setLoading(false)
     }
@@ -29,6 +34,7 @@ const UsersPage: React.FC = () => {
 
   return (
     <>
+      <Toast ref={toast} />
       <AddUsers loading={loading} isOpen={showAddUser} onClose={() => setShowAddUser(false)} onSubmit={onSubmit} />
       <Card
         title={() => (
