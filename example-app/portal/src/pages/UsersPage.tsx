@@ -5,12 +5,12 @@ import { Card } from 'primereact/card'
 import { Button } from 'primereact/button'
 import { Toast } from 'primereact/toast'
 import { UserFieldsFragmentDoc } from '../graphql/generated/graphqlRequest'
-import { AddUsers } from '../components/AddUsers/AddUsers'
+import { AddUsersModal } from '../components/AddUsersModal/AddUsersModal'
 import { useUpsertUsersMutation } from '../graphql/generated/resourceApi'
 
 const UsersPage: React.FC = () => {
   const { client } = useContext(AdminComponentContext)
-  const { tableAdapter } = useDataAdapter('users', UserFieldsFragmentDoc, client)
+  const { tableAdapter } = useDataAdapter('users', UserFieldsFragmentDoc)
   const [showAddUser, setShowAddUser] = React.useState(false)
   const [loading, setLoading] = React.useState(false)
   const toast = useRef<Toast>(null)
@@ -35,7 +35,7 @@ const UsersPage: React.FC = () => {
   return (
     <>
       <Toast ref={toast} />
-      <AddUsers loading={loading} isOpen={showAddUser} onClose={() => setShowAddUser(false)} onSubmit={onSubmit} />
+      <AddUsersModal loading={loading} isOpen={showAddUser} onClose={() => setShowAddUser(false)} onSubmit={onSubmit} />
       <Card
         title={() => (
           <div className="flex flex-row gap-4 items-center justify-between">

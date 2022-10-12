@@ -20,7 +20,7 @@ interface Props {
   onSubmit: (data: Record<string, any>) => void
 }
 
-export const AddUsers: React.FC<Props> = ({ defaultValues, isOpen, onClose, onSubmit, loading }) => {
+export const AddUsersModal: React.FC<Props> = ({ defaultValues, isOpen, onClose, onSubmit, loading }) => {
   const [selectedCountry, setSelectedCountry] = React.useState<AddressCountry>()
   return (
     <>
@@ -42,7 +42,7 @@ export const AddUsers: React.FC<Props> = ({ defaultValues, isOpen, onClose, onSu
           <AdminInputText isTextArea required containerClassName="w-full" name="address1" label="Address 1" />
           <AdminInputText isTextArea required containerClassName="w-full" name="address2" label="Address 2" />
           <AdminInputCountry required containerClassName="w-full" name="country" label="Country" onCountrySelect={setSelectedCountry} />
-          <AdminInputState required containerClassName="w-full" name="state" label="State" countryCode={selectedCountry?.code} />
+          <AdminInputState required containerClassName="w-full" name="state" label="State" countryCode={selectedCountry?.code || ''} />
           <AdminInputText required containerClassName="w-full" name="city" label="City" />
           <AdminInputNumber required containerClassName="w-full" name="postal_code" label="Postal Code" />
           <div className="grid sm:col-span-2 place-content-center">

@@ -33,7 +33,7 @@ const searchState = (
 
 export type AdminInputStateProps = AutoCompleteProps &
   AdminInputBaseProps & {
-    countryCode?: string
+    countryCode: string
   }
 
 const AdminInputState: React.FC<AdminInputStateProps> = props => {
