@@ -15,16 +15,18 @@ const AdminDetailAttributes: React.FC<ValuesDetailProps> = ({ attributes, types,
   <>
     <div style={{ width: '100%' }}>
       <Card>
-        <div className="pt-1 font-semibold text-xl border-solid border-b-2 p-primary-border-color mb-3 justify-between w-full flex flex-row">
-          {label}
-          {onEditButtonClick && <Button label="Edit" icon="pi pi-pencil" className="p-button-text text-primary" onClick={onEditButtonClick} />}
-        </div>
-        {types
-          ? types.map(type => {
-              const attribute = attributes.find(a => a.name === type.name)
-              return adminDetailForAttribute(attribute, { type })
-            })
-          : attributes.map(attribute => adminDetailForAttribute(attribute))}
+        <>
+          <div className="pt-1 font-semibold text-xl border-solid border-b-2 p-primary-border-color mb-3 justify-between w-full flex flex-row">
+            {label}
+            {onEditButtonClick && <Button label="Edit" icon="pi pi-pencil" className="p-button-text text-primary" onClick={onEditButtonClick} />}
+          </div>
+          {types
+            ? types.map(type => {
+                const attribute = attributes.find(a => a.name === type.name)
+                return adminDetailForAttribute(attribute, { type })
+              })
+            : attributes.map(attribute => adminDetailForAttribute(attribute))}
+        </>
       </Card>
     </div>
   </>

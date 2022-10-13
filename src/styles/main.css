@@ -1,0 +1,321 @@
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.sortable-helper {
+  z-index: 10000;
+}
+
+.delete-button-helper {
+  z-index: 10010;
+}
+
+.dzu-previewFileName {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color) !important;
+}
+
+.dzu-previewContainer {
+  border: 1px solid var(--form-border);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: var(--surface-header);
+  border-radius: var(--border-radius);
+}
+
+.dzu-previewButton {
+  filter: brightness(2) sepia(1) hue-rotate(0deg) saturate(0);
+}
+
+.dzu-dropzone {
+  align-items: flex-start !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--primary-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--surface-border);
+  border-radius: 4px;
+}
+
+:root {
+  --blue-device-background: #0f4570;
+  --blue-device-logo: #2196f3;
+  --red-device-background: #ff7581;
+  --red-device-logo: #c24c54;
+  --green-device-background: #003b34;
+  --green-device-logo: #008071;
+  --black-device-background: #333;
+  --black-device-logo: #181818;
+  --white-device-background: #fff;
+  --white-device-logo: #c0bfbf;
+  --yellow-device-background: #f9f06e;
+  --yellow-device-logo: #f3cd45;
+  --mint-device-background: #bfdea9;
+  --mint-device-logo: #659e5a;
+  --purple-device-background: #e6d5e8;
+  --purple-device-logo: #8e88c1;
+  --bright-50: #fff;
+  --bright-100: #f7f9f9;
+  --bright-200: #b9cad3;
+  --dim-50: #6a7c8b;
+  --dim-100: #192734;
+  --dim-200: #15202b;
+  --dark-50: #3d4145;
+  --dark-100: #15181c;
+  --dark-200: #000;
+  --ui-50: var(--bright-50);
+  --ui-100: var(--bright-100);
+  --ui-200: var(--bright-200);
+  --r-50: #ffd4d8;
+  --r-100: #ee8a94;
+  --r-200: #e23b4d;
+  --r-300: #b42635;
+  --r-400: #f19ea7;
+  --r-500: #5e000b;
+  --r-200-rgb: 226, 59, 77;
+  --y-50: #ffefa1;
+  --y-100: #f9e29c;
+  --y-200: #ffc107;
+  --y-300: #c99a0d;
+  --y-400: #ffe083;
+  --y-500: #644b01;
+  --y-200-rgb: 255, 193, 7;
+  --g-50: #d8f0d8;
+  --g-100: #ace6ac;
+  --g-200: #74d674;
+  --g-300: #63ba63;
+  --g-400: #baebba;
+  --g-500: #005e00;
+  --g-200-rgb: 116, 214, 116;
+  --b-50: #d4ecff;
+  --b-100: #95cbf4;
+  --b-200: #4fa8ed;
+  --b-300: #3a87c2;
+  --b-400: #a7d4f6;
+  --b-500: #00365f;
+  --b-200-rgb: 79, 168, 237;
+  --p-50: #e1dbf8;
+  --p-100: #b0a0ff;
+  --p-200: #7b61ff;
+  --p-300: #634cda;
+  --p-400: #d8d0ff;
+  --p-500: #130074;
+  --p-200-rgb: 123, 97, 255;
+  --bg-50: #d3e8e6;
+  --bg-100: #96e0d7;
+  --bg-200: #50ccbd;
+  --bg-300: #3d9d92;
+  --bg-400: #a8e6de;
+  --bg-500: #00493f;
+  --bg-200-rgb: 80, 204, 189;
+  --w-50: #eef2f8;
+  --w-100: #9ea5af;
+  --w-200: #414141;
+  --w-300: #000;
+  --w-400: #000;
+  --w-500: #000;
+  --w-200-rgb: 65, 65, 65, 1;
+  --bl-50: #eef2f8;
+  --bl-100: #b8bfca;
+  --bl-200: #3b3c3f;
+  --bl-300: #474747;
+  --bl-400: #fff;
+  --bl-500: #000;
+  --bl-200-rgb: 59, 60, 63;
+  --color-50: var(--w-50);
+  --color-100: var(--w-100);
+  --color-200: var(--w-200);
+  --color-300: var(--w-300);
+  --color-400: var(--w-400);
+  --icon-theme: var(--color-200);
+  --main-bg-color: var(--bright-50);
+  --secondary-bg-color: var(--bright-50);
+  --main-bg-color-70: hsla(0, 0%, 100%, 0.7);
+  --b100-text-color: #000;
+  --b200-text-color: #192734;
+  --b300-text-color: #6a7c8b;
+  --grey-25: #eef2f8;
+  --grey-100: #cccfd3;
+  --grey-200: #9ea5af;
+  --grey-400: #d4dbe6;
+  --error-red: #ec4242;
+  --valid-green: #6bfa8b;
+  --a50-accent-color: rgba(184, 191, 202, 0.3);
+  --a100-accent-color: var(--color-50);
+  --a200-accent-color: var(--bright-400);
+  --toggle-on: #b9cad3;
+  --toggle-off: #6a7c8b;
+  --enabled-text-box: var(--bright-100);
+  --light-accent-color: var(--grey-25);
+  --icon-shadow: rgba(110, 135, 171, 0.5019607843137255);
+  --pos-sticky: 0;
+
+  --ui-50: var(--bright-50);
+  --ui-100: var(--bright-100);
+  --ui-200: var(--bright-200);
+  --main-bg-color: var(--bright-50);
+  --secondary-bg-color: var(--bright-50);
+  --b100-text-color: var(--dark-200);
+  --b200-text-color: var(--dim-100);
+  --b300-text-color: var(--grey-200);
+  --a100-accent-color: var(--color-50);
+  --a200-accent-color: var(--color-400);
+  --light-accent-color: var(--white-50);
+  --toggle-on: var(--bright-200);
+  --toggle-off: var(--grey-25);
+  --enabled-text-box: var(--bright-100);
+  --icon-shadow: var(--icon-shadow);
+  --container-background: var(--ui-50);
+  --container-box-shadow: 0px 0px 20px rgba(110, 135, 171, 0.15);
+  --disabled-border: rgba(0, 0, 10, 0.2);
+  --disabled-background: rgba(0, 0, 10, 0.1);
+  --background-overlay: rgba(0, 0, 0, 0.2);
+  --menu-shadow: 0px -56px 80px rgba(110, 135, 171, 0.07), 0px -28.0273px 40.0391px rgba(110, 135, 171, 0.0532233),
+    0px -16.8824px 24.1177px rgba(110, 135, 171, 0.0456112), 0px -10.8191px 15.4559px rgba(110, 135, 171, 0.0399626),
+    0px -7.01207px 10.0172px rgba(110, 135, 171, 0.035), 0px -4.41402px 6.30574px rgba(110, 135, 171, 0.0300374),
+    0px -2.53613px 3.62304px rgba(110, 135, 171, 0.0243888), 0px -1.11622px 1.59459px rgba(110, 135, 171, 0.0167767);
+  --color-50: var(--w-50);
+  --color-100: var(--w-100);
+  --color-200: var(--w-200);
+  --color-300: var(--w-300);
+  --color-400: var(--w-400);
+  --color-500: var(--w-500);
+  --icon-color: var(--color-200);
+  --color-200-rgb: var(--w-200-rgb);
+
+  --Website: var(--bright-50);
+  --Email: linear-gradient(180deg, #1d61ee, #1ad3ff);
+  --Phone: linear-gradient(148.8deg, #61fb7c 4.26%, #0fbe2c 86.09%);
+  --WhatsApp: linear-gradient(158.26deg, #5efc7b 7.47%, #09b927 84.33%);
+  --Address: var(--bright-50);
+  --Signal: #3a76f0;
+  --Discord: #5865f2;
+  --Telegram: var(--bright-50);
+  --WeChat: linear-gradient(134.49deg, #03e172 6.84%, #06c462 93.24%);
+  --Spotify: #181413;
+  --SoundCloud: #ff5419;
+  --AppleMusic: linear-gradient(180deg, #fc5c79, #fc243d);
+  --iTunes: var(--bright-50);
+  --Beatport: var(--dark-200);
+  --Deezer: var(--dark-200);
+  --Tidal: linear-gradient(144.51deg, #403f45 18.49%, #000 90.92%);
+  --YoutubeMusic: var(--bright-50);
+  --Bandcamp: #f2f2f2;
+  --AmazonMusic: var(--bright-50);
+  --Calendly: var(--bright-50);
+  --Notion: var(--bright-50);
+  --GoogleDrive: var(--bright-50);
+  --Dribbble: var(--bright-50);
+  --Github: linear-gradient(180deg, #3a3a3a, #000);
+  --Behance: #000322;
+  --Medium: var(--dark-200);
+  --Booksy: #02cfa7;
+  --Etsy: #f45800;
+  --Instagram: radial-gradient(
+      94.08% 94.08% at 27.22% 112.68%,
+      #fff7ad 1.04%,
+      #f7ac3e 25.52%,
+      rgba(241, 90, 48, 0.39) 64.06%,
+      rgba(189, 68, 177, 0) 100%
+    ),
+    linear-gradient(160.39deg, #4c68d6 9.9%, rgba(212, 53, 133, 0) 83.73%), #ff0080;
+  --Twitter: #1ea1f2;
+  --Facebook: #1877f2;
+  --LinkedIn: #225982;
+  --YouTube: red;
+  --Snapchat: #fffd01;
+  --TikTok: var(--dark-200);
+  --Twitch: #9146ff;
+  --Pinterest: var(--bright-50);
+  --Vimeo: var(--bright-50);
+  --Clubhouse: var(--bright-50);
+  --Yelp: radial-gradient(67.99% 67.99% at 45.97% 25.67%, #e3738e 0%, #ff0411 100%);
+  --Venmo: linear-gradient(341.2deg, #368ec6 14.18%, #5ec2f3 83.08%);
+  --CashApp: #00d632;
+  --PayPal: linear-gradient(135deg, #002a6f, #0093d5);
+  --Zelle: linear-gradient(180deg, #701cca, #9a3fdf);
+  --sketelon-grey: #e5e8ec;
+  --b-device-background: #0f4570;
+  --b-device-logo: #2196f3;
+  --r-device-background: #ff7581;
+  --r-device-logo: #c24c54;
+  --bg-device-background: #003b34;
+  --bg-device-logo: #008071;
+  --bl-device-background: #333;
+  --bl-device-logo: #181818;
+  --w-device-background: #fff;
+  --w-device-logo: #c0bfbf;
+  --y-device-background: #f9f06e;
+  --y-device-logo: #f3cd45;
+  --g-device-background: #bfdea9;
+  --g-device-logo: #659e5a;
+  --p-device-background: #e6d5e8;
+  --p-device-logo: #8e88c1;
+  --icon-box-shadow: 0px 0px 20px rgba(110, 135, 171, 0.5);
+  --icon-border-radius: 50%;
+  --disabled-border: rgba(0, 0, 10, 0.2);
+  --disabled-background: rgba(0, 0, 10, 0.1);
+  --background-overlay: rgba(0, 0, 0, 0.2);
+  --container-box-shadow: 0px 0px 20px rgba(110, 135, 171, 0.15);
+  --button-shadow-cap: 0px 2px 0px var(--color-300);
+  --button-shadow-500: var(--button-shadow-cap), 0px 61px 111px rgba(47, 50, 69, 0.15), 0px 39.0082px 46.3731px rgba(47, 50, 69, 0.120339),
+    0px 23.3274px 24.7933px rgba(47, 50, 69, 0.102683), 0px 12.9302px 13.8989px rgba(47, 50, 69, 0.0877355);
+  --menu-shadow: 0px -56px 80px rgba(110, 135, 171, 0.07), 0px -28.0273px 40.0391px rgba(110, 135, 171, 0.0532233),
+    0px -16.8824px 24.1177px rgba(110, 135, 171, 0.0456112), 0px -10.8191px 15.4559px rgba(110, 135, 171, 0.0399626),
+    0px -7.01207px 10.0172px rgba(110, 135, 171, 0.035), 0px -4.41402px 6.30574px rgba(110, 135, 171, 0.0300374),
+    0px -2.53613px 3.62304px rgba(110, 135, 171, 0.0243888), 0px -1.11622px 1.59459px rgba(110, 135, 171, 0.0167767);
+  --ui-50: var(--bright-50);
+  --icon-background: var(--color-100);
+  --icon-color: var(--color-200);
+  --color-200-rgb: #fff;
+  --container-background: var(--ui-50);
+  --transition-ease: all 0.3s ease;
+}
+
+.secondary-card {
+  background-color: var(--surface-content);
+}
+
+.text-colors {
+  display: inline-block;
+  background: linear-gradient(to right, #00cfe5, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-primary {
+  color: var(--primary-color-text);
+}

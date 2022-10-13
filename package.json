@@ -2,8 +2,9 @@
   "name": "@tesseractcollective/admin-components",
   "version": "1.0.1",
   "description": "Form and Data Table Components for Admin Interfaces",
-  "main": "./src/index.ts",
-  "module": "./src/index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "repository": "git@https://github.com/tesseractcollective/admin-components.git",
   "private": false,
   "author": "Tesseract Collective",
@@ -11,8 +12,10 @@
   "scripts": {
     "format": "prettier --write **/*.ts{x,}",
     "lint": "npx eslint src --fix",
+    "build": "tsc && rollup -c --bundleConfigAsCjs",
     "madge:check": "madge --circular --warning ./src",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "build:publish": "npm run build && npm run publish"
   },
   "dependencies": {
     "@date-io/moment": "2.16.0",
@@ -25,6 +28,7 @@
     "graphql-ws": "^5.10.2",
     "moment": "2.29.4",
     "nanoid": "^4.0.0",
+    "postcss": "8.4.17",
     "primeicons": "6.0.1",
     "primereact": "8.6.1",
     "quill": "1.3.7",
@@ -32,12 +36,20 @@
     "react-hook-form": "^7.35.0",
     "react-phone-input-2": "2.15.1",
     "react-phone-number-input": "3.2.11",
+    "react-query": "3.39.2",
+    "react-router-dom": "6.4.2",
+    "rollup-plugin-postcss": "4.0.2",
     "sass": "1.55.0",
     "tailwindcss": "3.1.8"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "23.0.0",
+    "@rollup/plugin-json": "5.0.0",
+    "@rollup/plugin-node-resolve": "15.0.0",
+    "@rollup/plugin-typescript": "9.0.1",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
+    "autoprefixer": "10.4.12",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "17.0.0",
@@ -50,11 +62,21 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "madge": "^5.0.1",
     "prettier": "2.7.1",
+    "rollup": "3.1.0",
+    "rollup-copy-transform-css": "1.2.3",
+    "rollup-plugin-bundle-scss": "0.1.3",
+    "rollup-plugin-copy": "3.4.0",
+    "rollup-plugin-css-porter": "1.0.2",
+    "rollup-plugin-scss": "3.0.0",
+    "rollup-plugin-terser": "7.0.2",
+    "rollup-plugin-ts": "3.0.2",
+    "style-inject": "0.3.0",
     "typescript": "4.8.3"
   },
   "eslintConfig": {
     "extends": "plugin:react-hooks/recommended"
   },
+  "type": "module",
   "madge": {
     "fontSize": "10px",
     "fileExtensions": [
