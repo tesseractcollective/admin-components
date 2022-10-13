@@ -6,7 +6,6 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 import postcss from 'rollup-plugin-postcss'
 import copy from 'rollup-plugin-copy'
 import { createTransform } from 'rollup-copy-transform-css'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 
 import packageJson from './package.json'
 
@@ -29,7 +28,6 @@ export default [
     ],
     plugins: [
       typescript({ tsconfig: './tsconfig.json' }),
-      peerDepsExternal(),
       postcss(),
       commonjs(),
       copy({
