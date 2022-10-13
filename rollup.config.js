@@ -44,5 +44,10 @@ export default [
       terser()
     ],
     external: Object.keys(packageJson.dependencies)
+  },
+  {
+    input: 'dist/esm/index.js',
+    output: [{ file: 'dist/types/index.d.ts', format: 'esm', inlineDynamicImports: true }],
+    plugins: [typescript({ outDir: 'dist/types' })]
   }
 ]
