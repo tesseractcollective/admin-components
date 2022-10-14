@@ -17,7 +17,11 @@ export interface AdminTableState {
   error?: string
 }
 
-export type AdminTableAdapterEvent = 'reload'
+export type AdminTableAdapterEventName = 'reload' | 'data'
+
+export interface AdminTableEventListener {
+  (evt: Event, data: any): void
+}
 
 export interface ExportOptions {
   fields?: string[]
@@ -27,8 +31,9 @@ export interface ExportOptions {
 }
 
 export abstract class AdminTableAdapter {
-  events: Record<AdminTableAdapterEvent, EventListener[]> = {
-    reload: []
+  events: Record<AdminTableAdapterEventName, AdminTableEventListener[]> = {
+    reload: [],
+    data: []
   }
 
   abstract readonly initialState: AdminTableState
@@ -37,13 +42,13 @@ export abstract class AdminTableAdapter {
 
   abstract fetchAllAsRecords(options: ExportOptions): Promise<Record<string, any>[]>
 
-  on(event: AdminTableAdapterEvent, listener: EventListener): void {
-    this.events[event].push(listener)
+  on(eventName: AdminTableAdapterEventName, listener: AdminTableEventListener): void {
+    this.events[eventName].push(listener)
   }
 
-  emit(event: AdminTableAdapterEvent): void {
-    for (const listener of this.events[event]) {
-      listener(new Event(event))
+  emit(eventName: AdminTableAdapterEventName, data?: any): void {
+    for (const listener of this.events[eventName]) {
+      listener(new Event(eventName), data)
     }
   }
 
@@ -100,6 +105,8 @@ export class AdminTableHasuraAdapter extends AdminTableAdapter {
           }
         }) || []
       total = result.data?.aggregate.aggregate.count || 0
+
+      this.emit('data', current)
     } catch (graphqlError: any) {
       // TODO: parse error
       console.log(graphqlError)
