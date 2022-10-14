@@ -5,7 +5,6 @@ export function valueForAttribute(attribute: Attribute): any {
   switch (attribute.type.valueType) {
     case ValueType.Boolean:
       return attribute.value === 'true'
-
     case ValueType.Number:
       return Number(attribute.value)
     default:
