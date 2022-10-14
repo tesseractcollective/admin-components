@@ -1,11 +1,25 @@
 import { DataTableRowClickEventParams, DataTableSelectParams } from 'primereact/datatable'
-import { Address, Attribute } from './types'
+import { Address, Attribute, ValueType } from './types'
 
-export function valueForAttribute(attributes: Attribute[] | undefined, name: string): string {
-  const attribute = attributes?.find(attr => attr.name === name)
-  return attribute?.value || ''
+export function valueForAttribute(attribute: Attribute): any {
+  switch (attribute.type.valueType) {
+    case ValueType.Boolean:
+      return attribute.value === 'true'
+
+    case ValueType.Number:
+      return Number(attribute.value)
+    default:
+      return attribute.value
+  }
 }
 
+export function findValueFromAttributes(attributes: Attribute[] | undefined, name: string): any {
+  const attribute = attributes?.find(attr => attr.name === name)
+  if (attribute) {
+    return valueForAttribute(attribute)
+  }
+  return ''
+}
 export const rowToNewTab = (
   event: DataTableRowClickEventParams | DataTableSelectParams,
   route: string,
