@@ -25,6 +25,7 @@ export const AddUsersModal: React.FC<Props> = ({ defaultValues, isOpen, onClose,
   return (
     <>
       <Dialog
+        maskStyle={{ zIndex: 0 }}
         header={() => (
           <div className="self-center">
             <div className="font-light text-lg">Add User</div>

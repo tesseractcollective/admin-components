@@ -6,7 +6,8 @@ import { Button } from 'primereact/button'
 import { Toast } from 'primereact/toast'
 import { UserFieldsFragmentDoc } from '../graphql/generated/graphqlRequest'
 import { AddUsersModal } from '../components/AddUsersModal/AddUsersModal'
-import { useUpsertUsersMutation } from '../graphql/generated/resourceApi'
+import { useUpsertAddressMutation, useUpsertUsersMutation } from '../graphql/generated/resourceApi'
+import { getAddressData, getUserData } from '../utils/selectors'
 
 const UsersPage: React.FC = () => {
   const { client } = useContext(AdminComponentContext)
@@ -15,11 +16,15 @@ const UsersPage: React.FC = () => {
   const [loading, setLoading] = React.useState(false)
   const toast = useRef<Toast>(null)
   const userUpsert = useUpsertUsersMutation(client)
+  const addressUpsert = useUpsertAddressMutation(client)
   const onSubmit = async (data: Record<string, any>) => {
     try {
       setLoading(true)
       await userUpsert.mutateAsync({
-        objects: data
+        objects: getUserData(data)
+      })
+      await addressUpsert.mutateAsync({
+        objects: getAddressData(data)
       })
       tableAdapter.reload()
       toast.current?.show({ severity: 'success', summary: 'Success Message', detail: 'Added User' })

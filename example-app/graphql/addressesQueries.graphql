@@ -1,0 +1,5 @@
+query addressByUserId($userId: uuid!) {
+  address(where: { userId: { _eq: $userId } }) {
+    ...addressFields
+  }
+}

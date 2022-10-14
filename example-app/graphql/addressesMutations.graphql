@@ -1,0 +1,8 @@
+mutation upsertAddress($objects: [AddressInsertInput!]!) {
+  insertAddress(
+    objects: $objects
+    onConflict: { constraint: address_pkey, update_columns: [address1, address2, country, state, city, postalCode, userId] }
+  ) {
+    affected_rows
+  }
+}
