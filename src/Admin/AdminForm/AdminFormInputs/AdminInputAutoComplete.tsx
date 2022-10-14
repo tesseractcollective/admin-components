@@ -63,14 +63,15 @@ const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = props => {
     )
   }
   const getOptions = useCallback(async (): Promise<void> => {
+    const inputValue = control?._getWatch(name)
     await adapter
       ?.infiniteManyQuery({
         limit: 100,
-        orderBy: { [name]: 'ASC' },
+        orderBy: { [relationshipColumnNameForLabel]: 'ASC' },
         where: {
-          [name]: {
+          [relationshipColumnNameForLabel]: {
             _isNull: false,
-            _ilike: fieldValue?.value ? `%${fieldValue?.value}%` : fieldValue ? `%${fieldValue}%` : '%%'
+            _ilike: inputValue?.value ? `%${inputValue?.value}%` : inputValue ? `%${inputValue}%` : '%%'
           }
         }
       })
@@ -82,7 +83,7 @@ const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = props => {
         }))
         setFilteredOptions(items)
       })
-  }, [adapter, relationshipColumnNameForLabel, relationshipColumnNameForValue, fieldValue])
+  }, [adapter, control, name, pkForRoute, relationshipColumnNameForLabel, relationshipColumnNameForValue])
 
   useEffect(() => {
     if (!filteredOptions) {
