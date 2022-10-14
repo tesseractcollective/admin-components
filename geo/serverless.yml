@@ -13,7 +13,7 @@ custom:
   fullstack:
     domain:
       - geo.tesseractcollective.com
-    certificate: arn:aws:acm:us-east-1:315118507072:certificate/5d45dbf5-00f3-4deb-ab7f-55a3501a26d2
+    certificate: arn:aws:acm:us-east-1:315118507072:certificate/7b022325-a1b6-4563-878a-f4dbc91569b5
     bucketName: geo.tesseractcollective.com
     distributionFolder: static
     indexDocument: index.html
