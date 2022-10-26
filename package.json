@@ -1,6 +1,6 @@
 {
   "name": "@tesseractcollective/admin-components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Form and Data Table Components for Admin Interfaces",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
