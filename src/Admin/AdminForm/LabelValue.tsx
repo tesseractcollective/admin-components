@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LabelValue({ label, value }: { label: string; value: string | JSX.Element | null | undefined }) {
+export function LabelValue({ label, value }: { label: string; value: string | JSX.Element | null | undefined }) {
   return (
     <div className="grid grid-cols-[200px_1fr] gap-x-4 gap-y-2 mb-2">
       <div className="font-bold text-right">{label}:</div>
@@ -8,5 +8,3 @@ function LabelValue({ label, value }: { label: string; value: string | JSX.Eleme
     </div>
   )
 }
-
-export default LabelValue
