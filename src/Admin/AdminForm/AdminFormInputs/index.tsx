@@ -1,3 +1,4 @@
+import AdminInputAutoComplete from './AdminInputAutoComplete'
 import AdminInputBoolean from './AdminInputBoolean'
 import AdminInputCelsius from './AdminInputCelsius'
 import AdminInputChips from './AdminInputChips/AdminInputChips'
@@ -28,6 +29,7 @@ import AdminInputMultiselect from './AdminInputMultiselect'
 // AdminInputMeters
 
 export {
+  AdminInputAutoComplete,
   AdminInputBoolean,
   AdminInputCelsius,
   AdminInputChips,
