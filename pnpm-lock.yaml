@@ -51,6 +51,7 @@ specifiers:
   sass: 1.55.0
   style-inject: 0.3.0
   tailwindcss: 3.1.8
+  tslib: ^2.4.0
   typescript: 4.8.3
 
 dependencies:
@@ -82,7 +83,7 @@ devDependencies:
   '@rollup/plugin-commonjs': 23.0.0_rollup@3.1.0
   '@rollup/plugin-json': 5.0.0_rollup@3.1.0
   '@rollup/plugin-node-resolve': 15.0.0_rollup@3.1.0
-  '@rollup/plugin-typescript': 9.0.1_sglbdeeoj3ou55lvped3dpni6y
+  '@rollup/plugin-typescript': 9.0.1_wtg5wlqlbnszn32xivxjspybye
   '@typescript-eslint/eslint-plugin': 5.37.0_mmi3pyznw6owt4he5ffavktrc4
   '@typescript-eslint/parser': 5.37.0_k3rzghlbvxbkeygxp7hcorhnku
   eslint: 8.26.0
@@ -106,6 +107,7 @@ devDependencies:
   rollup-plugin-terser: 7.0.2_rollup@3.1.0
   rollup-plugin-ts: 3.0.2_sglbdeeoj3ou55lvped3dpni6y
   style-inject: 0.3.0
+  tslib: 2.4.0
   typescript: 4.8.3
 
 packages:
@@ -478,7 +480,7 @@ packages:
       rollup: 3.1.0
     dev: true
 
-  /@rollup/plugin-typescript/9.0.1_sglbdeeoj3ou55lvped3dpni6y:
+  /@rollup/plugin-typescript/9.0.1_wtg5wlqlbnszn32xivxjspybye:
     resolution: {integrity: sha512-fj+CTk8+HvFCEwwDQdNgWd0lIJVXtMQ0Z3vH/ZgzFSbK2s1zs5wjZrjzrhViTTN+UF49+P69/tybgKRdGHpj/Q==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -494,6 +496,7 @@ packages:
       '@rollup/pluginutils': 4.2.1
       resolve: 1.22.1
       rollup: 3.1.0
+      tslib: 2.4.0
       typescript: 4.8.3
     dev: true
 

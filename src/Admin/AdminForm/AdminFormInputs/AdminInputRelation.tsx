@@ -86,7 +86,7 @@ export const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
 
   const searchItems = (event: AutoCompleteCompleteMethodParams) => {
     const userInput = event.query
-    const _filteredItems = []
+    const _filteredItems: any[] = []
     for (let i = 0; i < options!.length; i++) {
       const item = options![i]
       if (item.label.toLowerCase().indexOf(userInput.toLowerCase()) === 0) {
