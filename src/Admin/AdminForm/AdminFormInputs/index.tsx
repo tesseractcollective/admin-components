@@ -15,6 +15,7 @@ import { AdminInputRichText } from './AdminInputRichText'
 import { AdminInputSelect } from './AdminInputSelect'
 import { AdminInputState } from './AdminInputState'
 import { AdminInputText } from './AdminInputText'
+import { AdminInputTime } from './AdminInputTime'
 import { AdminInputToggle } from './AdminInputToggle'
 import { AdminInputYaml } from './AdminInputYaml'
 import { AdminInputAddressSingleLine } from './AdminInputAddressSingleLine'
@@ -45,5 +46,6 @@ export {
   AdminInputAddressSingleLine,
   AdminInputFileUpload,
   AdminInputMultiSelect,
-  AdminInputDuplicateCheck
+  AdminInputDuplicateCheck,
+  AdminInputTime
 }
