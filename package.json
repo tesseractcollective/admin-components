@@ -14,7 +14,9 @@
     "lint": "npx eslint src --fix",
     "build": "rollup -c --bundleConfigAsCjs",
     "madge:check": "madge --circular --warning ./src",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@date-io/moment": "2.16.0",
@@ -56,6 +58,8 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "madge": "^5.0.1",
     "prettier": "2.7.1",
     "rollup": "3.1.0",
@@ -68,10 +72,16 @@
     "typescript": "4.8.3"
   },
   "peerDependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
     "graphql": "16.6.0",
-    "graphql-request": "5.0.0"
+    "graphql-request": "5.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn lint",
+      "yarn format"
+    ]
   },
   "eslintConfig": {
     "extends": "plugin:react-hooks/recommended"
