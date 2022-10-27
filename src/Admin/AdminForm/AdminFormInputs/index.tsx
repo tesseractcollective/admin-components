@@ -20,6 +20,7 @@ import { AdminInputYaml } from './AdminInputYaml'
 import { AdminInputAddressSingleLine } from './AdminInputAddressSingleLine'
 import { AdminInputFileUpload } from './AdminInputFileUpload'
 import { AdminInputMultiSelect } from './AdminInputMultiselect'
+import { AdminInputDuplicateCheck } from './AdminInputDuplicateCheck'
 
 export {
   AdminInputAutoComplete,
@@ -43,5 +44,6 @@ export {
   AdminInputYaml,
   AdminInputAddressSingleLine,
   AdminInputFileUpload,
-  AdminInputMultiSelect
+  AdminInputMultiSelect,
+  AdminInputDuplicateCheck
 }
