@@ -1,7 +1,7 @@
 import React from 'react'
-import AdminInputText, { AdminInputTextProps } from './AdminInputText'
+import { AdminInputTextProps, AdminInputText } from './AdminInputText'
 
-const AdminInputLink: React.FC<AdminInputTextProps> = props => {
+export const AdminInputLink: React.FC<AdminInputTextProps> = props => {
   const isValidUrl = (url: string): string | boolean => {
     try {
       const urlObj = new URL(url)
@@ -18,5 +18,3 @@ const AdminInputLink: React.FC<AdminInputTextProps> = props => {
 
   return <AdminInputText {...(customProps as React.PropsWithChildren<AdminInputTextProps>)} type="url" pattern="https://.*" />
 }
-
-export default AdminInputLink

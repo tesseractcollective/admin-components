@@ -6,7 +6,7 @@ import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm
 
 export type AdminInputToggleProps = ToggleButtonProps & AdminInputBaseProps
 
-const AdminInputToggle: React.FC<AdminInputToggleProps> = props => {
+export const AdminInputToggle: React.FC<AdminInputToggleProps> = props => {
   validateProps(props)
   const { control, name, helpText, containerClassName, required, attributeType, onIcon, offIcon, onLabel, offLabel, defaultValue, ...baseProps } =
     props
@@ -54,5 +54,3 @@ const AdminInputToggle: React.FC<AdminInputToggleProps> = props => {
     />
   )
 }
-
-export default AdminInputToggle

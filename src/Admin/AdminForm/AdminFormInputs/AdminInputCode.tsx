@@ -20,7 +20,7 @@ import useTheme from '../../useTheme'
 
 export type AdminInputTextProps = InputTextProps & AdminInputBaseProps & IAceEditorProps
 
-const AdminInputCode: React.FC<AdminInputTextProps> = props => {
+export const AdminInputCode: React.FC<AdminInputTextProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, mode, ...baseProps } = props
 
@@ -105,5 +105,3 @@ const AdminInputCode: React.FC<AdminInputTextProps> = props => {
     />
   )
 }
-
-export default AdminInputCode

@@ -11,7 +11,7 @@ export interface ValuesDetailProps {
   onEditButtonClick?: () => void
 }
 
-const AdminDetailAttributes: React.FC<ValuesDetailProps> = ({ attributes, types, label, onEditButtonClick }) => (
+export const AdminDetailAttributes: React.FC<ValuesDetailProps> = ({ attributes, types, label, onEditButtonClick }) => (
   <>
     <div style={{ width: '100%' }}>
       <Card>
@@ -31,5 +31,3 @@ const AdminDetailAttributes: React.FC<ValuesDetailProps> = ({ attributes, types,
     </div>
   </>
 )
-
-export default AdminDetailAttributes

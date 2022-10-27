@@ -16,7 +16,7 @@ interface InputRelationProps {
 export type AdminInputRelationProps = DropdownProps & AdminInputBaseProps & InputRelationProps
 type OptionProps = { value: any; label: string }
 
-const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
+export const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
   validateProps(props)
   const {
     control,
@@ -136,5 +136,3 @@ const AdminInputRelation: React.FC<AdminInputRelationProps> = props => {
     />
   )
 }
-
-export default AdminInputRelation

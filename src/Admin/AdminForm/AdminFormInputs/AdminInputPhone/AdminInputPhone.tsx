@@ -13,7 +13,7 @@ export type AdminInputPhoneProps = AdminInputBaseProps & {
 
 const ReactPhoneInput = (ReactPhoneInput2 as any).default ? (ReactPhoneInput2 as any).default : ReactPhoneInput2
 
-const AdminInputPhone: React.FC<AdminInputPhoneProps> = props => {
+export const AdminInputPhone: React.FC<AdminInputPhoneProps> = props => {
   validateProps(props)
   const { control, name, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseProps } = props
   const validatePhoneNumber = (number?: string): boolean | string =>
@@ -90,5 +90,3 @@ const AdminInputPhone: React.FC<AdminInputPhoneProps> = props => {
     />
   )
 }
-
-export default AdminInputPhone

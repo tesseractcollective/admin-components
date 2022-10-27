@@ -8,7 +8,7 @@ export type AdminInputMultiSelectProps = MultiSelectProps &
     optionValueType?: 'string' | 'number'
   }
 
-const AdminInputMultiSelect: React.FC<AdminInputMultiSelectProps> = props => {
+export const AdminInputMultiSelect: React.FC<AdminInputMultiSelectProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, options, ...baseProps } = props
 
@@ -56,5 +56,3 @@ const AdminInputMultiSelect: React.FC<AdminInputMultiSelectProps> = props => {
     />
   )
 }
-
-export default AdminInputMultiSelect

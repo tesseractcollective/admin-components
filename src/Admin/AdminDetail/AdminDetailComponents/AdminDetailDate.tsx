@@ -4,7 +4,7 @@ import { AdminDetailBaseProps, AdminDetailLabelWrapper, AdminDetailLabelWrapperP
 export type AdminDetailTextProps = AdminDetailBaseProps &
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & { showTime?: boolean }
 
-const AdminDetailText: React.FC<AdminDetailTextProps> = props => {
+export const AdminDetailDate: React.FC<AdminDetailTextProps> = props => {
   const { className, attribute, type, value, showTime, ...rest } = props
 
   const wrapperProps: AdminDetailLabelWrapperProps = {
@@ -26,5 +26,3 @@ const AdminDetailText: React.FC<AdminDetailTextProps> = props => {
     </AdminDetailLabelWrapper>
   )
 }
-
-export default AdminDetailText

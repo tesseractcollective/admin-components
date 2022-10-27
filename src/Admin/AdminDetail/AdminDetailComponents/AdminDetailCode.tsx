@@ -9,7 +9,7 @@ import { AdminDetailBaseProps, AdminDetailLabelWrapper, AdminDetailLabelWrapperP
 
 export type AdminDetailCodeProps = AdminDetailBaseProps & IAceEditorProps
 
-const AdminDetailCode: React.FC<AdminDetailCodeProps> = props => {
+export const AdminDetailCode: React.FC<AdminDetailCodeProps> = props => {
   const { isLightMode } = useTheme()
   const editorTheme = isLightMode ? 'chrome' : 'twilight'
 
@@ -37,5 +37,3 @@ const AdminDetailCode: React.FC<AdminDetailCodeProps> = props => {
     </AdminDetailLabelWrapper>
   )
 }
-
-export default AdminDetailCode

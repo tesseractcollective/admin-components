@@ -13,7 +13,7 @@ interface InputDuplicateCheckProps {
 
 export type AdminInputTextCheckProps = InputTextProps & AdminInputBaseProps & InputDuplicateCheckProps
 
-const AdminInputDuplicateCheck: React.FC<AdminInputTextCheckProps> = props => {
+export const AdminInputDuplicateCheck: React.FC<AdminInputTextCheckProps> = props => {
   validateProps(props)
   const {
     control,
@@ -122,5 +122,3 @@ const AdminInputDuplicateCheck: React.FC<AdminInputTextCheckProps> = props => {
     />
   )
 }
-
-export default AdminInputDuplicateCheck

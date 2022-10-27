@@ -1,6 +1,4 @@
 import React from 'react'
-import AdminDetailCode, { AdminDetailCodeProps } from './AdminDetailCode'
+import { AdminDetailCodeProps, AdminDetailCode } from './AdminDetailCode'
 
-const AdminDetailJson: React.FC<AdminDetailCodeProps> = props => <AdminDetailCode {...props} />
-
-export default AdminDetailJson
+export const AdminDetailJson: React.FC<AdminDetailCodeProps> = props => <AdminDetailCode {...props} />

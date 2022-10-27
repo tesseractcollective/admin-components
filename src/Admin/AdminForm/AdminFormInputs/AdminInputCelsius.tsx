@@ -17,7 +17,7 @@ export type AdminInputOption = {
   value: number
 }
 
-const AdminInputCelsius: React.FC<AdminInputCeslisusProps> = props => {
+export const AdminInputCelsius: React.FC<AdminInputCeslisusProps> = props => {
   validateProps(props)
   const {
     control,
@@ -160,5 +160,3 @@ const AdminInputCelsius: React.FC<AdminInputCeslisusProps> = props => {
     />
   )
 }
-
-export default AdminInputCelsius
