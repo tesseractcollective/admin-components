@@ -1,7 +1,7 @@
 import React from 'react'
-import AdminInputText, { AdminInputTextProps } from './AdminInputText'
+import { AdminInputTextProps, AdminInputText } from './AdminInputText'
 
-const AdminInputEmail: React.FC<AdminInputTextProps> = props => {
+export const AdminInputEmail: React.FC<AdminInputTextProps> = props => {
   const validateEmail = (testEmail?: string | null): boolean | string => {
     const result =
       // eslint-disable-next-line max-len
@@ -20,5 +20,3 @@ const AdminInputEmail: React.FC<AdminInputTextProps> = props => {
 
   return <AdminInputText {...(customProps as React.PropsWithChildren<AdminInputTextProps>)} />
 }
-
-export default AdminInputEmail

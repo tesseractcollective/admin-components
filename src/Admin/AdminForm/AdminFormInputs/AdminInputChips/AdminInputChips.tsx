@@ -12,7 +12,7 @@ export type AdminChipsInputProps = IChipsProps &
     required?: boolean
   }
 
-const AdminInputChips: React.FC<AdminChipsInputProps> = props => {
+export const AdminInputChips: React.FC<AdminChipsInputProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, attributeType, required, defaultValue, onBlur, ...baseProps } = props
 
@@ -76,5 +76,3 @@ const AdminInputChips: React.FC<AdminChipsInputProps> = props => {
     />
   )
 }
-
-export default AdminInputChips

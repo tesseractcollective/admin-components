@@ -8,7 +8,7 @@ export type AdminInputTextProps = EditorProps &
     required?: boolean
   }
 
-const AdminInputRichText: React.FC<AdminInputTextProps> = props => {
+export const AdminInputRichText: React.FC<AdminInputTextProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, headerTemplate, defaultValue, ...baseProps } = props
 
@@ -89,5 +89,3 @@ const AdminInputRichText: React.FC<AdminInputTextProps> = props => {
     />
   )
 }
-
-export default AdminInputRichText

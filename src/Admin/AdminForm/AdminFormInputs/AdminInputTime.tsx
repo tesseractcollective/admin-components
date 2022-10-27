@@ -3,9 +3,9 @@ import { Controller } from 'react-hook-form'
 import { Calendar, CalendarProps } from 'primereact/calendar'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
 
-export type AdminInputTextProps = CalendarProps & AdminInputBaseProps
+export type AdminInputTimeProps = CalendarProps & AdminInputBaseProps
 
-const AdminInputText: React.FC<AdminInputTextProps> = props => {
+export const AdminInputTime: React.FC<AdminInputTimeProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseProps } = props
 
@@ -57,5 +57,3 @@ const AdminInputText: React.FC<AdminInputTextProps> = props => {
     />
   )
 }
-
-export default AdminInputText

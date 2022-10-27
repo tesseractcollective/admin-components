@@ -7,7 +7,7 @@ import { addressSingleLineFormat } from '../../adminUtils'
 
 export type AdminAddressSingleLineInputProps = AdminInputTextProps
 
-const AdminInputAddressSingleLine: React.FC<AdminAddressSingleLineInputProps> = props => {
+export const AdminInputAddressSingleLine: React.FC<AdminAddressSingleLineInputProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseProps } = props
   const priorityLabel = attributeType?.label ?? label ?? name
@@ -61,4 +61,3 @@ const AdminInputAddressSingleLine: React.FC<AdminAddressSingleLineInputProps> = 
     />
   )
 }
-export default AdminInputAddressSingleLine

@@ -5,7 +5,7 @@ import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm
 
 export type AdminInputBooleanProps = CheckboxProps & AdminInputBaseProps
 
-const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
+export const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseProps } = props
 
@@ -55,5 +55,3 @@ const AdminInputBoolean: React.FC<AdminInputBooleanProps> = props => {
     />
   )
 }
-
-export default AdminInputBoolean

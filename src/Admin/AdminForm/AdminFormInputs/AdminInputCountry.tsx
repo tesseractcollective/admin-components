@@ -44,7 +44,7 @@ export type AdminInputCountryProps = AutoCompleteProps &
     autofill?: boolean
   }
 
-const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
+export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
   validateProps(props)
 
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultCountryCode, onCountrySelect, autofill, ...baseProps } =
@@ -182,5 +182,3 @@ const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
     />
   )
 }
-
-export default AdminInputCountry

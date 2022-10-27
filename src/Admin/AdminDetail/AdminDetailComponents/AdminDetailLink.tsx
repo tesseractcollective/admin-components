@@ -3,7 +3,7 @@ import { AdminDetailBaseProps, AdminDetailLabelWrapper, AdminDetailLabelWrapperP
 
 export type AdminDetailLinkProps = AdminDetailBaseProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
-const AdminDetailLink: React.FC<AdminDetailLinkProps> = props => {
+export const AdminDetailLink: React.FC<AdminDetailLinkProps> = props => {
   const { className, attribute, type, value, ...rest } = props
 
   const wrapperProps: AdminDetailLabelWrapperProps = {
@@ -21,5 +21,3 @@ const AdminDetailLink: React.FC<AdminDetailLinkProps> = props => {
     </AdminDetailLabelWrapper>
   )
 }
-
-export default AdminDetailLink

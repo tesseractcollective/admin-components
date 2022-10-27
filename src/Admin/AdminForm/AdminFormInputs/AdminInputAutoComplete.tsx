@@ -18,7 +18,7 @@ interface InputRelationProps {
 export type AdminInputAutoCompleteProps = AutoCompleteProps & AdminInputBaseProps & InputRelationProps
 type OptionProps = { value: any; label: string; pk?: string }
 
-const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = props => {
+export const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = props => {
   validateProps(props)
   const {
     control,
@@ -156,5 +156,3 @@ const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = props => {
     />
   )
 }
-
-export default AdminInputAutoComplete

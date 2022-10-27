@@ -10,7 +10,7 @@ interface InputProps {
 
 export type AdminInputTextProps = InputTextProps & AdminInputBaseProps & InputTextareaProps & InputProps
 
-const AdminInputText: React.FC<AdminInputTextProps> = props => {
+export const AdminInputText: React.FC<AdminInputTextProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, isTextArea, onBlur, ...baseProps } = props
 
@@ -79,5 +79,3 @@ const AdminInputText: React.FC<AdminInputTextProps> = props => {
     />
   )
 }
-
-export default AdminInputText

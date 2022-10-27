@@ -15,7 +15,7 @@ export type AdminInputDateProps = AdminInputBaseProps &
     value?: ParsableDate | null | undefined
   }
 
-const AdminInputDate: React.FC<AdminInputDateProps> = props => {
+export const AdminInputDate: React.FC<AdminInputDateProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultValue, onBlur, ...baseprops } = props
 
@@ -70,5 +70,3 @@ const AdminInputDate: React.FC<AdminInputDateProps> = props => {
     />
   )
 }
-
-export default AdminInputDate

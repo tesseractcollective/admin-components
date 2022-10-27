@@ -5,7 +5,7 @@ import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm
 
 export type AdminInputFileUploadProps = FileUploadProps & AdminInputBaseProps
 
-const AdminInputFileUpload: React.FC<AdminInputFileUploadProps> = props => {
+export const AdminInputFileUpload: React.FC<AdminInputFileUploadProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, mode, defaultValue, ...baseprops } = props
 
@@ -50,5 +50,3 @@ const AdminInputFileUpload: React.FC<AdminInputFileUploadProps> = props => {
     />
   )
 }
-
-export default AdminInputFileUpload

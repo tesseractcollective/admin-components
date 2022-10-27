@@ -8,7 +8,7 @@ export type AdminInputSelectProps = DropdownProps &
     optionValueType?: 'string' | 'number'
   }
 
-const AdminInputSelect: React.FC<AdminInputSelectProps> = props => {
+export const AdminInputSelect: React.FC<AdminInputSelectProps> = props => {
   validateProps(props)
   const {
     control,
@@ -80,5 +80,3 @@ const AdminInputSelect: React.FC<AdminInputSelectProps> = props => {
     />
   )
 }
-
-export default AdminInputSelect

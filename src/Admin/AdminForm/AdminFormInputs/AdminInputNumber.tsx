@@ -8,7 +8,7 @@ export type AdminInputNumberProps = InputNumberProps &
     mode?: 'decimal' | 'currency'
   }
 
-const AdminInputNumber: React.FC<AdminInputNumberProps> = props => {
+export const AdminInputNumber: React.FC<AdminInputNumberProps> = props => {
   validateProps(props)
   const { control, name, label, helpText, containerClassName, required, attributeType, mode, minFractionDigits, defaultValue, onBlur, ...baseprops } =
     props
@@ -63,5 +63,3 @@ const AdminInputNumber: React.FC<AdminInputNumberProps> = props => {
     />
   )
 }
-
-export default AdminInputNumber
