@@ -7,6 +7,8 @@ export function valueForAttribute(attribute: Attribute): any {
       return attribute.value === 'true'
     case ValueType.Number:
       return Number(attribute.value)
+    case ValueType.Json:
+      return JSON.parse(attribute.value)
     default:
       return attribute.value
   }
