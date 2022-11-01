@@ -5,7 +5,7 @@ import { Skeleton } from 'primereact/skeleton'
 import { DataAdapter } from '../../DataAdapter'
 import { AdminInputBaseProps, validateProps } from '../AdminForm'
 import { AutoComplete, AutoCompleteProps } from 'primereact/autocomplete'
-import { useNavigate } from 'react-router-dom'
+import { NavigateFunction } from 'react-router-dom'
 
 interface InputRelationProps {
   relationshipColumnNameForLabel: string
@@ -13,6 +13,7 @@ interface InputRelationProps {
   adapter: DataAdapter
   pkForRoute?: string
   route?: string
+  navigate?: NavigateFunction
 }
 
 export type AdminInputAutoCompleteProps = AutoCompleteProps & AdminInputBaseProps & InputRelationProps
@@ -35,6 +36,7 @@ export const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = pro
     pkForRoute,
     route,
     onBlur,
+    navigate,
     ...baseProps
   } = props
 
@@ -43,7 +45,6 @@ export const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = pro
   const [filteredOptions, setFilteredOptions] = useState<OptionProps[]>()
   const [lazyLoading, _setLazyLoading] = useState<any>(false)
   const fieldValue = control?._getWatch(name)
-  const navigate = useNavigate()
 
   const itemTemplate = (tOptions: any): ReactNode => {
     const className = classNames('custom-scroll-item scroll-item', {

@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { Controller } from 'react-hook-form'
 import { DataAdapter } from '../../DataAdapter'
-import { useNavigate } from 'react-router-dom'
+import { NavigateFunction } from 'react-router-dom'
 import { InputText, InputTextProps } from 'primereact/inputtext'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
 
@@ -9,6 +9,7 @@ interface InputDuplicateCheckProps {
   adapter: DataAdapter
   pkForRoute?: string
   route?: string
+  navigate?: NavigateFunction
 }
 
 export type AdminInputTextCheckProps = InputTextProps & AdminInputBaseProps & InputDuplicateCheckProps
@@ -28,6 +29,7 @@ export const AdminInputDuplicateCheck: React.FC<AdminInputTextCheckProps> = prop
     pkForRoute,
     route,
     onBlur,
+    navigate,
     ...baseProps
   } = props
 
@@ -36,7 +38,6 @@ export const AdminInputDuplicateCheck: React.FC<AdminInputTextCheckProps> = prop
 
   const [duplicateValue, setDuplicateValue] = useState<any>(undefined)
   const [fieldValue, setFieldValue] = useState<string | undefined>(undefined)
-  const navigate = useNavigate()
   const attributeTypeProps = attributeType?.props
 
   const checkDuplicateValue = useCallback(async (): Promise<void> => {
