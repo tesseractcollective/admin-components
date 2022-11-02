@@ -108,7 +108,7 @@ export const AdminInputDuplicateCheck: React.FC<AdminInputTextCheckProps> = prop
                       type="button"
                       className="text-blue-500 cursor-pointer underline"
                       onClick={() => {
-                        navigate(route ? route?.replace(':pk', duplicateValue[pkForRoute ?? ''] ?? '') : '')
+                        navigate?.(route ? route?.replace(':pk', duplicateValue[pkForRoute ?? ''] ?? '') : '')
                       }}
                     >
                       view

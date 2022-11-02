@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowJs": false,
     "target": "es6",
-    "outDir": "dist/types",
+    "outDir": "types",
     "moduleResolution": "node",
     "module": "esnext",
     "esModuleInterop": true,
@@ -19,5 +19,5 @@
     "noImplicitAny": false
   },
   "include": ["src"],
-  "exclude": ["./node_modules", "./example-app", "./dist"]
+  "exclude": ["./node_modules", "./example-app"]
 }

@@ -143,7 +143,7 @@ export const AdminInputAutoComplete: React.FC<AdminInputAutoCompleteProps> = pro
                     <button
                       type="button"
                       className="text-blue-500 cursor-pointer underline"
-                      onClick={() => navigate(route ? route?.replace(':pk', filteredOptions?.[0]?.pk ?? '') : '')}
+                      onClick={() => navigate?.(route ? route?.replace(':pk', filteredOptions?.[0]?.pk ?? '') : '')}
                     >
                       view
                     </button>

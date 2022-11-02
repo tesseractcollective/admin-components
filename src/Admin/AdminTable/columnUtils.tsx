@@ -1,5 +1,5 @@
 import { ColumnBodyOptions } from 'primereact/column'
-import { moneyFormat } from 'utils/formatters'
+import { moneyFormat } from '../../utils/formatters'
 
 export const dateBody = (data: any, options: ColumnBodyOptions): string => {
   if (!data) {
