@@ -1,5 +1,0 @@
-query userById($id: uuid!) {
-  usersById: usersByPk(id: $id) {
-    ...userFields
-  }
-}
