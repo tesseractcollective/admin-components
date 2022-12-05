@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { AutoComplete, AutoCompleteCompleteMethodParams, AutoCompleteProps } from 'primereact/autocomplete'
-import { Controller } from 'react-hook-form'
+import { Controller, useWatch } from 'react-hook-form'
 import { nanoid } from 'nanoid'
 import { AdminInputBaseProps, buildClassName, validateProps } from '../AdminForm'
+import _ from 'lodash'
 import dataCountries from '../../data/countries.json'
 import { AddressCountry } from '../../types'
 
@@ -50,6 +51,8 @@ export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
   const { control, name, label, helpText, containerClassName, required, attributeType, defaultCountryCode, onCountrySelect, autofill, ...baseProps } =
     props
 
+  const fieldValue = useWatch({ name, control })
+
   const [id] = useState(nanoid())
   const [isFirstRender, setIsFirstRender] = useState(true)
   const [hasFocus, setHasFocus] = useState(false)
@@ -90,8 +93,17 @@ export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
   }, [autofill, id])
 
   useEffect(() => {
+    if (fieldValue && !currentInput && isFirstRender) {
+      const { country } = searchCountry(fieldValue)
+      setCurrentInput(country?.name || '')
+      onCountrySelect?.(country)
+    } else if (fieldValue) {
+      const { country } = searchCountry(fieldValue)
+      setCurrentInput(country?.name || '')
+      onCountrySelect?.(country)
+    }
     setIsFirstRender(false)
-  }, [])
+  }, [fieldValue, currentInput, isFirstRender])
 
   return (
     <Controller
@@ -102,12 +114,6 @@ export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
         ...attributeType?.validation
       }}
       render={({ field, fieldState, formState: _formState }) => {
-        if (field.value && !currentInput && isFirstRender) {
-          const { country } = searchCountry(field.value)
-          onCountrySelect?.(country)
-          setCurrentInput(country?.name || '')
-        }
-
         const errorMessage = fieldState.error?.message || fieldState.error?.type
 
         return (
@@ -126,7 +132,6 @@ export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
                   setCurrentInput(e.query)
                   const { country, filteredCountries } = searchCountry(e.query)
                   setCountries(filteredCountries)
-                  onCountrySelect?.(country)
                   if (country) {
                     field.onChange(country.code)
                   }
@@ -144,9 +149,11 @@ export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
                 onChange={e => {
                   setCurrentInput(e.value?.name || e.value)
                   const { country } = searchCountry(e.value)
-                  onCountrySelect?.(country)
                   if (country) {
                     field.onChange(country.code)
+                    if (currentInput !== country.name) {
+                      onCountrySelect?.(country)
+                    }
                   }
                   if (!e.value) {
                     field.onChange(null)
@@ -158,7 +165,6 @@ export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
                 onBlur={() => {
                   setHasFocus(false)
                   const { country } = searchCountry(currentInput)
-                  onCountrySelect?.(country)
                   if (country) {
                     field.onChange(country.code)
                     setCurrentInput(country.name || '')
@@ -170,6 +176,7 @@ export const AdminInputCountry: React.FC<AdminInputCountryProps> = props => {
 
               <label htmlFor={nameValue} className="capitalize">
                 {priorityLabel}
+                {required && ' *'}
               </label>
             </div>
             <small id={`${nameValue}-help`} className="p-d-block">
